@@ -1,0 +1,81 @@
+body {
+  font-size: 24px;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  border: 3px solid #000;
+  padding: 20px;
+  margin: 0px 0px 10px 0px;
+}
+
+.block1 {
+  background: green;
+  width: 200px;
+  height: 200px;
+}
+.block2 {
+  background-color: blue;
+}
+
+div._type1 > div.block1 {
+  float: left;
+}
+
+._type2 {
+  position: relative;
+}
+div._type2 > div.block1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+div._type2 > div.block2 {
+  margin: 0px 0px 0px 200px;
+}
+
+._type3 {
+  position: relative;
+}
+div._type3 > div.block1 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+div._type3 > div.block2 {
+  margin: 0px 250px 0px 0px;
+}
+
+._type4 {
+  position: relative;
+}
+div._type4 > div.block1 {
+  position: absolute;
+  top: 105px;
+  left: 412px;
+}
+._type5{
+  position: relative;
+}
+
+div._type5 > div.block1 {
+  height: 400px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+div._type5 > div.block2 {
+  margin: 0px 250px 375px 0px;
+}
+
+div._type6 > div.block1 {
+  float: left;
+  transform: translate(300px, 160px);
+}
