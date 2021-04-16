@@ -1,0 +1,160 @@
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamProRegular.eot');
+	src: local('☺'), url('../fonts/GothamProRegular.woff') format('woff'), url('../fonts/GothamProRegular.ttf') format('truetype'), url('../fonts/GothamProRegular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamProBold.eot');
+	src: local('☺'), url('../fonts/GothamProBold.woff') format('woff'), url('../fonts/GothamProBold.ttf') format('truetype'), url('../fonts/GothamProBold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura New';
+	src: url('../fonts/FuturaNewBook-Reg.eot');
+	src: local('☺'), url('../fonts/FuturaNewBook-Reg.woff') format('woff'), url('../fonts/FuturaNewBook-Reg.ttf') format('truetype'), url('../fonts/FuturaNewBook-Reg.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura New';
+	src: url('../fonts/FuturaNewBold-Reg.eot');
+	src: local('☺'), url('../fonts/FuturaNewBold-Reg.woff') format('woff'), url('../fonts/FuturaNewBold-Reg.ttf') format('truetype'), url('../fonts/FuturaNewBold-Reg.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+body {
+  font-family: 'Gotham Pro';
+}
+
+.header__top {
+  background-color: #000000;
+}
+
+.top-header {
+}
+
+.container {
+  max-width: 1134px;
+  margin: 0 auto;
+}
+
+.top-header__content {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-header__left {
+}
+
+.top-header__menu {
+}
+
+.top-header__list {
+  display: flex;
+}
+
+.top-header__list li {
+  margin: 0px 38px 0px 0px;
+}
+
+.top-header__list li:nth-child(3) {
+  margin: 0px 39px 0px 0px
+}
+.top-header__list li:nth-child(4) {
+  margin: 0px 41px 0px 0px
+}
+
+.top-header__link {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 11px;
+  letter-spacing: 0.1em;
+}
+
+.top-header__link:hover {
+  text-decoration: underline;
+}
+
+.top-header__right {
+  display: flex;
+}
+.top-header__menuright {
+  color: #FFFFFF;
+  font-size: 10px;
+  line-height: 11px;
+  text-align: right;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.top-header__menuright:hover {
+  text-decoration: underline;
+}
+
+.top-header__icon {
+  position: relative;
+  display: block;
+	width: 30px;
+	height: 12px;
+	cursor: pointer;
+  margin: 0px 0px 0px 13px;
+}
+
+.top-header__icon:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transition: all 0.3s ease 0s;
+  background-color:  #FFFFFF;
+}
+
+.top-header__icon:after {
+  content: "";
+  position: absolute;
+  bottom:-2px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transition: all 0.3s ease 0s;
+  background-color:  #FFFFFF;
+}
+
+.top-header__icon._active:before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0px, -50%);
+}
+
+.top-header._active:after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0px, 50%);
+}
