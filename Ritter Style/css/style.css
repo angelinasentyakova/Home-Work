@@ -23,6 +23,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 }
 
 @font-face {
+  font-family: 'Gotham Pro';
+  src: url(../fonts/GothamPro-Medium.eot);
+  src: url(../fonts/GothamPro-Medium.eot?#iefix) format('embedded-opentype'),
+  url(../fonts/GothamPro-Medium.otf) format('otf'),
+  url(../fonts/GothamPro-Medium.ttf) format('truetype'),
+  url(../fonts/GothamPro-Medium.woff) format('woff'),
+  url(../fonts/GothamPro-Medium.svg#GothamPro-Medium) format('svg');
+  font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'Gotham Pro';
 	src: url('../fonts/GothamProBold.eot');
 	src: local('☺'), url('../fonts/GothamProBold.woff') format('woff'), url('../fonts/GothamProBold.ttf') format('truetype'), url('../fonts/GothamProBold.svg') format('svg');
@@ -48,6 +60,17 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 body {
   font-family: 'Gotham Pro';
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+  flex-direction: column;
+}
+
+.content {
+	flex: 1 1 auto;
 }
 
 .header__top {
@@ -157,4 +180,183 @@ body {
 .top-header._active:after {
   bottom: 50%;
   transform: rotate(45deg) translate(0px, 50%);
+}
+
+
+.header__mid {
+}
+
+.mid-header {
+}
+
+.mid-header__row {
+  display: flex;
+}
+
+.mid-header__column {
+  flex: 0 1 33.333%;
+}
+
+.mid-header__contacts {
+  display: flex;
+  padding: 42px 0px 37px 0px;
+}
+
+.contacts-midheader {
+}
+
+.contacts-midheader__column {
+  margin: 0px 40px 0px 0px;
+}
+
+.contacts-midheader__column:last-child {
+  margin: 0;
+}
+
+.contacts-midheader__item {
+}
+
+.contacts-midheader__item_icon1 {
+  background: url('../img/icons/header/header__mid/phone.png') 0 1px no-repeat;
+  padding: 0px 0px 0px 31px;
+  cursor: pointer;
+}
+.contacts-midheader__city {
+  font-size: 10px;
+  line-height: 10px;
+  color: #000000;
+  opacity: 0.5;
+  margin: 0px 0px 1px 0px;
+}
+
+.contacts-midheader__phone {
+  font-size: 15px;
+  line-height: 14px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.contacts-midheader__phone:hover {
+  text-decoration: underline;
+}
+
+.contacts-midheader__item_icon2 {
+  background: url('../img/icons/header/header__mid/mail.png') left no-repeat;
+  padding: 0px 0px 0px 35px;
+  cursor: pointer;
+}
+.contacts-midheader__writeus {
+  font-size: 10px;
+  line-height: 10px;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.contacts-midheader__email {
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.contacts-midheader__email:hover {
+  text-decoration: underline;
+}
+
+.mid-header__column_logo {
+  background: url('../img/Rectangle\ 2.png') center no-repeat;
+}
+
+.mid-header__logo {
+  display: flex;
+  justify-content: center;
+  margin: 17px 0px 22px 0px;
+}
+
+.mid-header__userinfo {
+  display: flex;
+  justify-content: flex-end;
+  padding: 43px 0px 36px 0px;
+}
+
+.userinfo-midheader {
+}
+
+.userinfo-midheader__column {
+  margin: 0px 0px 0px 36px;
+}
+
+.userinfo-midheader__column:first-child {
+  margin: 0;
+}
+
+.userinfo-midheader__item {
+}
+
+.contacts-midheader__item_icon3 {
+  background: url('../img/icons/header/header__mid/login.png') right no-repeat;
+  padding: 0px 31px 0px 0px;
+  cursor: pointer;
+}
+
+.userinfo-midheader__profile {
+  font-size: 10px;
+  line-height: 10px;
+  text-align: right;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.userinfo-midheader__login {
+  dispay: block;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: right;
+  color: #000000;
+  font-weight: 500;
+}
+
+.userinfo-midheader__login:hover {
+  text-decoration: underline;
+}
+
+.contacts-midheader__item_icon4 {
+  background: url('../img/icons/header/header__mid/cart.png') 105px 2px no-repeat;
+  padding: 0px 40px 0px 0px; 
+  position: relative;
+  cursor: pointer;
+}
+
+.userinfo-midheader__goods {
+  font-size: 10px;
+  line-height: 10px;
+  text-align: right;
+  color: #000000;
+  opacity: 0.5;
+}
+.userinfo-midheader__sum {
+  display: block;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: right;
+  color: #000000;
+  font-weight: 500;
+}
+
+.userinfo-midheader__sum:hover {
+  text-decoration: underline;
+}
+
+.userinfo-midheader__cart {
+  position: absolute;
+  background: url('../img/icons/header/header__mid/number.png') right no-repeat;
+  right: 2px;
+  top: -20px;
+  width: 26px;
+  height: 20px;
+}
+
+.footer {
+  background-color: #000000;
+  height: 60px;
 }
