@@ -70,6 +70,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Georgia';
+	src: url('../fonts/Georgia-Italic.eot');
+	src: local('☺'), url('../fonts/Georgia-Italic.woff') format('woff'), url('../fonts/Georgia-Italic.ttf') format('truetype'), url('../fonts/Georgia-Italic.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
 body {
   font-family: 'Gotham Pro';
 }
@@ -831,6 +839,92 @@ body._lock {
     display: none;
   }
 }
+
+
+.content__block1 {
+  height: 578px;
+  background: url('../img/block1/background.png') left no-repeat;
+  
+}
+
+.slider__item {
+  display: flex;
+}
+
+.slider__left {
+  flex: 0 0 38%;
+  padding: 74px 0px 0px 0px;
+}
+
+.slider__title {
+  font-size: 60px;
+  line-height: 69px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0px 0px 6px 0px;
+}
+
+.slider__text {
+  font-family: 'Georgia';
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  opacity: 0.7;
+  margin: 0px 0px 47px 0px;
+}
+
+.slider__moreinfo {
+  padding: 20px 22px;
+  background: linear-gradient(93.8deg, #807FD4 0%, #609CE2 0.01%, #2346FF 100%);
+  box-shadow: 0px 5px 12px rgba(71, 120, 239, 0.6);
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: all 0.3s ease-out;
+}
+
+.slider__moreinfo:hover {
+  box-shadow: 5px 5px 5px #807FD4;
+}
+
+.slider__moreinfo:active {
+  position: relative; 
+  top: 2px;
+  left: 2px;
+}
+
+.slider__buttons {
+  margin: 195px 0px 0px 0px;
+}
+
+.slider__button {
+  display: inline-block;
+  height: 6px;
+  width: 10px;
+  background: #D7E4F4;
+  border-radius: 2px;
+  margin: 0px 3px 0px 0px;
+  transition: box-shadow 0.3s ease;
+}
+
+.slider__button.active {
+  width: 44px;
+  height: 6px;
+  background: #2D54FB;
+}
+
+.slider__button:hover {
+  box-shadow: 2px 2px 3px #2346FF;
+}
+
+.slider__right {
+  flex: 0 0 auto;
+}
+
+
 
 .footer {
   background: #000000;
