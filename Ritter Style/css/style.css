@@ -925,6 +925,50 @@ body._lock {
 }
 
 
+.content__block2 {
+  padding: 70px 0px;
+}
+
+.block2-content__row {
+  display: flex;
+  margin: 0px -15px;
+}
+
+.block2-content__column {
+  flex: 0 1 25%;
+  padding: 0px 15px;
+}
+
+.block2-content__image {
+  margin: 0px 0px 33px 0px;
+  text-align: center;
+}
+
+.block2-content__image img {
+  height: 30px;
+  margin: 0px 0px 16px 0px;
+}
+
+.block2-content__title {
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0px 0px 19px 0px;
+}
+
+.block2-content__text {
+  text-align: center;
+  font-family: 'Futura New';
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  opacity: 0.4;
+}
+
+
 
 .footer {
   background: #000000;
