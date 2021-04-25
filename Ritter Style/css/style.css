@@ -95,6 +95,7 @@ body._lock {
 
 .content {
 	flex: 1 1 auto;
+  background: url('../img/block3/background.png') -10px 730px no-repeat;
 }
 
 /* Верхний хедер */
@@ -966,6 +967,224 @@ body._lock {
   line-height: 19px;
   color: #000000;
   opacity: 0.4;
+}
+
+
+.content__block3 {
+  padding: 10px 0px 67px 0px;
+  
+}
+.block3-content {
+}
+.container {
+}
+.block3-content__products {
+}
+.products-block3 {
+}
+.products-block3__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px;
+}
+.products-block3__column {
+  flex: 0 1 25%;
+  padding: 0px 15px;
+  margin: 0px 0px 30px 0px;
+  
+}
+
+
+.products-block3__item {
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: -20px 24px 64px #F6F6F6;
+  padding: 0px 0px 17px 0px;
+  transition: all 0.3s ease;
+}
+
+.products-block3__item:hover {
+  box-shadow: -20px 24px 64px #D7E4F4;
+}
+
+.item {
+}
+.item__image {
+  
+}
+
+.item__image img {
+  width: 261px;
+  height: 260px;
+  text-align: center;
+  margin: 0px 0px 16px 0px;
+}
+
+.item__label {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background: #000;
+  color: #FFFFFF;
+  font-family: 'Futura New';
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 5px;
+  font-weight: 300;
+}
+.item__body {
+  max-width: 201px;
+  margin: 0 auto;
+}
+
+.item__top {
+  display: flex;
+}
+
+.item__titlecontainer {
+  max-height: 40px;
+  overflow: hidden;
+  display: inline-block;
+  max-width: 180px;
+  margin: 0px 0px 13px 0px;
+}
+
+
+.item__title {
+  font-family: 'Futura New';
+  font-size: 17px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000; 
+  transition: all 0.3s ease;
+}
+
+.item__titlecontainer:hover {
+  text-shadow: 1px 1px 1px #ADD8E6;
+}
+
+.item__add {
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: url('../img/icons/block3/1.png') 0 2px no-repeat;
+  transition: all 0.2s ease;
+}
+
+.item__add:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.item__add:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.item__description {
+  margin: 0px 0px 5px 0px;
+}
+.item__art {
+  font-family: 'Futura New';
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.5;
+}
+.item___maker {
+  font-family: 'Futura New';
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+}
+
+.item__description a {
+  display: inline-block;
+  font-family: 'Futura New';
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color:#000000;
+  text-decoration: underline;
+  transition: all 0.5s ease;
+}
+
+.item__description a:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+
+.item__price {
+  display: inline-block;
+  margin: 0px 11px 0px 0px;
+  transition: all 0.4s ease;
+}
+
+.item__price:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.item__price a {
+  font-family: 'Futura New';
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+}
+.item__oldprice {
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  transition: all 0.4s ease;
+}
+
+.item__oldprice:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.item__oldprice a {
+  font-family: Futura New;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.item__oldprice a:before {
+  content: "";
+  width: 100%;
+  height: 0.1em;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transition: all 0.6s ease;
+}
+
+.item__oldprice a:hover:before {
+  width: 0%;
 }
 
 
