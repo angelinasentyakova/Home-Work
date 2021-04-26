@@ -128,7 +128,7 @@ body._lock {
   background-color: #000000;
 }
 
-.container {
+.container1 {
   max-width: 1134px;
   margin: 0 auto;
 }
@@ -248,7 +248,7 @@ body._lock {
 }
 
 @media (max-width:1280px) {
-  .container {
+  .container1 {
     max-width: 740px;
   }
   .top-header__menuright, .top-header__icon {
@@ -284,7 +284,7 @@ body._lock {
 
 
   @media (max-width:768px) {
-  .container {
+  .container1 {
       max-width: 90%;
   }
   .top-header__content {
@@ -889,6 +889,7 @@ body._lock {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: 0px 0px 6px 0px;
+  font-weight: 500;
 }
 
 .slider__text {
@@ -1212,17 +1213,29 @@ body._lock {
   flex-wrap: wrap;
   margin: 0px -5px;
   margin: 0px 0px 134px 0px;
+  
 }
 
 .block4-content__column {
   flex: 0 0 50%;
-  background: url('../img/block4/chair.png') 255px 0px no-repeat;
   margin: 0px 0px 10px 0px;
   padding: 0px 5px;
 }
 
+
+.block4-content__background {
+  background: #F3F3F3;
+}
+
 .block4-content__item {
   padding: 50px 0px 62px 50px;  
+  background: url('../img/block4/chair.png') 235px 0px no-repeat;
+  mix-blend-mode: darken;
+  transition: all 0.3s ease;
+}
+
+.block4-content__item:hover {
+  box-shadow: 3px 3px 5px #D7E4F4;
 }
 
 .block4-content__body {
@@ -1608,7 +1621,7 @@ body._lock {
   height: 40px;
   margin: 10px 0px 0px 0px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .block8-content__button {
   font-size: 13px;
@@ -1619,6 +1632,56 @@ body._lock {
 
 .block8-content__right:hover {
   box-shadow: 2px 2px 3px #2346FF;
+}
+
+.content__block9 {
+  padding: 82px 0px 70px 0px;
+}
+.block9-content {
+}
+.block9-content__top {
+  margin: 0px 0px 79px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.block9-content__left {
+  margin: 0px 0px 0px 80px;
+  flex: 0 0 60%;
+}
+.block9-content__title {
+  font-size: 37px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.block9-content__right {
+  padding: 5px;
+  flex: 0 0 20%;
+  display: flex;
+  align-self: flex-end;
+  transition: all 0.4s ease-in-out;
+}
+
+.block9-content__right:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.block9-content__right img {
+  margin: 0px 0px 0px 9px;
+}
+
+.block9-content__text {
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 500;
+}
+.block9-content__image {
+  width: 39px;
 }
 
 
@@ -1934,7 +1997,7 @@ body._lock {
   background-color: white;
   transition: all 0.3s ease-in-out;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .bottom-footer__righttext:hover:before {
