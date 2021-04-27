@@ -867,11 +867,10 @@ body._lock {
 
 
 .content__block1 {
-  max-width: 1400px;
+  width: 1400px;
   margin: 0 auto;
   height: 578px;
   background: url('../img/block1/background.png') left no-repeat;
-  
 }
 
 .slider__item {
@@ -1200,7 +1199,7 @@ body._lock {
 
 
 .block4-content {
-  max-width: 1380px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -1224,7 +1223,7 @@ body._lock {
 
 .block4-content__item {
   padding: 50px 0px 62px 50px;  
-  background: url('../img/block4/chair.png') 247px 0px no-repeat;
+  background: url('../img/block4/chair.png') 100% 0% no-repeat;
   mix-blend-mode: darken;
   transition: all 0.3s ease;
 }
@@ -1573,8 +1572,9 @@ body._lock {
 
 
 .content__block8 {
-  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
+  text-align: center;
   position: relative;
 }
 
