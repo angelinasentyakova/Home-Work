@@ -128,7 +128,7 @@ body._lock {
   background-color: #000000;
 }
 
-.container1 {
+.container__width {
   max-width: 1134px;
   margin: 0 auto;
 }
@@ -248,7 +248,7 @@ body._lock {
 }
 
 @media (max-width:1280px) {
-  .container1 {
+  .container__width {
     max-width: 740px;
   }
   .top-header__menuright, .top-header__icon {
@@ -284,7 +284,7 @@ body._lock {
 
 
   @media (max-width:768px) {
-  .container1 {
+  .container__width {
       max-width: 90%;
   }
   .top-header__content {
@@ -871,17 +871,17 @@ body._lock {
   margin: 0 auto;
   height: 578px;
   background: url('../img/block1/background.png') left no-repeat;
-  position: relative;
-}
-
-.block1__content__image {
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 .slider__item {
   display: flex;
+  position: relative;
+}
+
+.slider__right {
+  position: absolute;
+  right: -12%;
+  top: 0;
 }
 
 .slider__left {
@@ -1148,10 +1148,19 @@ body._lock {
   transform: translate(2%, 2%);
 }
 
+.item__prices {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .item__price {
   display: inline-block;
   margin: 0px 11px 0px 0px;
   transition: all 0.3s ease;
+  width: 116px;
+  height: 30px;
+  overflow: hidden;
 }
 
 .item__price:hover {
@@ -1169,9 +1178,10 @@ body._lock {
 }
 
 .item__oldprice {
-  display: inline-block;
+  width: 65px;
+  height: 17px;
+  overflow: hidden;
   position: relative;
-  top: -2px;
   transition: all 0.4s ease;
 }
 
