@@ -867,10 +867,17 @@ body._lock {
 
 
 .content__block1 {
-  width: 1400px;
+  width: 100%;
   margin: 0 auto;
   height: 578px;
   background: url('../img/block1/background.png') left no-repeat;
+  position: relative;
+}
+
+.block1__content__image {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .slider__item {
