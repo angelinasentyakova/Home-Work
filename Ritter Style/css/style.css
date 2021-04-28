@@ -867,7 +867,7 @@ body._lock {
 
 
 .content__block1 {
-  width: 100%;
+  width: 1400px;
   margin: 0 auto;
   height: 578px;
   background: url('../img/block1/background.png') left no-repeat;
@@ -1593,6 +1593,8 @@ body._lock {
   margin: 0 auto;
   text-align: center;
   position: relative;
+  background: url('../img/block8/background.jpg') 0 0 repeat-x;
+  height: 253px;
 }
 
 .block8-content__subscribe {
