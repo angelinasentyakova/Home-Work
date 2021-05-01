@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Riter style</title>
 </head>
@@ -10,7 +11,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__top top-header">
-        <div class="container">
+        <div class="container__width">
           <div class="top-header__content">   
           <div class="top-header__left">
             <nav class="top-header__menu">
@@ -32,15 +33,15 @@
         </div>
       </div>
       <div class="header__mid mid-header">
-        <div class="container mid-header__container">
+        <div class="container__width mid-header__container">
         <div class="mid-header__row">
         <div class="mid-header__column">
           <div class="mid-header__contacts contacts-midheader">
             <div class="contacts-midheader__column">
               <div class="contacts-midheader__item contacts-midheader__item_icon1">
-                <div class="contacts-midheader__city">ВАШ ГОРОД: ПЕРМЬ</div>
+                <div class="contacts-midheader__city">ВАШ ГОРОД: <span id="city">МОСКВА</span></div>
                 <div class="contacts-midheader__city_tab">c 9.00 до 20.00</div>
-                <a href="tel:84952903484" class="contacts-midheader__phone">+7 495 290-34-84</a>
+                <a href="tel:84952903484" class="contacts-midheader__phone">8 800 2000 600</a>
                 <a href="tel:84952903484" class="contacts-midheader__phone_tab">8 495 290-34-84</a>
               </div>
             </div>
@@ -83,7 +84,7 @@
         </div>
       </div>
       <div class="header__bottom bottom-header">
-        <div class="container">
+        <div class="container__width">
           <div class="bottom-header__body">
             <div class="bottom-header__column bottom-header__column_left">
               <div class="bottom-header__item">
@@ -145,9 +146,572 @@
         </div>
       </div>
     </header>
-    <main class="content"></main>
+    <main class="content">
+      <div class="content__block1 block1-content">
+        <div class="block1-content__background">
+        </div>
+        <div class="container__width">
+          <div class="block1-content__slider slider">
+            <div class="slider__wrapper">
+              <div class="slider__item">
+                <div class="slider__left">
+                  <div class="slider__title">Офисная мебель</div>
+                  <div class="slider__text">Новый каталог 2018-2019</div>
+                  <a href="" class="slider__moreinfo">Подробнее о каталоге</a>
+                  <div class="slider__buttons"></a>
+                    <a href="" class="slider__button active"></a>
+                    <a href="" class="slider__button"></a>
+                    <a href="" class="slider__button"></a>
+                    <a href="" class="slider__button"></a>
+                    <a href="" class="slider__button"></a>
+                  </div>
+                </div>
+                <div class="slider__right">
+                <img class="block1__content__image" src="./img/block1/chair.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="content__block2 block2-content">
+        <div class="container__width">
+          <div class="block2-content__row">
+          <div class="block2-content__column">
+            <div class="block2-content__item">
+              <div class="block2-content__image">
+                <img src="./img/icons/block2/1.png" alt="Быстрая доставка">
+              </div>
+              <div class="block2-content__title">Быстрая доставка</div>
+              <div class="block2-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+            </div>
+          </div>
+          <div class="block2-content__column">
+            <div class="block2-content__item">
+              <div class="block2-content__image">
+                <img src="./img/icons/block2/2.png" alt="30 тыс.+ моделей">
+              </div>
+              <div class="block2-content__title">30 тыс.+ моделей</div>
+              <div class="block2-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+            </div>
+          </div>
+          <div class="block2-content__column">
+            <div class="block2-content__item">
+              <div class="block2-content__image">
+                <img src="./img/icons/block2/3.png" alt="Только оригиналы">
+              </div>
+              <div class="block2-content__title">Только оригиналы</div>
+              <div class="block2-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+            </div>
+          </div>
+          <div class="block2-content__column">
+            <div class="block2-content__item">
+              <div class="block2-content__image">
+                <img src="./img/icons/block2/4.png" alt="110% низкие цены">
+              </div>
+              <div class="block2-content__title">110% низкие цены</div>
+              <div class="block2-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="content__block3 block3-content">
+        <div class="container__width">
+        <div class="block3-content__products products-block3">
+          <div class="products-block3__row">
+          <div class="products-block3__column">
+            <div class="products-block3__item item">
+              <a href="" class="item__image">
+                <img src="./img/block3/1.jpg" alt="Стул">
+              </a>
+              <div class="item__label">В наличии</div>
+              <div class="item__body">
+                <div class="item__top">
+                <div class="item__titlecontainer">
+                <a href="" class="item__title">Стул такой-то 
+                  марки</a>
+                </div>
+                <a href="" class="item__add"></a>
+              </div>
+                <div class="item__description">
+                  <div class="item__art">Арт. 42342347</div>
+                  <div class="item___maker">Производитель: <a href="">KOLBINS</a></div>
+                </div>
+                <div class="item__prices">
+                <div class="item__price">
+                  <a href="">152 810 ₽</a>
+                </div>
+                <div class="item__oldprice">
+                  <a href="">432 810 ₽</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products-block3__column">
+            <div class="products-block3__item item">
+              <a href="" class="item__image">
+                <img src="./img/block3/1.jpg" alt="Стул">
+              </a>
+              <div class="item__label">В наличии</div>
+              <div class="item__body">
+                <div class="item__top">
+                <div class="item__titlecontainer">
+                <a href="" class="item__title">Стул такой-то 
+                  марки</a>
+                </div>
+                <a href="" class="item__add"></a>
+              </div>
+                <div class="item__description">
+                  <div class="item__art">Арт. 42342347</div>
+                  <div class="item___maker">Производитель: <a href="">KOLBINS</a></div>
+                </div>
+                <div class="item__prices">
+                <div class="item__price">
+                  <a href="">152 810 ₽</a>
+                </div>
+                <div class="item__oldprice">
+                  <a href="">432 810 ₽</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products-block3__column">
+            <div class="products-block3__item item">
+              <a href="" class="item__image">
+                <img src="./img/block3/1.jpg" alt="Стул">
+              </a>
+              <div class="item__label">В наличии</div>
+              <div class="item__body">
+                <div class="item__top">
+                <div class="item__titlecontainer">
+                <a href="" class="item__title">Стул такой-то 
+                  марки</a>
+                </div>
+                <a href="" class="item__add"></a>
+              </div>
+                <div class="item__description">
+                  <div class="item__art">Арт. 42342347</div>
+                  <div class="item___maker">Производитель: <a href="">KOLBINS</a></div>
+                </div>
+                <div class="item__prices">
+                <div class="item__price">
+                  <a href="">152 810 ₽</a>
+                </div>
+                <div class="item__oldprice">
+                  <a href="">432 810 ₽</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products-block3__column">
+            <div class="products-block3__item item">
+              <a href="" class="item__image">
+                <img src="./img/block3/1.jpg" alt="Стул">
+              </a>
+              <div class="item__label">В наличии</div>
+              <div class="item__body">
+                <div class="item__top">
+                <div class="item__titlecontainer">
+                <a href="" class="item__title">Стул такой-то 
+                  марки</a>
+                </div>
+                <a href="" class="item__add"></a>
+              </div>
+                <div class="item__description">
+                  <div class="item__art">Арт. 42342347</div>
+                  <div class="item___maker">Производитель: <a href="">KOLBINS</a></div>
+                </div>
+                <div class="item__prices">
+                <div class="item__price">
+                  <a href="">152 810 ₽</a>
+                </div>
+                <div class="item__oldprice">
+                  <a href="">432 810 ₽</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products-block3__column">
+            <div class="products-block3__item item">
+              <a href="" class="item__image">
+                <img src="./img/block3/1.jpg" alt="Стул">
+              </a>
+              <div class="item__label">В наличии</div>
+              <div class="item__body">
+                <div class="item__top">
+                <div class="item__titlecontainer">
+                <a href="" class="item__title">Стул такой-то 
+                  марки</a>
+                </div>
+                <a href="" class="item__add"></a>
+              </div>
+                <div class="item__description">
+                  <div class="item__art">Арт. 42342347</div>
+                  <div class="item___maker">Производитель: <a href="">KOLBINS</a></div>
+                </div>
+                <div class="item__prices">
+                <div class="item__price">
+                  <a href="">152 810 ₽</a>
+                </div>
+                <div class="item__oldprice">
+                  <a href="">432 810 ₽</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products-block3__column">
+            <div class="products-block3__item item">
+              <a href="" class="item__image">
+                <img src="./img/block3/1.jpg" alt="Стул">
+              </a>
+              <div class="item__label">В наличии</div>
+              <div class="item__body">
+                <div class="item__top">
+                <div class="item__titlecontainer">
+                <a href="" class="item__title">Стул такой-то 
+                  марки</a>
+                </div>
+                <a href="" class="item__add"></a>
+                </div>
+                <div class="item__description">
+                  <div class="item__art">Арт. 42342347</div>
+                  <div class="item___maker">Производитель: <a href="">KOLBINS</a></div>
+                </div>
+                <div class="item__prices">
+                <div class="item__price">
+                  <a href="">152 810 ₽</a>
+                </div>
+                <div class="item__oldprice">
+                  <a href="">432 810 ₽</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products-block3__column">
+            <div class="products-block3__item item">
+              <a href="" class="item__image">
+                <img src="./img/block3/1.jpg" alt="Стул">
+              </a>
+              <div class="item__label">В наличии</div>
+              <div class="item__body">
+                <div class="item__top">
+                <div class="item__titlecontainer">
+                <a href="" class="item__title">Стул такой-то 
+                  марки</a>
+                </div>
+                <a href="" class="item__add"></a>
+              </div>
+                <div class="item__description">
+                  <div class="item__art">Арт. 42342347</div>
+                  <div class="item___maker">Производитель: <a href="">KOLBINS</a></div>
+                </div>
+                <div class="item__prices">
+                <div class="item__price">
+                  <a href="">152 810 ₽</a>
+                </div>
+                <div class="item__oldprice">
+                  <a href="">432 810 ₽</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products-block3__column">
+            <div class="products-block3__item item">
+              <a href="" class="item__image">
+                <img src="./img/block3/1.jpg" alt="Стул">
+              </a>
+              <div class="item__label">В наличии</div>
+              <div class="item__body">
+                <div class="item__top">
+                <div class="item__titlecontainer">
+                <a href="" class="item__title">Стул такой-то 
+                  марки</a>
+                </div>
+                <a href="" class="item__add"></a>
+              </div>
+                <div class="item__description">
+                  <div class="item__art">Арт. 42342347</div>
+                  <div class="item___maker">Производитель: <a href="">KOLBINS</a></div>
+                </div>
+                <div class="item__prices">
+                <div class="item__price">
+                  <a href="">152 810 ₽</a>
+                </div>
+                <div class="item__oldprice">
+                  <a href="">432 810 ₽</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+      <div class="content__block4 block4-content">
+        <div class="block4-content__row">
+          <div class="block4-content__column">
+          <div class="block4-content__background">
+            <div class="block4-content__item">
+              <div class="block4-content__body">
+                <div class="block4-content__title">Стулья, Кресла, Диваны</div>
+                <div class="block4-content__textcontainer">
+                <div class="block4-content__text">Авторский дизайн, большой ассортимент и многообразие цветовой гаммы в сочетании с отличным качеством.</div>
+                </div>
+                <a href="" class="block4-content__button">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="block4-content__column">
+            <div class="block4-content__item">
+              <div class="block4-content__body">
+                <div class="block4-content__title">Стулья, Кресла, Диваны</div>
+                <div class="block4-content__textcontainer">
+                <div class="block4-content__text">Авторский дизайн, большой ассортимент и многообразие цветовой гаммы в сочетании с отличным качеством.</div>
+                </div>
+                <a href="" class="block4-content__button">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="block4-content__column">
+            <div class="block4-content__item">
+              <div class="block4-content__body">
+                <div class="block4-content__title">Стулья, Кресла, Диваны</div>
+                <div class="block4-content__textcontainer">
+                <div class="block4-content__text">Авторский дизайн, большой ассортимент и многообразие цветовой гаммы в сочетании с отличным качеством.</div>
+                </div>
+                <a href="" class="block4-content__button">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="block4-content__column">
+            <div class="block4-content__background">
+            <div class="block4-content__item">
+              <div class="block4-content__body">
+                <div class="block4-content__title">Стулья, Кресла, Диваны</div>
+                <div class="block4-content__textcontainer">
+                <div class="block4-content__text">Авторский дизайн, большой ассортимент и многообразие цветовой гаммы в сочетании с отличным качеством.</div>
+                </div>
+                <a href="" class="block4-content__button">Подробнее</a>
+              </div>           
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="content__block5 block5-content">
+        <article class="block5-content__article">
+          <div class="block5-content__category">О компании riter</div>
+          <div class="block5-content__title">Дизайнерская мебель в интернет магазине Ритер</div>
+          <div class="block5-content__body">
+            <div class="block5-content__left">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+              <div class="block5-content__subtitle">Заголовок со смыслом и значением</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="block5-content__right"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p></div>
+          </div>
+          <div class="block5-content__bottom">
+            <div class="block5-content__bottom1"></div>
+            <div class="block5-content__bottom2">
+              <div class="block5-content__bottomtext"><a href="">Подробнее о компании</a></div> 
+              <a href=""><img src="./img/icons/block5/Arrow.png" alt=""></a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="content__block6 block6-content">
+        <div class="block6">
+        <div class="container__width">
+          <div class="block6-content__title">наши бренды</div>
+          <div class="block6-content__body">
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+          </div>
+          <div class="block6-content__body">
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+          </div>
+          <div class="block6-content__body">
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+          </div>
+          <div class="block6-content__body">
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+          </div>
+          <div class="block6-content__body">
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+            <a href=""><img src="./img/block6/1.png" alt="наши бренды"></a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="block7__content content-block7">
+        <div class="container__width">
+        <div class="content-block7__top">
+          <div class="content-block7__left">
+            <div class="content-block7__title">Дизайнеры <br> интерьера о нас.</div>
+            <div class="content-block7__textblock">
+              <a href=""><div class="content-block7__text">Чем мы можем быть полезны дизайнерам</div></a>
+              <a href="" class="content-block7__arrow" ><img src="./img/icons/block7/arrow.png" alt="Чем мы можем быть полезны дизайнерам"></a>
+            </div>
+          </div>
+          <div class="content-block7__right">
+            <a href="" class="content-block7__prev"><img src="./img/icons/block7/next.png" alt="Предыдущий"></a>
+            <a href="" class="content-block7__next"><img src="./img/icons/block7/next.png" alt="Следующий" ></a>
+          </div>
+        </div>
+        <div class="content-block7__bottom">
+          <div class="content-block7__column column-block7">
+            <div class="column-block7__top">
+              <div class="column-block7__image"><img src="./img/block7/elena.png" alt="Елена Малышева"></div>
+              <div class="column-block7__info">
+                <div class="column-block7__name">Елена Малышева</div>
+                <div class="column-block7__profession">Архитектор, дизайнер, выпускник Ba 
+                  <br> London | Москва</div>
+                <a href="" class="column-block7__web">www.website.ru</a>
+              </div>
+            </div>
+            <div class="column-block7__bottom">
+              <div class="column-block7__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+            </div>
+          </div>
+          <div class="content-block7__column column-block7">
+            <div class="column-block7__top">
+              <div class="column-block7__image"><img src="./img/block7/elena.png" alt="Елена Малышева"></div>
+              <div class="column-block7__info">
+                <div class="column-block7__name">Елена Малышева</div>
+                <div class="column-block7__profession">Архитектор, дизайнер, выпускник Ba 
+                  <br> London | Москва</div>
+                <a href="" class="column-block7__web">www.website.ru</a>
+              </div>
+            </div>
+            <div class="column-block7__bottom">
+              <div class="column-block7__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="content__block8 block8-content">
+        
+        <div class="container__width">
+        <div class="block8-content__subscribe">
+          <div class="block8-content__left">
+          <div class="block8-content__title">подпишись на тег</div>
+          <div class="block8-content__hash">#riter</div>
+          </div>
+          <div class="block8-content__right">
+            <a href="" class="block8-content__button">Подписаться</a>
+          </div>
+          </div>
+        </div>
+        </div>
+      <div class="content__block9 block9-content">
+        <div class="container__width">
+          <div class="block9-content__top">
+            <div class="block9-content__left">
+              <div class="block9-content__title">Блог про дизайнерскую мебель</div>
+            </div>
+            <a href="" class="block9-content__right">
+              <div class="block9-content__text">Все новости</div>
+              <img class="block9-content__image" src="./img/icons/block9/Arrow.svg" alt="Все новости">
+            </a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row block9-content__row">
+            <div class="col-lg-4 block9-content__column">
+              <div class="block9-content__item">
+              <div class="block9-content__image">
+                <img src="./img/block9/1.jpg" alt="">
+              </div>
+              <div class="block9-content__info">
+              <div class="block9-content__date">12/08/18</div>
+              <div class="block9-content__title2">Название статьи</div>
+              <div class="block9-content__text2container">
+              <div class="block9-content__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</div>
+              </div>
+              <a href="" class="block9-content__button">
+                <div class="block9-content__buttontext">Читать далее</div>
+                <img src="./img/icons/block9/Arrow.svg" alt="Читать далее" class="block9-content__arrow">
+              </a>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-4 block9-content__column">
+              <div class="block9-content__item">
+              <div class="block9-content__image">
+                <img src="./img/block9/1.jpg" alt="">
+              </div>
+              <div class="block9-content__info">
+              <div class="block9-content__date">12/08/18</div>
+              <div class="block9-content__title2">Название статьи</div>
+              <div class="block9-content__text2container">
+              <div class="block9-content__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</div>
+              </div>
+              <a href="" class="block9-content__button">
+                <div class="block9-content__buttontext">Читать далее</div>
+                <img src="./img/icons/block9/Arrow.svg" alt="Читать далее" class="block9-content__arrow">
+              </a>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-4 block9-content__column">
+              <div class="block9-content__item">
+              <div class="block9-content__image">
+                <img src="./img/block9/1.jpg" alt="">
+              </div>
+              <div class="block9-content__info">
+              <div class="block9-content__date">12/08/18</div>
+              <div class="block9-content__title2">Название статьи</div>
+              <div class="block9-content__text2container">
+              <div class="block9-content__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</div>
+              </div>
+              <a href="" class="block9-content__button">
+                <div class="block9-content__buttontext">Читать далее</div>
+                <img src="./img/icons/block9/Arrow.svg" alt="Читать далее" class="block9-content__arrow">
+              </a>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container__width">
       <div class="footer__top top-footer">
         <div class="top-footer__row">
           <div class="top-footer__left left-topfooter">
@@ -242,4 +806,5 @@
 </body>
 <script src="js/burger.js"></script>
 <script src="js/accordion.js"></script>
+<script src="js/geolocation.js"></script>
 </html>
