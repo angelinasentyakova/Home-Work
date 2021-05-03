@@ -867,21 +867,31 @@ body._lock {
 
 
 .content__block1 {
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
   height: 578px;
   background: url('../img/block1/background.png') left no-repeat;
-}
-
-.slider__item {
-  display: flex;
   position: relative;
 }
 
-.slider__right {
+.slider__wrapper {
+  position: relative;
+  height: 578px;
+}
+
+.slider__item {
+  opacity: 0;
   position: absolute;
-  right: -12%;
-  top: 0;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  transition: opacity 1s ease;
+  display: flex;
+}
+
+.slider__item.active {
+  opacity: 1;
+  z-index: 2;
 }
 
 .slider__left {
@@ -895,7 +905,6 @@ body._lock {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: 0px 0px 6px 0px;
-  font-weight: 500;
 }
 
 .slider__text {
@@ -905,7 +914,7 @@ body._lock {
   line-height: 26px;
   color: #000000;
   opacity: 0.7;
-  margin: 0px 0px 47px 0px;
+  margin: 0px 0px 67px 0px;
 }
 
 .slider__moreinfo {
@@ -932,6 +941,9 @@ body._lock {
 
 .slider__buttons {
   margin: 195px 0px 0px 0px;
+  position: absolute;
+  bottom: 50px;
+  left: 135px;
 }
 
 .slider__button {
@@ -942,6 +954,7 @@ body._lock {
   border-radius: 2px;
   margin: 0px 3px 0px 0px;
   transition: box-shadow 0.3s ease;
+  transition: background-color 1s ease;
 }
 
 .slider__button.active {
@@ -956,6 +969,13 @@ body._lock {
 
 .slider__right {
   flex: 0 0 auto;
+  position: relative;
+}
+
+.slider__right img {
+  position: absolute;
+  top: 0px;
+  left: 40px;
 }
 
 
