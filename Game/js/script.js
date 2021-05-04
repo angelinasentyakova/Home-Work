@@ -53,7 +53,7 @@ function buttonClicked() {
   keys
   }));
 
-//определение столкновений
+//определение столкновений квадратов
 const checkCollision = users => {
   const [{ user: one }, { user: two }] = users;
   let { top: a, left: c, width: w1, height: h1 } = one.getBoundingClientRect();
@@ -75,11 +75,11 @@ const checkCollision = users => {
     user.style.transform = matrix;
     })
 
-//вывод алерта
+//вывод алерта при столкновении
     if (checkCollision(users)) {
       const [{ user: one }, { user: two }] = users;
-      let { top: a, left: c, width: w1, height: h1 } = one.getBoundingClientRect();
-      let { top: b, left: d, width: w2, height: h2 } = two.getBoundingClientRect();
+      let { width: w1 } = one.getBoundingClientRect();
+      let { width: w2 } = two.getBoundingClientRect();
       if (w2 > w1) {
         alert('Второй игрок выйграл');
         location.reload();
