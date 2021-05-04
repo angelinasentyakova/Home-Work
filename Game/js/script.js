@@ -82,11 +82,11 @@ const checkCollision = users => {
       let { width: w2 } = two.getBoundingClientRect();
       if (w2 > w1) {
         alert('Второй игрок выйграл');
-        location.reload();
+        window.location.reload();
       }
       if (w1 > w2) {
         alert('Первый игрок выйграл');
-        location.reload();
+        window.location.reload();
       }
     }
     requestAnimationFrame(loop);
