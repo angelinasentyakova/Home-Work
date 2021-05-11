@@ -401,6 +401,8 @@ body.--lock {
   position: relative;
   top: 6px;
   left: 8px;
+  position: relative;
+  top: 5px;
 }
 .profile-top-header img:hover {
   opacity: 0.8;
