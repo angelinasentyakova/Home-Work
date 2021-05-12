@@ -739,9 +739,6 @@ body.--lock {
   .slider-block1-content__wrapper {
     width: 550px;
   }
-  .slider-block1-content__image img {
-    width: 100%;
-  }
   .slider-block1-content__content {
     width: 300px;
     margin: 15px 0px 0px 30px;

@@ -33,3 +33,19 @@
   .mySlider__dots li.active {
     background: #42b1ba;
   }
+
+  @media (max-width:1280px) {
+    .mySlider__wrapper {
+        width: 550px;
+        height: 201px;
+    }
+    .mySlider__slide img {
+      width: 100%;
+    }
+  }
+
+  @media (max-width:920px) {
+    .mySlider__dots {
+      left: 40%;
+    }
+  }
