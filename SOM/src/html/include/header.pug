@@ -1,0 +1,79 @@
+- var accessoriesLinks = ['Party decor', 'Baking and decorating cakes', 'Clothes'];
+
+header.header
+  .container
+    .header__top 
+      .header__top-logo
+        img(src="img/header/logo.svg", alt="Logo")
+      .header__top-search
+        form.header__top-search-form(action="#", method="get", name="search") 
+          input.header__top-search-input(type="text")
+          button.header__top-search-button(type="submit")
+      .header__top-currency 
+        .header__top-currency-title Currency
+        select.header__top-currency-select(name="select") 
+          option(value="#") 
+          option(value="Dollar") $ (USA)
+          option(value="Euro") € (EUR) 
+          option(value="Pounds") £ (EN)
+          option(value="Yen") Ұ (CH)
+      .header__top-cart 
+        a(href="") 
+          img(src="img/header/cart.svg", alt="Shopping cart")
+        span 34
+      .header__top-profile 
+        a(href="")
+          img(src="img/header/profile.svg", alt="Profile")
+        .header__top-profile-menu
+          ul.header__top-profile-list
+            li.header__top-profile-link 
+              a(href="") Посмотреть профиль
+            li.header__top-profile-link.--favorite
+              a(href="") Избранные магазины
+              img(src="img/header/like.png", alt="Избранные магазины")
+            li.header__top-profile-link
+              a(href="") Покупки и отзывы 
+            li.header__top-profile-link
+              a(href="") Настройки аккаунта 
+            li.header__top-profile-link.no--border
+              a(href="") Выйти
+  .header__bottom
+    .container 
+      .header__bottom-menu 
+        ul.header__bottom-list 
+          li.header__bottom-link 
+            a(href="") Leather goods
+          li.header__bottom-link 
+            a(href="") Wood products
+          li.header__bottom-link 
+            a(href="") Wedding
+            ul.header__bottom-wedding-sublist
+              li.header__bottom-wedding-sublink 
+                a(href="") All
+              li.header__bottom-wedding-sublink 
+                a(href="") Party supplies
+              li.header__bottom-wedding-sublink 
+                a(href="") Invitations and cards
+              li.header__bottom-wedding-sublink 
+                a(href="") Wedding decor
+              li.header__bottom-wedding-sublink 
+                a(href="") Wedding gift
+              li.header__bottom-wedding-sublink 
+                a(href="") Wedding accessories
+                ul.header__bottom-accesories-sublist  
+                  each link in accessoriesLinks
+                    li.header__bottom-accesories-sublink 
+                      a(href="")= link
+              li.header__bottom-wedding-sublink 
+                a(href="") Wedding jewelry
+              li.header__bottom-wedding-sublink 
+                a(href="") Wedding clothes
+          li.header__bottom-link 
+            a(href="") Happy Birthday
+          li.header__bottom-link 
+            a(href="") Toys and entertainment
+          li.header__bottom-link 
+            a(href="") Art objects
+          li.header__bottom-link 
+            a(href="") Goods for needlework
+
