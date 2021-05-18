@@ -1,0 +1,12 @@
+- var pageNumbers = ['1', '...', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '...', '345'];
+
+.container
+  .pagination 
+    a.pagination__previous.button(href="") Previous
+      img(src="img/pagination/prev.svg", alt="")
+    ul.pagination__numbers 
+      each number in pageNumbers
+        li.pagination__number
+          a(href="")= number
+    a.pagination__next.button(href="") Next
+      img(src="img/pagination/next.svg", alt="")

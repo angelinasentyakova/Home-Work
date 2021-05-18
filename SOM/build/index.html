@@ -25,24 +25,22 @@
           <div class="header__top-currency"> 
             <div class="header__top-currency-title">Currency</div>
             <select class="header__top-currency-select" name="select"> 
-              <option value="#"> </option>
-              <option value="Dollar">$ (USA)</option>
-              <option value="Euro">€ (EUR) </option>
-              <option value="Pounds">£ (EN)</option>
-              <option value="Yen">Ұ (CH)</option>
+              <option class="header__top-currency-option" value="#"></option>
+              <option class="header__top-currency-option" value="Dollar">$ (USA)</option>
+              <option class="header__top-currency-option" value="Euro">€ (EUR) </option>
+              <option class="header__top-currency-option" value="Pounds">£ (EN)</option>
+              <option class="header__top-currency-option" value="Yen">Ұ (CH)</option>
             </select>
           </div>
           <div class="header__top-cart"> <a href=""> <img src="img/header/cart.svg" alt="Shopping cart"></a><span>34</span></div>
-          <div class="header__top-profile"> <a href=""><img src="img/header/profile.svg" alt="Profile"></a>
-            <div class="header__top-profile-menu">
-              <ul class="header__top-profile-list">
-                <li class="header__top-profile-link"> <a href="">Посмотреть профиль</a></li>
-                <li class="header__top-profile-link --favorite"><a href="">Избранные магазины</a><img src="img/header/like.png" alt="Избранные магазины"></li>
-                <li class="header__top-profile-link"><a href="">Покупки и отзывы </a></li>
-                <li class="header__top-profile-link"><a href="">Настройки аккаунта </a></li>
-                <li class="header__top-profile-link no--border"><a href="">Выйти</a></li>
-              </ul>
-            </div>
+          <div class="header__top-profile --clickable"><a href=""><img src="img/header/profile.svg" alt="Profile"></a>
+            <ul class="header__top-profile-list">
+              <li class="header__top-profile-link"> <a href="">Посмотреть профиль</a></li>
+              <li class="header__top-profile-link --favorite"><a href="">Избранные магазины</a><img src="img/header/like.png" alt="Избранные магазины"></li>
+              <li class="header__top-profile-link"><a href="">Покупки и отзывы </a></li>
+              <li class="header__top-profile-link"><a href="">Настройки аккаунта </a></li>
+              <li class="header__top-profile-link no--border"><a href="">Выйти</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -51,15 +49,14 @@
           <div class="header__bottom-menu"> 
             <ul class="header__bottom-list"> 
               <li class="header__bottom-link"> <a href="">Leather goods</a></li>
-              <li class="header__bottom-link"> <a href="">Wood products</a></li>
-              <li class="header__bottom-link"> <a href="">Wedding</a>
+              <li class="header__bottom-link --open-on-hover"><a href="">Wood products</a>
                 <ul class="header__bottom-wedding-sublist">
                   <li class="header__bottom-wedding-sublink"> <a href="">All</a></li>
                   <li class="header__bottom-wedding-sublink"> <a href="">Party supplies</a></li>
                   <li class="header__bottom-wedding-sublink"> <a href="">Invitations and cards</a></li>
                   <li class="header__bottom-wedding-sublink"> <a href="">Wedding decor</a></li>
                   <li class="header__bottom-wedding-sublink"> <a href="">Wedding gift</a></li>
-                  <li class="header__bottom-wedding-sublink"> <a href="">Wedding accessories</a>
+                  <li class="header__bottom-wedding-sublink --clickable"><a href="">Wedding accessories</a>
                     <ul class="header__bottom-accesories-sublist"> 
                       <li class="header__bottom-accesories-sublink"> <a href="">Party decor</a></li>
                       <li class="header__bottom-accesories-sublink"> <a href="">Baking and decorating cakes</a></li>
@@ -70,6 +67,7 @@
                   <li class="header__bottom-wedding-sublink"> <a href="">Wedding clothes</a></li>
                 </ul>
               </li>
+              <li class="header__bottom-link"> <a href="">Wedding</a></li>
               <li class="header__bottom-link"> <a href="">Happy Birthday</a></li>
               <li class="header__bottom-link"> <a href="">Toys and entertainment</a></li>
               <li class="header__bottom-link"> <a href="">Art objects</a></li>
@@ -79,11 +77,213 @@
         </div>
       </div>
     </header>
+    <div class="navigation"> 
+      <div class="container">
+        <ul class="navigation__list"> 
+          <li class="navigation__link"> <a href="">Свадьба<a class="navigation__arrow" href=""> <img src="img/navigation/arrow.svg" alt=""></a></a></li>
+          <li class="navigation__link"> <a href="">Товары для вечеринок<a class="navigation__arrow" href=""> <img src="img/navigation/arrow.svg" alt=""></a></a></li>
+          <li class="navigation__link"> <a href="">Декор для вечеринок </a><span>(362 товара)</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="radio"> 
+        <div class="radio__title subtitle">Цена</div>
+        <ul class="radio__list"> 
+          <li class="radio__item">
+            <input class="radio__radio" type="radio" name="price" value="Any" id="Any">
+            <label class="radio__label" for="Any">Любая цена</label>
+          </li>
+          <li class="radio__item">
+            <input class="radio__radio" type="radio" name="price" value="Less than 25$" id="Less25" checked>
+            <label class="radio__label" for="Less25">Дешевле 25$</label>
+          </li>
+          <li class="radio__item">
+            <input class="radio__radio" type="radio" name="price" value="From 25$ to 50$" id="25to50">
+            <label class="radio__label" for="25to50">От 25$ до 50$</label>
+          </li>
+          <li class="radio__item">
+            <input class="radio__radio" type="radio" name="price" value="From 50$ to 100$" id="50to100">
+            <label class="radio__label" for="50to100">От 50$ до 100$</label>
+          </li>
+          <li class="radio__item">
+            <input class="radio__radio" type="radio" name="price" value="More than 100$" id="More100">
+            <label class="radio__label" for="More100">Дороже 100$</label>
+          </li>
+          <li class="radio__item">
+            <input class="radio__checkbox" type="checkbox" value="Sale" id="Sale">
+            <label class="radio__label" for="Sale">Распродажа</label>
+          </li>
+        </ul>
+      </div>
+      <div class="products"> 
+        <div class="products__filters">
+          <div class="products__filter">
+            <ul class="products__filter-prices subtitle">
+              <li class="products__filter-price"><a href=""> Сначала самые дорогие</a></li>
+            </ul><a class="products__arrow" href=""></a>
+          </div>
+          <div class="products__filter">
+            <ul class="products__filter-ages subtitle">
+              <li class="products__filter-age"><a href="">Самые новые</a></li>
+            </ul><a class="products__arrow" href=""> </a>
+          </div>
+        </div>
+        <div class="products__wrapper"> 
+          <div class="products__column"> 
+            <div class="products__item">
+              <div class="products__item-image"><img src="images/products/1.jpg" alt="Pet ID tag"></div>
+              <div class="products__item-description-container">
+                <div class="products__item-description">Stamped pet ID tag</div>
+              </div>
+              <div class="products__item-price-container">
+                <div class="products__item-price">$23.99</div>
+              </div>
+              <div class="products__item-oldprice-container">
+                <div class="products__item-oldprice"></div>
+              </div>
+            </div>
+          </div>
+          <div class="products__column"> 
+            <div class="products__item">
+              <div class="products__item-image"><img src="images/products/2.jpg" alt="Cutting Board"></div>
+              <div class="products__item-description-container">
+                <div class="products__item-description">Personalized Cutting Board - Engraved Cutting Board, Custom Cutting Board</div>
+              </div>
+              <div class="products__item-price-container">
+                <div class="products__item-price">$52.00</div>
+              </div>
+              <div class="products__item-oldprice-container">
+                <div class="products__item-oldprice"></div>
+              </div>
+            </div>
+          </div>
+          <div class="products__column --twoprices"> 
+            <div class="products__item">
+              <div class="products__item-image"><img src="images/products/3.jpg" alt="Silicone Bamboo Mold"></div>
+              <div class="products__item-description-container">
+                <div class="products__item-description">Silicone Bamboo Mold, Chocolate Mold</div>
+              </div>
+              <div class="products__item-price-container">
+                <div class="products__item-price --onsale">$37.80</div>
+              </div>
+              <div class="products__item-oldprice-container">
+                <div class="products__item-oldprice">$45.20</div>
+              </div>
+            </div>
+          </div>
+          <div class="products__column"> 
+            <div class="products__item">
+              <div class="products__item-image"><img src="images/products/4.jpg" alt="Silicone Bamboo Mold"></div>
+              <div class="products__item-description-container">
+                <div class="products__item-description">Silicone Bamboo Mold, Chocolate Mold</div>
+              </div>
+              <div class="products__item-price-container">
+                <div class="products__item-price">Sold</div>
+              </div>
+              <div class="products__item-oldprice-container">
+                <div class="products__item-oldprice"></div>
+              </div>
+            </div>
+          </div>
+          <div class="products__column"> 
+            <div class="products__item">
+              <div class="products__item-image"><img src="images/products/5.jpg" alt="Pet ID tag"></div>
+              <div class="products__item-description-container">
+                <div class="products__item-description">Stamped pet ID tag</div>
+              </div>
+              <div class="products__item-price-container">
+                <div class="products__item-price">$143.00</div>
+              </div>
+              <div class="products__item-oldprice-container">
+                <div class="products__item-oldprice"></div>
+              </div>
+            </div>
+          </div>
+          <div class="products__column"> 
+            <div class="products__item">
+              <div class="products__item-image"><img src="images/products/6.jpg" alt="Cutting Board"></div>
+              <div class="products__item-description-container">
+                <div class="products__item-description">Personalized Cutting Board - Engraved Cutting Board, Custom Cutting Board</div>
+              </div>
+              <div class="products__item-price-container">
+                <div class="products__item-price">$52.00</div>
+              </div>
+              <div class="products__item-oldprice-container">
+                <div class="products__item-oldprice"></div>
+              </div>
+            </div>
+          </div>
+          <div class="products__column --twoprices"> 
+            <div class="products__item">
+              <div class="products__item-image"><img src="images/products/7.jpg" alt="Cutting Board"></div>
+              <div class="products__item-description-container">
+                <div class="products__item-description">Personalized Cutting Board - Engraved Cutting Board, Custom Cutting Board</div>
+              </div>
+              <div class="products__item-price-container">
+                <div class="products__item-price --onsale">$37.80</div>
+              </div>
+              <div class="products__item-oldprice-container">
+                <div class="products__item-oldprice">$45.20</div>
+              </div>
+            </div>
+          </div>
+          <div class="products__column"> 
+            <div class="products__item">
+              <div class="products__item-image"><img src="images/products/8.jpg" alt="Silicone Bamboo Mold"></div>
+              <div class="products__item-description-container">
+                <div class="products__item-description">Silicone Bamboo Mold, Chocolate Mold</div>
+              </div>
+              <div class="products__item-price-container">
+                <div class="products__item-price">$23.99</div>
+              </div>
+              <div class="products__item-oldprice-container">
+                <div class="products__item-oldprice"></div>
+              </div>
+            </div>
+          </div>
+          <div class="products__column"> 
+            <div class="products__item">
+              <div class="products__item-image"><img src="images/products/9.jpg" alt="Pet ID tag"></div>
+              <div class="products__item-description-container">
+                <div class="products__item-description">Stamped pet ID tag</div>
+              </div>
+              <div class="products__item-price-container">
+                <div class="products__item-price">$2.30</div>
+              </div>
+              <div class="products__item-oldprice-container">
+                <div class="products__item-oldprice"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="pagination"> <a class="pagination__previous button" href="">Previous<img src="img/pagination/prev.svg" alt=""></a>
+        <ul class="pagination__numbers"> 
+          <li class="pagination__number"><a href="">1</a></li>
+          <li class="pagination__number"><a href="">...</a></li>
+          <li class="pagination__number"><a href="">7</a></li>
+          <li class="pagination__number"><a href="">8</a></li>
+          <li class="pagination__number"><a href="">9</a></li>
+          <li class="pagination__number"><a href="">10</a></li>
+          <li class="pagination__number"><a href="">11</a></li>
+          <li class="pagination__number"><a href="">12</a></li>
+          <li class="pagination__number"><a href="">13</a></li>
+          <li class="pagination__number"><a href="">14</a></li>
+          <li class="pagination__number"><a href="">15</a></li>
+          <li class="pagination__number"><a href="">16</a></li>
+          <li class="pagination__number"><a href="">...</a></li>
+          <li class="pagination__number"><a href="">345</a></li>
+        </ul><a class="pagination__next button" href="">Next<img src="img/pagination/next.svg" alt=""></a>
+      </div>
+    </div>
     <div class="container"> 
       <div class="seller"> 
         <div class="seller__image"> <img src="images/seller/Rectangle.jpg" alt="Background"></div>
-        <div class="seller-title">What is Seller-online ?</div>
-        <div class="seller-icon"><img src="images/seller/Group.png" alt="What is online"></div><a class="seller-button button" href="">Read more</a>
+        <div class="seller__title title">What is Seller-online ?</div>
+        <div class="seller__icon"><img src="images/seller/Group.png" alt="What is online"></div><a class="seller__button button" href="">Read more</a>
       </div>
     </div>
     <footer class="footer"> 
@@ -92,50 +292,46 @@
           <div class="footer__top-wrapper">
             <div class="footer__top-column"> 
               <div class="footer__top-item"> 
-                <div class="footer__top-title">Store
-                  <ul class="footer__top-list"> 
-                    <li class="footer__top-link"> <a href="">Подарочные сертификаты </a></li>
-                    <li class="footer__top-link"><a href="">Seller-online блог</a></li>
-                  </ul>
-                </div>
+                <div class="footer__top-title">Store</div>
+                <ul class="footer__top-list"> 
+                  <li class="footer__top-link"> <a href="">Подарочные сертификаты </a></li>
+                  <li class="footer__top-link"><a href="">Seller-online блог</a></li>
+                </ul>
               </div>
             </div>
             <div class="footer__top-column"> 
               <div class="footer__top-item"> 
-                <div class="footer__top-title">Sell
-                  <ul class="footer__top-list"> 
-                    <li class="footer__top-link"> <a href="">Sell on SOM</a></li>
-                    <li class="footer__top-link"><a href="">Teams</a></li>
-                    <li class="footer__top-link"><a href="">Forums</a></li>
-                  </ul>
-                </div>
+                <div class="footer__top-title">Sell</div>
+                <ul class="footer__top-list"> 
+                  <li class="footer__top-link"> <a href="">Sell on SOM</a></li>
+                  <li class="footer__top-link"><a href="">Teams</a></li>
+                  <li class="footer__top-link"><a href="">Forums</a></li>
+                </ul>
               </div>
             </div>
             <div class="footer__top-column"> 
               <div class="footer__top-item"> 
-                <div class="footer__top-title">About
-                  <ul class="footer__top-list"> 
-                    <li class="footer__top-link"> <a href="">Seller-online, Inc.</a></li>
-                    <li class="footer__top-link"><a href="">Policies</a></li>
-                    <li class="footer__top-link"><a href="">Investors</a></li>
-                    <li class="footer__top-link"> <a href="">Careers</a></li>
-                    <li class="footer__top-link"><a href="">Press</a></li>
-                    <li class="footer__top-link"><a href="">Impact</a></li>
-                    <li class="footer__top-link"><a href="">Legal imprint</a></li>
-                  </ul>
-                </div>
+                <div class="footer__top-title">About</div>
+                <ul class="footer__top-list"> 
+                  <li class="footer__top-link"> <a href="">Seller-online, Inc.</a></li>
+                  <li class="footer__top-link"><a href="">Policies</a></li>
+                  <li class="footer__top-link"><a href="">Investors</a></li>
+                  <li class="footer__top-link"> <a href="">Careers</a></li>
+                  <li class="footer__top-link"><a href="">Press</a></li>
+                  <li class="footer__top-link"><a href="">Impact</a></li>
+                  <li class="footer__top-link"><a href="">Legal imprint</a></li>
+                </ul>
               </div>
             </div>
             <div class="footer__top-column"> 
               <div class="footer__top-item"> 
-                <div class="footer__top-title">Follow SOM
-                  <ul class="footer__top-list"> 
-                    <li class="footer__top-link"> <a href="">Facebook</a></li>
-                    <li class="footer__top-link"><a href="">Instagram</a></li>
-                    <li class="footer__top-link"><a href="">Pinterest</a></li>
-                    <li class="footer__top-link"> <a href="">Twitter</a></li>
-                  </ul>
-                </div>
+                <div class="footer__top-title">Follow SOM</div>
+                <ul class="footer__top-list"> 
+                  <li class="footer__top-link"> <a href="">Facebook</a></li>
+                  <li class="footer__top-link"><a href="">Instagram</a></li>
+                  <li class="footer__top-link"><a href="">Pinterest</a></li>
+                  <li class="footer__top-link"> <a href="">Twitter</a></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -147,7 +343,7 @@
             <div class="footer__bottom-left"> 
               <div class="footer__bottom-logo"><img src="img/footer/SOM.png" alt="logo"></div><a class="footer__bottom-solma" href="">© 2019 Solma</a>
             </div>
-            <div class="footer__bottom__right"> 
+            <div class="footer__bottom-right"> 
               <ul class="footer__bottom-list"> 
                 <li class="footer__bottom-link"> <a href="">Terms of Use</a></li>
                 <li class="footer__bottom-link"> <a href="">Privacy</a></li>

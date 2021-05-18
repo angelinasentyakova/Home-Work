@@ -5,6 +5,9 @@
 body {
   font-family: "Roboto";
   font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $gray-superdark;
 }
 
 .container {
@@ -24,6 +27,26 @@ body {
   transition: $transition;
 }
 
+.title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 110%;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: $navy-dark;
+}
+
+
+
 @import "blocks/header.scss";
+@import "blocks/navigation.scss";
+@import "blocks/radio.scss";
+@import "blocks/products.scss";
+@import "blocks/pagination.scss";
 @import "blocks/seller.scss";
 @import "blocks/footer.scss";

@@ -2,12 +2,11 @@
   position: relative;
   &__image {
     clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0 100%);
+    margin: 0px 0px 90px 0px;
   }
 }
-.seller-title {
-  font-family: Montserrat;
+.seller__title {
   font-size: 36px;
-  line-height: 110%;
   color: $white;
   position: absolute;
   margin: 30px 0px 0px 50px;
@@ -15,12 +14,12 @@
   left: 0;
   width: 280px;
 }
-.seller-icon {
+.seller__icon {
   position: absolute;
   bottom: -17px;
   left: 470px;
 }
-.seller-button {
+.seller__button {
   position: absolute;
   right: 40px;
   top: 48px;
