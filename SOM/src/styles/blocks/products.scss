@@ -63,6 +63,7 @@
   }
   &__item-image {
     margin: 0px 0px 13px 0px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     img {
     width: 100%;
     }
