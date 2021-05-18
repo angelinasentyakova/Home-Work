@@ -419,6 +419,7 @@ body {
   pointer-events: all;
   visibility: visible;
 }
+
 .navigation {
   border-bottom: 1px solid #ececec;
 }
@@ -453,7 +454,7 @@ body {
   transition: all 0.3s ease;
 }
 .navigation__arrow:active {
-  top: 5px;
+  top: 9px;
 }
 
 .radio {

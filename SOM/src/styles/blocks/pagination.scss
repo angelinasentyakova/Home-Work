@@ -23,13 +23,11 @@
       background-color: $gray-darker;
     }
   }
-
   &__numbers {
     display: flex;
     align-items: center;
     height: 30px;
   }
-
   &__number {
     width: 36px;
     display: flex;
@@ -48,7 +46,6 @@
       }
     }
   }
-
   &__next {
     width: 126px;
     height: 30px;
