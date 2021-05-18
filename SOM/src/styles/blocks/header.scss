@@ -207,11 +207,6 @@
       margin: 0;
     }
   }
-  &__bottom-link.--open-on-hover:hover > ul {
-    opacity: 1;
-    pointer-events: all;
-    visibility: visible;
-  }
   &__bottom-wedding-sublist {
     font-weight: 400;
     font-family: Roboto;
@@ -223,9 +218,9 @@
     z-index: 4;
     background: $white;
     box-shadow: 0px 20px 25px rgba(62, 75, 102, 0.2);
-    visibility: visible;
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
     transition: $transition;
     &.--active {
       opacity: 1;
@@ -236,9 +231,13 @@
   &__bottom-wedding-sublink {
     padding: 0px 0px 10px 0px;
     z-index: 5;
+    width: 150px;
     a {
       display: inline-block;
       position: relative;
+      &:hover {
+        color: $blue;
+      }
       &:after {
         content: "";
         position: absolute;
@@ -250,17 +249,14 @@
         width: 0;
         transition: $transition;
       }
-      &:hover {
-        color: $blue;
-        &:after {
-          width: 100%;
-        }
-      }
-      &:active {
-        &:after {
-          width: 100%;
-        }
-      }
+    }
+  }
+  &__bottom-wedding-sublink.--clickable > a.--selected {
+    display: inline-block;
+    position: relative;
+    color: $blue;
+    &:after {
+      width: 100%;
     }
   }
 
@@ -269,7 +265,7 @@
   top: 0;
   left: 200px;
   padding: 37px 0px 0px 190px;
-  visibility: visible;
+  visibility: hidden;
   height: 400px;
   opacity: 0;
   pointer-events: none;
@@ -281,7 +277,6 @@
   }
   }
   &__bottom-accesories-sublink {
-    
     
   }
 }

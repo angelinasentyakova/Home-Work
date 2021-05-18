@@ -347,11 +347,6 @@ body {
 .header__bottom-link:last-child {
   margin: 0;
 }
-.header__bottom-link.--open-on-hover:hover > ul {
-  opacity: 1;
-  pointer-events: all;
-  visibility: visible;
-}
 .header__bottom-wedding-sublist {
   font-weight: 400;
   font-family: Roboto;
@@ -364,9 +359,9 @@ body {
   background: #fff;
   -webkit-box-shadow: 0px 20px 25px rgba(62, 75, 102, 0.2);
           box-shadow: 0px 20px 25px rgba(62, 75, 102, 0.2);
-  visibility: visible;
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -378,10 +373,14 @@ body {
 .header__bottom-wedding-sublink {
   padding: 0px 0px 10px 0px;
   z-index: 5;
+  width: 150px;
 }
 .header__bottom-wedding-sublink a {
   display: inline-block;
   position: relative;
+}
+.header__bottom-wedding-sublink a:hover {
+  color: #42b1ba;
 }
 .header__bottom-wedding-sublink a:after {
   content: "";
@@ -395,13 +394,12 @@ body {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.header__bottom-wedding-sublink a:hover {
+.header__bottom-wedding-sublink.--clickable > a.--selected {
+  display: inline-block;
+  position: relative;
   color: #42b1ba;
 }
-.header__bottom-wedding-sublink a:hover:after {
-  width: 100%;
-}
-.header__bottom-wedding-sublink a:active:after {
+.header__bottom-wedding-sublink.--clickable > a.--selected:after {
   width: 100%;
 }
 .header__bottom-accesories-sublist {
@@ -409,7 +407,7 @@ body {
   top: 0;
   left: 200px;
   padding: 37px 0px 0px 190px;
-  visibility: visible;
+  visibility: hidden;
   height: 400px;
   opacity: 0;
   pointer-events: none;
