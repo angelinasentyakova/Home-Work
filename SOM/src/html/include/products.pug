@@ -17,7 +17,7 @@
       .products__column(class=item.modifier) 
         .products__item
           .products__item-image
-            img(src= item.src, alt=item.alt)
+            img(src= item.src, alt=item.alt).js-crop-image
           .products__item-description-container
             .products__item-description= item.description
           .products__item-price-container

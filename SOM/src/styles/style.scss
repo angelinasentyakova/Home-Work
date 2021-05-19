@@ -2,46 +2,9 @@
 @import "commons/variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Roboto:ital,wght@0,200;0,300;0,400;0,700;1,400&display=swap");
 
-body {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: $gray-superdark;
-}
-
-.container {
-  max-width: 1128px;
-  margin: 0 auto;
-}
-
-.button {
-  border-radius: 30px;
-  color: $white;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 120%;
-  background: $blue;
-  display: inline-block;
-  cursor: pointer;
-  transition: $transition;
-}
-
-.title {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 110%;
-}
-
-.subtitle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  color: $navy-dark;
-}
-
-
+@import "blocks/base.scss";
+@import "blocks/titles.scss";
+@import "blocks/button.scss";
 
 @import "blocks/header.scss";
 @import "blocks/navigation.scss";

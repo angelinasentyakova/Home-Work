@@ -183,8 +183,8 @@
       content: "";
       position: absolute;
       display: block;
-      bottom: -3px;
       left: 0;
+      bottom:-3px;
       height: 3px;
       background: $blue;
       width: 0;
@@ -212,6 +212,7 @@
     font-family: Roboto;
     position: absolute;
     width: 1128px;
+    margin: 0 auto;
     top: 40px;
     padding: 37px 0px 20px 95px;
     left: -163px;
