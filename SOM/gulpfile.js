@@ -3,7 +3,7 @@ let sourceFolder = "src";
 
 let path = {
   build: {
-    html: projectFolder + "/html/",
+    html: projectFolder + "/",
     css: projectFolder + "/css/",
     js: projectFolder + "/js/",
     img: projectFolder + "/images/",
@@ -39,7 +39,7 @@ let { src, dest } = require('gulp'),
 function browserSync(params) {
   browsersync.init({
     server: {
-      baseDir: projectFolder + "/html/"
+      baseDir: "./" + projectFolder 
     },
     port: 3000,
   })

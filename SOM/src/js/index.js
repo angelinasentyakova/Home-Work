@@ -1,2 +1,4 @@
 @@include('libs.js')
-//= components/Settings.js
+@@include('components/Styler.js')
+@@include('components/Swiper.js')
+@@include('components/Gallery.js')

@@ -1,0 +1,11 @@
+- let productItems = [{src: "images/product-picture/1.jpg", class: ""}, {src: "images/product-picture/2.jpg", class: ""}, {src: "images/product-picture/3.jpg", class: "--active"}, {src: "images/product-picture/4.jpg", class: ""}, {src: "images/product-picture/5.jpg", class: ""}, {src: "images/product-picture/6.jpg", class: ""}, {src: "images/product-picture/7.jpg", class: ""}, {src: "images/product-picture/8.jpg", class: ""}, {src: "images/product-picture/9.jpg", class: ""}, {src: "images/product-picture/10.jpg", class: ""},];
+
+
+.product-picture
+  .product-picture__current 
+    each item in productItems
+      img(src=item.src, alt="", class=item.class)
+  .product-picture__slider 
+    each item in productItems
+      .product-picture__slide 
+        img(src=item.src, alt="", class=item.class)

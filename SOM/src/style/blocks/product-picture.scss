@@ -1,0 +1,43 @@
+
+.product-picture {
+  flex: 0 0 50%;
+  &__current {
+    width: 551px;
+    height: 357px;
+    position: relative;
+    margin: 0px 0px 17px 0px;
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      z-index: 1;
+      transition: $transition;
+      &.--active {
+        opacity: 1;
+        z-index: 2;
+      }
+    }
+  }
+  &__slider {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__slide {
+    flex: 0 0 16%; 
+    margin: 0px 3px 14px 0px;
+    width: 80px;
+    height: 52px;
+    & img {
+      height: 52px;
+      width: 80px;
+      opacity: 0.5;
+      &.--active {
+        opacity: 1;
+      }
+    }
+  }
+}

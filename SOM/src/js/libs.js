@@ -1,3 +1,2 @@
-/*
-/ /= ../../node_modules/jquery/dist/jquery.js
- */kjlbb
+@@include('../../node_modules/jquery-form-styler/dist/jquery.formstyler.min.js')
+

@@ -1,0 +1,32 @@
+.seller {
+  position: relative;
+  &__image {
+    clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0 100%);
+    margin: 0px 0px 90px 0px;
+  }
+}
+.seller__title {
+  font-size: 36px;
+  color: $white;
+  position: absolute;
+  margin: 30px 0px 0px 50px;
+  top: 0;
+  left: 0;
+  width: 280px;
+}
+.seller__icon {
+  position: absolute;
+  bottom: -17px;
+  left: 470px;
+}
+.seller__button {
+  position: absolute;
+  right: 40px;
+  top: 48px;
+  padding: 8px 25px;
+  border: 3px solid $white;
+  transition: $transition;
+  &:hover {
+    border: 3px dotted $white;
+  }
+}

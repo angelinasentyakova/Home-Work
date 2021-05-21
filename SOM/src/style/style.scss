@@ -1,14 +1,20 @@
-@import "libs";
+@import "libs/jquery.formstyler.scss";
+@import "libs/jquery.formstyler.theme.scss";
+@import "libs/swiper.bundle.min.scss";
 @import "constants";
 @import "functions";
 @import "mixins";
 
-//какие-то глобальные стили
+
+@import "common/null";
 @import "common/fonts";
 @import "common/base";
+@import "common/button";
+@import "common/titles";
 
-//Ваши блоки
-@import "blocks/header/header";
-@import "blocks/header/header-nav";
+
+@import "blocks/header";
+@import "blocks/product-info.scss";
+@import "blocks/product-picture.scss";
+@import "blocks/seller";
 @import "blocks/footer";
-@import "blocks/settings";

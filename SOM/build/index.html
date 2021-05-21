@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+    <title>Product</title>
+  </head>
+  <body> 
+    <header class="header">
+      <div class="container">
+        <div class="header__top"> 
+          <div class="header__top-logo"><img src="images/header/logo.svg" alt="Logo"></div>
+          <div class="header__top-search">
+            <form class="header__top-search-form" action="#" method="get" name="search"> 
+              <input class="header__top-search-input" type="text">
+              <button class="header__top-search-button" type="submit"></button>
+            </form>
+          </div>
+          <div class="header__top-currency"> 
+            <div class="header__top-currency-title">Currency</div>
+            <select class="header__top-currency-select" name="select"> 
+              <option class="header__top-currency-option" value="#"></option>
+              <option class="header__top-currency-option" value="Dollar">$ (USA)</option>
+              <option class="header__top-currency-option" value="Euro">€ (EUR) </option>
+              <option class="header__top-currency-option" value="Pounds">£ (EN)</option>
+              <option class="header__top-currency-option" value="Yen">Ұ (CH)</option>
+            </select>
+          </div>
+          <div class="header__top-cart"> <a href=""> <img src="images/header/cart.svg" alt="Shopping cart"></a><span>34</span></div>
+          <div class="header__top-profile --clickable"><a href=""><img src="images/header/profile.svg" alt="Profile"></a>
+            <ul class="header__top-profile-list">
+              <li class="header__top-profile-link"> <a href="">Посмотреть профиль</a></li>
+              <li class="header__top-profile-link --favorite"><a href="">Избранные магазины</a><img src="images/header/like.png" alt="Избранные магазины"></li>
+              <li class="header__top-profile-link"><a href="">Покупки и отзывы </a></li>
+              <li class="header__top-profile-link"><a href="">Настройки аккаунта </a></li>
+              <li class="header__top-profile-link no--border"><a href="">Выйти</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container"> 
+          <div class="header__bottom-menu"> 
+            <ul class="header__bottom-list"> 
+              <li class="header__bottom-link"><a href="">Leather goods</a></li>
+              <li class="header__bottom-link --clickable"><a href="">Wood products</a>
+                <ul class="header__bottom-wedding-sublist">
+                  <li class="header__bottom-wedding-sublink"> <a href="">All</a></li>
+                  <li class="header__bottom-wedding-sublink"> <a href="">Party supplies</a></li>
+                  <li class="header__bottom-wedding-sublink"> <a href="">Invitations and cards</a></li>
+                  <li class="header__bottom-wedding-sublink"> <a href="">Wedding decor</a></li>
+                  <li class="header__bottom-wedding-sublink"> <a href="">Wedding gift</a></li>
+                  <li class="header__bottom-wedding-sublink --clickable"><a href="">Wedding accessories</a>
+                    <ul class="header__bottom-accesories-sublist"> 
+                      <li class="header__bottom-accesories-sublink"><a href="">Party decor</a></li>
+                      <li class="header__bottom-accesories-sublink"><a href="">Baking and decorating cakes</a></li>
+                      <li class="header__bottom-accesories-sublink"><a href="">Clothes</a></li>
+                    </ul>
+                  </li>
+                  <li class="header__bottom-wedding-sublink"> <a href="">Wedding jewelry</a></li>
+                  <li class="header__bottom-wedding-sublink"> <a href="">Wedding clothes</a></li>
+                </ul>
+              </li>
+              <li class="header__bottom-link"> <a href="">Wedding</a></li>
+              <li class="header__bottom-link"> <a href="">Happy Birthday</a></li>
+              <li class="header__bottom-link"> <a href="">Toys and entertainment</a></li>
+              <li class="header__bottom-link"> <a href="">Art objects</a></li>
+              <li class="header__bottom-link"> <a href="">Goods for needlework</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container"> 
+      <div class="product-info">
+        <div class="product-picture">
+          <div class="product-picture__current"> <img src="images/product-picture/1.jpg" alt=""><img src="images/product-picture/2.jpg" alt=""><img class="--active" src="images/product-picture/3.jpg" alt=""><img src="images/product-picture/4.jpg" alt=""><img src="images/product-picture/5.jpg" alt=""><img src="images/product-picture/6.jpg" alt=""><img src="images/product-picture/7.jpg" alt=""><img src="images/product-picture/8.jpg" alt=""><img src="images/product-picture/9.jpg" alt=""><img src="images/product-picture/10.jpg" alt="">
+          </div>
+          <div class="product-picture__slider"> 
+            <div class="product-picture__slide"> <img src="images/product-picture/1.jpg" alt=""></div>
+            <div class="product-picture__slide"> <img src="images/product-picture/2.jpg" alt=""></div>
+            <div class="product-picture__slide"> <img class="--active" src="images/product-picture/3.jpg" alt=""></div>
+            <div class="product-picture__slide"> <img src="images/product-picture/4.jpg" alt=""></div>
+            <div class="product-picture__slide"> <img src="images/product-picture/5.jpg" alt=""></div>
+            <div class="product-picture__slide"> <img src="images/product-picture/6.jpg" alt=""></div>
+            <div class="product-picture__slide"> <img src="images/product-picture/7.jpg" alt=""></div>
+            <div class="product-picture__slide"> <img src="images/product-picture/8.jpg" alt=""></div>
+            <div class="product-picture__slide"> <img src="images/product-picture/9.jpg" alt=""></div>
+            <div class="product-picture__slide"> <img src="images/product-picture/10.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container"> 
+      <div class="seller"> 
+        <div class="seller__image"> <img src="images/seller/Rectangle.jpg" alt="Background"></div>
+        <div class="seller__title title">What is Seller-online ?</div>
+        <div class="seller__icon"><img src="images/seller/Group.png" alt="What is online"></div><a class="seller__button button" href="">Read more</a>
+      </div>
+    </div>
+    <footer class="footer"> 
+      <div class="footer__top"> 
+        <div class="container">
+          <div class="footer__top-wrapper">
+            <div class="footer__top-column"> 
+              <div class="footer__top-item"> 
+                <div class="footer__top-title">Store</div>
+                <ul class="footer__top-list"> 
+                  <li class="footer__top-link"> <a href="">Подарочные сертификаты </a></li>
+                  <li class="footer__top-link"><a href="">Seller-online блог</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__top-column"> 
+              <div class="footer__top-item"> 
+                <div class="footer__top-title">Sell</div>
+                <ul class="footer__top-list"> 
+                  <li class="footer__top-link"> <a href="">Sell on SOM</a></li>
+                  <li class="footer__top-link"><a href="">Teams</a></li>
+                  <li class="footer__top-link"><a href="">Forums</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__top-column"> 
+              <div class="footer__top-item"> 
+                <div class="footer__top-title">About</div>
+                <ul class="footer__top-list"> 
+                  <li class="footer__top-link"> <a href="">Seller-online, Inc.</a></li>
+                  <li class="footer__top-link"><a href="">Policies</a></li>
+                  <li class="footer__top-link"><a href="">Investors</a></li>
+                  <li class="footer__top-link"> <a href="">Careers</a></li>
+                  <li class="footer__top-link"><a href="">Press</a></li>
+                  <li class="footer__top-link"><a href="">Impact</a></li>
+                  <li class="footer__top-link"><a href="">Legal imprint</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__top-column"> 
+              <div class="footer__top-item"> 
+                <div class="footer__top-title">Follow SOM</div>
+                <ul class="footer__top-list"> 
+                  <li class="footer__top-link"> <a href="">Facebook</a></li>
+                  <li class="footer__top-link"><a href="">Instagram</a></li>
+                  <li class="footer__top-link"><a href="">Pinterest</a></li>
+                  <li class="footer__top-link"> <a href="">Twitter</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom"> 
+        <div class="container">
+          <div class="footer__bottom-wrapper"> 
+            <div class="footer__bottom-left"> 
+              <div class="footer__bottom-logo"><img src="images/footer/SOM.png" alt="logo"></div><a class="footer__bottom-solma" href="">© 2019 Solma</a>
+            </div>
+            <div class="footer__bottom-right"> 
+              <ul class="footer__bottom-list"> 
+                <li class="footer__bottom-link"> <a href="">Terms of Use</a></li>
+                <li class="footer__bottom-link"> <a href="">Privacy</a></li>
+                <li class="footer__bottom-link"> <a href="">Interest-based ads</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+  <script src="js/index.js"> </script>
+</html>
