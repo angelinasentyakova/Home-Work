@@ -1,0 +1,50 @@
+.product-buttons {
+  display: flex;
+
+		&__button-buy {
+      width: 263px;
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $white;
+      border: 2px solid $navy;
+      color: $navy;
+      font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0px 24px 0px 0px;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 1;
+  }
+}
+
+		&__button-add {
+      width: 263px;
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $navy;
+      font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+  padding: 0px 0px 0px 19px;
+  & img {
+    position: relative;
+    left: -115px;
+    top: 0px;
+  }
+  &:hover {
+    opacity: 0.9;
+  }
+  &:active {
+    opacity: 1;
+  }
+}
+}
+

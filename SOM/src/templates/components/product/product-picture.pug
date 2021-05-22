@@ -4,8 +4,10 @@
 .product-picture
   .product-picture__current 
     each item in productItems
-      img(src=item.src, alt="", class=item.class)
+      img.js-crop-image.js-image-current(src=item.src, alt="", class=item.class)
+  .product-picture__like-button
+    img(src="images/product-picture/like.svg", alt="")
   .product-picture__slider 
     each item in productItems
       .product-picture__slide 
-        img(src=item.src, alt="", class=item.class)
+        img.js-crop-image.js-image-switch(src=item.src, alt="", class=item.class)

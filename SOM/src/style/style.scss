@@ -1,6 +1,5 @@
 @import "libs/jquery.formstyler.scss";
 @import "libs/jquery.formstyler.theme.scss";
-@import "libs/swiper.bundle.min.scss";
 @import "constants";
 @import "functions";
 @import "mixins";
@@ -14,7 +13,12 @@
 
 
 @import "blocks/header";
-@import "blocks/product-info.scss";
-@import "blocks/product-picture.scss";
+@import "blocks/product/product.scss";
+@import "blocks/product/product-picture.scss";
+@import "blocks/product/product-order.scss";
+@import "blocks/product-prices.scss";
+@import "blocks/product-buttons.scss";
+@import "blocks/description/description";
+@import "blocks/button-about";
 @import "blocks/seller";
 @import "blocks/footer";

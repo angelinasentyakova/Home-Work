@@ -4,34 +4,21 @@
 
 $(function() {
   
-  $('select, option').styler({
+  $('.header__top-currency-select, .header__top-currency-option').styler({
     selectVisibleOptions: 4,
     selectPlaceholder: "USD",
   });
 
-});
-
-/*const swiperGallery = new Swiper('.product-picture__slider', {
-
-
-});
-
-const swiperThumbs = new Swiper('.product-picture-mini__slider', {
-  
-  slidesPerView: 10,
-  slideToClickedSlide: true,
+  $('.product-order__quantity-select, .product-order__quantity-option').styler({
+    selectVisibleOptions: 4,
+    selectPlaceholder: "1",
+  });
 
 });
+'use strict'
 
-swiperGallery.controller.control = swiperThumbs;
-    swiperThumbs.controller.control = swiperGallery;
-    */
-let slides = document.querySelectorAll('.product-picture__current img');
-console.log(slides)
-let buttons = document.querySelectorAll('.product-picture__slide img');
-console.log(slides)
-
-
+let slides = document.querySelectorAll('.js-image-current');
+let buttons = document.querySelectorAll('.js-image-switch');
 
 //ставим класс active на текущий слайд, с других убираем
 function activeSlide(n) {
@@ -55,8 +42,6 @@ function makeCurrentSlide(index) {
   activeButton(index);
 }
 
-
-
 //переключаем слайд по кнопке
 buttons.forEach((item, currentButton) => {
   item.addEventListener('click', () => {
@@ -66,3 +51,32 @@ buttons.forEach((item, currentButton) => {
 })
 
 
+
+$(function () {
+  const cropImage = [
+    'polygon(0 0, 100% 0%, 98% 100%, 0% 100%)',
+    'polygon(0 0, 100% 0%, 100% 100%, 0 98%)',
+    'polygon(0 0, 100% 0%, 100% 98%, 0 100%)',
+    'polygon(0 0, 98% 0, 100% 100%, 0% 100%)',
+    'polygon(0 0, 100% 3%, 100% 100%, 0 100%)',
+    'polygon(1% 1%, 100% 0, 100% 100%, 0 100%)',
+    'polygon(1% 0, 100% 0, 100% 100%, 0 100%)',
+    'polygon(0 0, 100% 0, 100% 100%, 4% 100%)',
+    'polygon(0 0, 98% 0, 100% 100%, 0% 100%)',
+  ];
+
+  const images = $('.js-crop-image');
+
+  if (images.length > 0) {
+    for (let index = 0; index < images.length; index++) {
+      images[index].style.clipPath = cropImage[Math.floor(Math.random() * cropImage.length)];
+    }
+  };
+});
+$(function () {
+  $('.button-about').click(function (event) {
+    event.preventDefault();
+    $(this).toggleClass('--opened');
+    $(this).prev('div').toggleClass('--opened');
+  });
+});

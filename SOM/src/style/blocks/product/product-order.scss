@@ -1,0 +1,102 @@
+.product-order {
+  flex: 0 0 50%;
+  &__title-height {
+    width: 550px;
+    height: 98px;
+    margin: 0px 0px 18px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+    &__inscription-quantity {
+      padding: 17px 0px 24px 0px;
+    display: flex;
+    align-items: start;
+    margin: 0px 24px 0px 0px;
+    }
+		&__inscription {
+      flex: 0 0 265px;
+      margin: 0px 24px 0px 0px;
+		}
+
+		&__inscription-title {
+      font-size: 16px;
+      margin: 0px 0px 5px 0px;
+		}
+
+		&__inscription-input {
+      width: 264px;
+      height: 40px;
+      border: 1px solid $gray;
+      border-radius: 4px;
+      padding: 11px 16px;
+      margin: 0px 0px 10px 0px;
+      font-family: Fira Sans;
+      color: #000;
+      &::placeholder {
+        color: $black;
+      }
+      &:hover {
+        box-shadow: 0px 5px 15px $gray;
+      }
+      &:focus {
+        box-shadow: 0px 5px 15px $gray-darker;
+      }
+      &:-ms-input-placeholder {
+        color: $black;
+      }
+		}
+
+		&__inscription-example {
+      font-size: 12px;
+    line-height: 19px;
+    color: $gray-dark;
+		}
+
+		&__quantity {
+      
+		}
+
+		&__quantity-title {
+      font-size: 16px;
+      margin: 0px 0px 5px 0px;
+		}
+
+		&__quantity-select {
+      &.jq-selectbox {
+        margin: 0px 0px 10px 0px;
+      }
+      & div.jq-selectbox__select {
+        width: 72px;
+      height: 40px;
+      border: 1px solid $gray;
+      border-radius: 4px;
+      padding: 2px 0px 11px 16px;
+      }
+      & div.jq-selectbox__dropdown {
+        max-width: 72px;
+        min-width: 72px;
+        & li {
+          padding: 5px 10px 6px 31px;
+        }
+        
+      }
+      & div.jq-selectbox__trigger {
+        right: 3px;
+      }
+      & div.jq-selectbox__trigger-arrow {
+        border-top: 5px solid $gray-darker;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  top: 18px;
+      }
+		}
+
+		&__quantity-option {
+      max-width: 72px;
+        min-width: 72px;    
+		}
+
+}

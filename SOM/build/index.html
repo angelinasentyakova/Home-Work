@@ -73,22 +73,106 @@
         </div>
       </div>
     </header>
-    <div class="container"> 
-      <div class="product-info">
-        <div class="product-picture">
-          <div class="product-picture__current"> <img src="images/product-picture/1.jpg" alt=""><img src="images/product-picture/2.jpg" alt=""><img class="--active" src="images/product-picture/3.jpg" alt=""><img src="images/product-picture/4.jpg" alt=""><img src="images/product-picture/5.jpg" alt=""><img src="images/product-picture/6.jpg" alt=""><img src="images/product-picture/7.jpg" alt=""><img src="images/product-picture/8.jpg" alt=""><img src="images/product-picture/9.jpg" alt=""><img src="images/product-picture/10.jpg" alt="">
+    <div class="product">
+      <div class="container"> 
+        <div class="product__wrapper">
+          <div class="product-picture">
+            <div class="product-picture__current"> <img class="js-crop-image js-image-current" src="images/product-picture/1.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/2.jpg" alt=""><img class="js-crop-image js-image-current --active" src="images/product-picture/3.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/4.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/5.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/6.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/7.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/8.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/9.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/10.jpg" alt="">
+            </div>
+            <div class="product-picture__like-button"><img src="images/product-picture/like.svg" alt=""></div>
+            <div class="product-picture__slider"> 
+              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/1.jpg" alt=""></div>
+              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/2.jpg" alt=""></div>
+              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch --active" src="images/product-picture/3.jpg" alt=""></div>
+              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/4.jpg" alt=""></div>
+              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/5.jpg" alt=""></div>
+              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/6.jpg" alt=""></div>
+              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/7.jpg" alt=""></div>
+              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/8.jpg" alt=""></div>
+              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/9.jpg" alt=""></div>
+              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/10.jpg" alt=""></div>
+            </div>
           </div>
-          <div class="product-picture__slider"> 
-            <div class="product-picture__slide"> <img src="images/product-picture/1.jpg" alt=""></div>
-            <div class="product-picture__slide"> <img src="images/product-picture/2.jpg" alt=""></div>
-            <div class="product-picture__slide"> <img class="--active" src="images/product-picture/3.jpg" alt=""></div>
-            <div class="product-picture__slide"> <img src="images/product-picture/4.jpg" alt=""></div>
-            <div class="product-picture__slide"> <img src="images/product-picture/5.jpg" alt=""></div>
-            <div class="product-picture__slide"> <img src="images/product-picture/6.jpg" alt=""></div>
-            <div class="product-picture__slide"> <img src="images/product-picture/7.jpg" alt=""></div>
-            <div class="product-picture__slide"> <img src="images/product-picture/8.jpg" alt=""></div>
-            <div class="product-picture__slide"> <img src="images/product-picture/9.jpg" alt=""></div>
-            <div class="product-picture__slide"> <img src="images/product-picture/10.jpg" alt=""></div>
+          <div class="product-order"> 
+            <div class="product-order__title-height"> 
+              <div class="product-order__title title --medium">Personalized Dog Leash Hanger, Dog Leash Hook, Dog Gift Personalized with Name</div>
+            </div>
+            <div class="product-prices"> 
+              <div class="product-prices__wrapper">
+                <div class="product-prices__dollar-container"> 
+                  <div class="product-prices__dollar title --medium">$23.99</div>
+                </div>
+                <div class="product-prices__euro-container"> 
+                  <div class="product-prices__euro">18.34 €</div>
+                </div>
+              </div>
+            </div>
+            <form class="product-order__details" action="#" method="get">
+              <div class="product-order__inscription-quantity">
+                <div class="product-order__inscription"> 
+                  <div class="product-order__inscription-title subtitle">Apply the inscription on the product</div>
+                  <input class="product-order__inscription-input" type="text" placeholder="I'am mrbig">
+                  <div class="product-order__inscription-example">Example: Enter the name you want  on the necklace. Max 10 characters, no spaces, no special charachters. Thank you.</div>
+                </div>
+                <div class="product-order__quantity"> 
+                  <div class="product-order__quantity-title subtitle">Quantity</div>
+                  <select class="product-order__quantity-select" name="select">
+                    <option class="product-order__quantity-option"></option>
+                    <option class="product-order__quantity-option" value="1">1</option>
+                    <option class="product-order__quantity-option" value="2">2</option>
+                    <option class="product-order__quantity-option" value="3">3</option>
+                    <option class="product-order__quantity-option" value="4">4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="product-buttons">
+                <button class="product-buttons__button-buy button" type="submit">Buy it now</button>
+                <button class="product-buttons__button-add button" type="submit">Add to cart<img src="images/product-buttons/add.svg" alt=""></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="description">
+      <div class="container">
+        <div class="description__wrapper">
+          <div class="description__product-description"> 
+            <div class="description__product-description-title title --small">Product description</div>
+            <div class="description__product-description-text-wrapper">
+              <div class="description__product-description-text">
+                AN IDEAL GIFT FOR ANY OCCASION
+                Personalized cutting board is a perfect gift for any occasion: Birthday, Anniversary, Wedding, Bridal Shower, Mother's Day, Father’s Day, Christmas or Housewarming gift for family, couple etc. 
+                This cutting board is the ideal gift choice for your loved ones. It is guaranteed to be a talking point wherever
+                it is presented!
+                <br>
+                <br>
+                All of our custom cutting boards are made of high-quality natural wood. Each and every board is examined carefully prior to beginning the engraving process. All boards are covered twice with hot mineral oil to last long, so the cutting board will be immediately available for use upon arrival.
+                <br>
+                <br>
+                HOW TO ORDER?
+                <br>
+                1. Using a drop-down menu make your selection of wood type and size. You may also add display stand, gift wrap and note card to your order.
+                <br>
+                2. Click “add to cart” button.
+                <br>
+                3. Enter all information for personalization in the personalization box
+              </div>
+            </div>
+            <div class="button-about">
+              <div class="button-about__wrapper"><a class="button-about__button" href="">More about product<img src="images/button-more/arrow.png" alt=""></a></div>
+            </div>
+          </div>
+          <div class="description__delivery">
+            <div class="description__delivery-title title --small">Delivery details</div>
+            <div class="description__delivery-column"> 
+              <div class="description__delivery-subtitle subtitle">Ready to ship </div>
+              <div class="description__delivery-text">in 2–4 business days From Ukraine</div>
+            </div>
+            <div class="description__delivery-column"> 
+              <div class="description__delivery-subtitle subtitle">Returns and exchanges accepted</div>
+              <div class="description__delivery-text">Exceptions may apply. See return policy </div>
+            </div>
           </div>
         </div>
       </div>
@@ -169,6 +253,5 @@
       </div>
     </footer>
   </body>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
   <script src="js/index.js"> </script>
 </html>

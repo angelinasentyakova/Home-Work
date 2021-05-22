@@ -1,9 +1,7 @@
-let slides = document.querySelectorAll('.product-picture__current img');
-console.log(slides)
-let buttons = document.querySelectorAll('.product-picture__slide img');
-console.log(slides)
+'use strict'
 
-
+let slides = document.querySelectorAll('.js-image-current');
+let buttons = document.querySelectorAll('.js-image-switch');
 
 //ставим класс active на текущий слайд, с других убираем
 function activeSlide(n) {
@@ -26,8 +24,6 @@ function makeCurrentSlide(index) {
   activeSlide(index);
   activeButton(index);
 }
-
-
 
 //переключаем слайд по кнопке
 buttons.forEach((item, currentButton) => {

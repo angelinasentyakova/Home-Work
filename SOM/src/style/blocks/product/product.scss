@@ -1,0 +1,7 @@
+.product {
+  border-bottom: 1px dashed $gray;
+  &__wrapper {
+  display: flex;
+  padding: 26px 0px;
+  }
+}

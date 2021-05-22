@@ -1,4 +1,5 @@
 @@include('libs.js')
 @@include('components/Styler.js')
-@@include('components/Swiper.js')
 @@include('components/Gallery.js')
+@@include('components/Crop.js')
+@@include('components/MoreInfo.js')
