@@ -392,6 +392,33 @@ body {
   opacity: 1;
 }
 
+.button-social {
+  margin: 0px 0px 20px 0px;
+  text-align: left;
+  display: inline-block;
+  padding: 10px 22px;
+  width: 263px;
+  height: 40px;
+  border-radius: 35px;
+  color: #fff;
+  font-weight: 700;
+  position: relative;
+}
+
+.button-social img {
+  position: absolute;
+  top: 11px;
+  right: 20px;
+}
+
+.button-social:hover {
+  opacity: 0.9;
+}
+
+.button-social:active {
+  opacity: 1;
+}
+
 .button-wide {
   width: 263px;
   height: 46px;
@@ -492,15 +519,23 @@ body {
   border: 1px solid #e2e2e2;
   border-radius: 4px;
   padding: 11px 16px;
-  margin: 0px 0px 10px 0px;
+  color: #3f3f3f;
 }
 
-.input:hover {
-  box-shadow: 0px 5px 15px #e2e2e2;
+.input::placeholder {
+  color: #3f3f3f;
+}
+
+.input:-ms-input-placeholder {
+  color: #3f3f3f;
+}
+
+.input:enabled:hover {
+  border: 1px solid #c2c2c2;
 }
 
 .input:focus {
-  box-shadow: 0px 5px 15px #c2c2c2;
+  border: 1px solid #7f7f7f;
 }
 
 .header__top {
@@ -826,6 +861,151 @@ body {
   visibility: visible;
 }
 
+.wrapper {
+  width: 383px;
+  padding: 55px 0px 30px 0px;
+  box-shadow: 0px 20px 25px rgba(62, 75, 102, 0.2);
+}
+
+.sign-in {
+  display: none;
+}
+
+.sign-in.fancybox-content {
+  padding: 0;
+}
+
+.sign-in__top {
+  padding: 0px 60px 23px 60px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.sign-in__title {
+  margin: 0px 0px 27px 0px;
+}
+
+.sign-in__input {
+  margin: 0px 0px 3px 0px;
+}
+
+.sign-in__problem {
+  display: inline-block;
+  color: #42b1ba;
+}
+
+.sign-in__middle {
+  padding: 30px 60px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.sign-in__google {
+  background: #E54B43;
+}
+
+.sign-in__facebook {
+  background: #466AB0;
+  margin: 0;
+}
+
+.sign-in__facebook img {
+  right: 23px;
+}
+
+.sign-in__coninue {
+  margin: 30px 60px 0px 60px;
+}
+
+.registration {
+  display: none;
+}
+
+.registration.fancybox-content {
+  padding: 0;
+}
+
+.registration__wrapper {
+  padding: 55px 0px 30px 0px;
+}
+
+.registration__top {
+  padding: 0px 60px 13px 60px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.registration__title {
+  margin: 0px 0px 27px 0px;
+}
+
+.registration__input {
+  margin: 0px 0px 17px 0px;
+}
+
+.registration__button {
+  margin: 30px 60px 0px 60px;
+}
+
+.authoristaion {
+  display: none;
+}
+
+.authoristaion.fancybox-content {
+  padding: 0;
+}
+
+.authoristaion__top {
+  padding: 0px 60px 29px 60px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.authoristaion__top a {
+  color: #42b1ba;
+}
+
+.authoristaion__title {
+  margin: 0px 0px 27px 0px;
+}
+
+.authoristaion__input {
+  margin: 0px 0px 17px 0px;
+}
+
+.authoristaion__input.--nomargin {
+  margin: 0;
+}
+
+.authoristaion__registration {
+  margin: 0px 36px 0px 0px;
+}
+
+.authoristaion__button {
+  margin: 30px 60px 0px 60px;
+}
+
+.reset {
+  display: none;
+}
+
+.reset.fancybox-content {
+  padding: 0;
+}
+
+.reset__top {
+  padding: 0px 60px 20px 60px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.reset__top a {
+  color: #42b1ba;
+}
+
+.reset__title {
+  margin: 0px 0px 27px 0px;
+}
+
+.reset__button {
+  margin: 30px 60px 0px 60px;
+}
+
 .product {
   border-bottom: 1px dashed #e2e2e2;
 }
@@ -965,6 +1145,7 @@ body {
 .product-order__inscription-input {
   font-family: Fira Sans;
   color: #000;
+  margin: 0px 0px 10px 0px;
 }
 
 .product-order__inscription-input::placeholder {

@@ -30,7 +30,7 @@
             </select>
           </div>
           <div class="header__top-cart"> <a href=""> <img src="images/header/cart.svg" alt="Shopping cart"></a><span>34</span></div>
-          <div class="header__top-profile --clickable"><a href=""><img src="images/header/profile.svg" alt="Profile"></a>
+          <div class="header__top-profile --clickable"><a class="js-fancybox" href="#sign-in"><img src="images/header/profile.svg" alt="Profile"></a>
             <ul class="header__top-profile-list">
               <li class="header__top-profile-link"> <a href="">Посмотреть профиль</a></li>
               <li class="header__top-profile-link --favorite"><a href="">Избранные магазины</a><img src="images/header/like.png" alt="Избранные магазины"></li>
@@ -75,11 +75,51 @@
       </div>
     </header>
     <div class="modals">
-      <form class="sign-in" action="#" method="get"> 
-        <div class="sign-in__wrapper"> 
-          <div class="sign-in__title title --small">Вход / Регистрация</div>
-          <label class="sign-in__label" for="">Email</label>
-          <input class="sign-in__input input" type="email" placeholder="Alexander.Ivanov@gmail.com"><a class="sign-in__problem" href="">Проблема с входом ?</a><a class="sign-in__google button-wide --navy" href="">Войти через Google<img src="images/modals/google.svg" alt=""></a><a class="sign-in__facebook button-wide --navy" href="">Войти через Facebook<img src="images/modals/facebook.svg" alt=""></a><a class="sign-in__coninue button-wide" href="">Продолжить как гость</a>
+      <form class="sign-in" action="#" method="post" id="sign-in"> 
+        <div class="sign-in__wrapper wrapper">
+          <div class="sign-in__top">
+            <div class="sign-in__title title --small">Вход / Регистрация</div>
+            <label class="sign-in__label" for="email">Email</label>
+            <input class="sign-in__input input" type="email" placeholder="Alexander.Ivanov@gmail.com" id="email"><a class="sign-in__problem" href="">Проблема с входом ?</a>
+          </div>
+          <div class="sign-in__middle"><a class="sign-in__google button-social" href="">Войти через Google<img src="images/modals/google.svg" alt=""></a><a class="sign-in__facebook button-social" href="">Войти через Facebook<img src="images/modals/facebook.svg" alt=""></a></div><a class="sign-in__coninue button-wide" href="#registration">Продолжить как гость</a>
+        </div>
+      </form>
+      <form class="registration" action="#" method="post" id="registration"> 
+        <div class="registration__wrapper wrapper">
+          <div class="registration__top">
+            <div class="registration__title title --small">Регистрация</div>
+            <label class="registration__label">Email
+              <input class="registration__input input" type="email">
+            </label>
+            <label class="registration__label">Новый пароль
+              <input class="registration__input input" type="password">
+            </label>
+            <label class="registration__label">Повторите пароль
+              <input class="registration__input input" type="password">
+            </label>
+          </div><a class="registration__button button-wide --navy" href="">Зарегистрироваться</a>
+        </div>
+      </form>
+      <form class="authoristaion" action="#" method="post" id="authorisation"> 
+        <div class="authoristaion__wrapper wrapper">
+          <div class="authoristaion__top">
+            <div class="authoristaion__title title --small">Авторизация</div>
+            <label class="authoristaion__label">Почта
+              <input class="authoristaion__input input" type="email">
+            </label>
+            <label class="authoristaion__label">Пароль
+              <input class="authoristaion__input --nomargin input" type="password">
+            </label><a class="authoristaion__registration" href="">Регистрация</a><a class="authoristaion__forgot-password js-fancybox" href="#reset">Восстановить пароль</a>
+          </div><a class="authoristaion__button button-wide --navy" href="">Войти</a>
+        </div>
+      </form>
+      <form class="reset" action="#" method="post" id="reset"> 
+        <div class="reset__wrapper wrapper"> 
+          <div class="reset__top"> 
+            <div class="reset__title title --small">Восстановление пароля</div>
+            <div class="reset__text">Сссылка для восстановления пароля отправлена на <a href=""> </a></div>
+          </div><a class="reset__button button-wide --navy" href="">Закрыть</a>
         </div>
       </form>
     </div>
@@ -170,7 +210,7 @@
               </div>
             </div>
             <div class="description__product-more">
-              <div class="description__product-more-button button-more"><a href="">More about product<img src="images/button-more/arrow.png" alt=""></a><a class="--noshow" href="">Show less<img src="images/button-more/arrow.png" alt=""></a></div>
+              <div class="description__product-more-button button-more js-button-more"><a href="">More about product<img src="images/button-more/arrow.png" alt=""></a><a class="--noshow" href="">Show less<img src="images/button-more/arrow.png" alt=""></a></div>
             </div>
           </div>
           <div class="description__delivery">
@@ -254,7 +294,7 @@
             </div>
           </div>
           <div class="reviews__list-more">
-            <div class="reviews__list-more-button button-more"><a href="">23 more reviews<img src="images/button-more/arrow.png" alt=""></a><a class="--noshow" href="">Show less<img src="images/button-more/arrow.png" alt=""></a></div>
+            <div class="reviews__list-more-button button-more js-button-more"><a href="">23 more reviews<img src="images/button-more/arrow.png" alt=""></a><a class="--noshow" href="">Show less<img src="images/button-more/arrow.png" alt=""></a></div>
           </div>
         </div>
       </div>

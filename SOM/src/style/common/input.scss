@@ -4,11 +4,17 @@
       border: 1px solid $gray;
       border-radius: 4px;
       padding: 11px 16px;
-      margin: 0px 0px 10px 0px;
-      &:hover {
-        box-shadow: 0px 5px 15px $gray;
+      color: $gray-superdark;
+      &::placeholder {
+        color: $gray-superdark;
+      }
+      &:-ms-input-placeholder {
+        color: $gray-superdark;
+      }
+      &:enabled:hover {
+        border: 1px solid $gray-darker;
       }
       &:focus {
-        box-shadow: 0px 5px 15px $gray-darker;
+        border: 1px solid $gray-dark;
       }
 }

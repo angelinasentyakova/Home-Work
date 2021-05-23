@@ -3,3 +3,4 @@
 @@include('components/Gallery.js')
 @@include('components/Crop.js')
 @@include('components/MoreInfo.js')
+@@include('components/Modals.js')
