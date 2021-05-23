@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
     <title>Product</title>
   </head>
@@ -73,6 +74,15 @@
         </div>
       </div>
     </header>
+    <div class="modals">
+      <form class="sign-in" action="#" method="get"> 
+        <div class="sign-in__wrapper"> 
+          <div class="sign-in__title title --small">Вход / Регистрация</div>
+          <label class="sign-in__label" for="">Email</label>
+          <input class="sign-in__input input" type="email" placeholder="Alexander.Ivanov@gmail.com"><a class="sign-in__problem" href="">Проблема с входом ?</a><a class="sign-in__google button-wide --navy" href="">Войти через Google<img src="images/modals/google.svg" alt=""></a><a class="sign-in__facebook button-wide --navy" href="">Войти через Facebook<img src="images/modals/facebook.svg" alt=""></a><a class="sign-in__coninue button-wide" href="">Продолжить как гость</a>
+        </div>
+      </form>
+    </div>
     <div class="product">
       <div class="container"> 
         <div class="product__wrapper">
@@ -97,13 +107,13 @@
             <div class="product-order__title-height"> 
               <div class="product-order__title title --medium">Personalized Dog Leash Hanger, Dog Leash Hook, Dog Gift Personalized with Name</div>
             </div>
-            <div class="product-prices"> 
-              <div class="product-prices__wrapper">
-                <div class="product-prices__dollar-container"> 
-                  <div class="product-prices__dollar title --medium">$23.99</div>
+            <div class="product-order__prices">
+              <div class="product-order__prices-wrapper prices-wrapper">
+                <div class="product-order__prices-box prices-box"> 
+                  <div class="product-order__prices-dollar prices --navy">$23.99</div>
                 </div>
-                <div class="product-prices__euro-container"> 
-                  <div class="product-prices__euro">18.34 €</div>
+                <div class="product-order__prices-box prices-box">
+                  <div class="product-order__prices-euro prices --gray">18.34 €</div>
                 </div>
               </div>
             </div>
@@ -111,7 +121,7 @@
               <div class="product-order__inscription-quantity">
                 <div class="product-order__inscription"> 
                   <div class="product-order__inscription-title subtitle">Apply the inscription on the product</div>
-                  <input class="product-order__inscription-input" type="text" placeholder="I'am mrbig">
+                  <input class="product-order__inscription-input input" type="text" placeholder="I'am mrbig">
                   <div class="product-order__inscription-example">Example: Enter the name you want  on the necklace. Max 10 characters, no spaces, no special charachters. Thank you.</div>
                 </div>
                 <div class="product-order__quantity"> 
@@ -126,8 +136,8 @@
                 </div>
               </div>
               <div class="product-buttons">
-                <button class="product-buttons__button-buy button" type="submit">Buy it now</button>
-                <button class="product-buttons__button-add button" type="submit">Add to cart<img src="images/product-buttons/add.svg" alt=""></button>
+                <button class="product-buttons__button-buy button-wide" type="submit">Buy it now</button>
+                <button class="product-buttons__button-add button-wide --navy" type="submit">Add to cart<img src="images/product-buttons/add.svg" alt=""></button>
               </div>
             </form>
           </div>
@@ -159,8 +169,8 @@
                 3. Enter all information for personalization in the personalization box
               </div>
             </div>
-            <div class="button-about">
-              <div class="button-about__wrapper"><a class="button-about__button" href="">More about product<img src="images/button-more/arrow.png" alt=""></a></div>
+            <div class="description__product-more">
+              <div class="description__product-more-button button-more"><a href="">More about product<img src="images/button-more/arrow.png" alt=""></a><a class="--noshow" href="">Show less<img src="images/button-more/arrow.png" alt=""></a></div>
             </div>
           </div>
           <div class="description__delivery">
@@ -175,6 +185,84 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="reviews"> 
+      <div class="container"> 
+        <div class="reviews__wrapper">
+          <div class="reviews__top"> 
+            <div class="reviews__top-title title --small">Reviews</div>
+            <div class="reviews__top-stars"><img src="images/reviews/stars_1.png" alt=""></div>
+            <div class="reviews__top-total subtitle">(45)</div>
+          </div>
+          <div class="reviews__list"> 
+            <div class="reviews__list-column">
+              <div class="reviews__list-stars"><img src="images/reviews/stars_1.png" alt=""></div>
+              <div class="reviews__list-text-wrapper">
+                <div class="reviews__list-text">5+ stars! Customer service was excellent! I can't believe how flawless and fast shipping was all the way to California 😊 super happy with the product, it was perfect. It was a gift and the new bride and groom absolutely loved it. I highly recommend this seller! Thank you again!</div>
+              </div>
+              <div class="reviews__list-info"> 
+                <div class="reviews__list-product"><img src="images/reviews/1.1.jpg" alt=""></div>
+                <div class="reviews__list-person"> <img src="images/reviews/1.1.png" alt=""></div>
+                <div class="reviews__list-person-info"> 
+                  <div class="reviews__list-person-name subtitle">Alexander</div>
+                  <div class="reviews__list-date">12 sept 2019 г</div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__list-column">
+              <div class="reviews__list-stars"><img src="images/reviews/stars_2.png" alt=""></div>
+              <div class="reviews__list-text-wrapper">
+                <div class="reviews__list-text">These are GREAT~!!! Cat was quite eager and happy to work with us on what our daughter would love. The signs were exactly what our daughter would want. Great work! Thank you so very much for your quick service and EXCELLEN</div>
+              </div>
+              <div class="reviews__list-info"> 
+                <div class="reviews__list-product"><img src="images/reviews/2.1.jpg" alt=""></div>
+                <div class="reviews__list-person"> <img src="images/reviews/2.1.png" alt=""></div>
+                <div class="reviews__list-person-info"> 
+                  <div class="reviews__list-person-name subtitle">Kate</div>
+                  <div class="reviews__list-date">15 may 2019 г</div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__list-column">
+              <div class="reviews__list-stars"><img src="images/reviews/stars_3.png" alt=""></div>
+              <div class="reviews__list-text-wrapper">
+                <div class="reviews__list-text">There is no supply of coffee at all, water flows at the junction of the connection of these parts. Tightly tie fails (closes obliquely) for the reason that stopping too long nozzle container for coffee (instructions 4)</div>
+              </div>
+              <div class="reviews__list-info"> 
+                <div class="reviews__list-product"><img src="images/reviews/3.1.jpg" alt=""></div>
+                <div class="reviews__list-person"> <img src="images/reviews/3.1.png" alt=""></div>
+                <div class="reviews__list-person-info"> 
+                  <div class="reviews__list-person-name subtitle">Jenifer</div>
+                  <div class="reviews__list-date">14 march 2019 г</div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__list-column">
+              <div class="reviews__list-stars"><img src="images/reviews/stars_1.png" alt=""></div>
+              <div class="reviews__list-text-wrapper">
+                <div class="reviews__list-text">5+ stars! Customer service was excellent! I can't believe how flawless and fast shipping was all the way to California 😊 super happy with the product, it was perfect. It was a gift and the new bride and groom absolutely loved it. I highly recommend this seller! Thank you again!</div>
+              </div>
+              <div class="reviews__list-info"> 
+                <div class="reviews__list-product"><img src="images/reviews/1.1.jpg" alt=""></div>
+                <div class="reviews__list-person"> <img src="images/reviews/1.1.png" alt=""></div>
+                <div class="reviews__list-person-info"> 
+                  <div class="reviews__list-person-name subtitle">Alexander</div>
+                  <div class="reviews__list-date">12 sept 2019 г</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__list-more">
+            <div class="reviews__list-more-button button-more"><a href="">23 more reviews<img src="images/button-more/arrow.png" alt=""></a><a class="--noshow" href="">Show less<img src="images/button-more/arrow.png" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container"> 
+      <div class="related"> 
+        <div class="related__title title --small">Related to this item</div>
+        <div class="related__buttons"><a class="related__button" href="">wnicet</a><a class="related__button" href="">wgood</a><a class="related__button" href="">harder</a></div>
       </div>
     </div>
     <div class="container"> 
@@ -253,5 +341,6 @@
       </div>
     </footer>
   </body>
-  <script src="js/index.js"> </script>
+  <script src="js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"> </script>
 </html>

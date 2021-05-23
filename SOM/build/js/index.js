@@ -74,9 +74,10 @@ $(function () {
   };
 });
 $(function () {
-  $('.button-about').click(function (event) {
+  $('.button-more').click(function (event) {
     event.preventDefault();
     $(this).toggleClass('--opened');
-    $(this).prev('div').toggleClass('--opened');
+    $(this).parent('div').prev('div').toggleClass('--opened');
+    $(this).children('a').toggleClass('--noshow')
   });
 });

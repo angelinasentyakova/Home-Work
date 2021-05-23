@@ -1,12 +1,17 @@
 .product-order 
   .product-order__title-height 
     .product-order__title.title.--medium Personalized Dog Leash Hanger, Dog Leash Hook, Dog Gift Personalized with Name
-  include ../product-prices
+  .product-order__prices
+    .product-order__prices-wrapper.prices-wrapper
+      .product-order__prices-box.prices-box 
+        .product-order__prices-dollar.prices.--navy $23.99
+      .product-order__prices-box.prices-box
+        .product-order__prices-euro.prices.--gray 18.34 €
   form.product-order__details(action="#", method="get")
     .product-order__inscription-quantity
       .product-order__inscription 
         .product-order__inscription-title.subtitle Apply the inscription on the product
-        input.product-order__inscription-input(type="text", placeholder="I'am mrbig") 
+        input.product-order__inscription-input.input(type="text", placeholder="I'am mrbig") 
         .product-order__inscription-example Example: Enter the name you want  on the necklace. Max 10 characters, no spaces, no special charachters. Thank you.
       .product-order__quantity 
         .product-order__quantity-title.subtitle Quantity

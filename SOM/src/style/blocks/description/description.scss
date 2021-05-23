@@ -39,6 +39,10 @@
   &__product-description-text {
     line-height: 22px;
   }
+  &__product-more {
+    display: flex;
+    justify-content: center;
+  }
 
   &__delivery {
   }

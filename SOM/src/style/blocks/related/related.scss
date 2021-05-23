@@ -1,0 +1,27 @@
+.related {
+  padding: 38px 0px 70px 0px;
+  &__title {
+    margin: 0px 0px 26px 0px;
+  }
+  &__buttons {
+    display: flex;
+  & a {
+    display: flex;
+    font-size: 12px;
+    width: 72px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    background: $navy-dark;
+    color: $white;
+    border-radius: 16px;
+    margin: 0px 16px 0px 0px;
+    &:hover {
+      opacity: 0.9;
+    }
+    &:active {
+      opacity: 1;
+    }
+}
+  }
+}

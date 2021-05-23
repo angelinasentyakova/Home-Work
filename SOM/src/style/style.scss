@@ -8,17 +8,19 @@
 @import "common/null";
 @import "common/fonts";
 @import "common/base";
-@import "common/button";
+@import "common/buttons";
 @import "common/titles";
+@import "common/input";
 
 
 @import "blocks/header";
 @import "blocks/product/product.scss";
 @import "blocks/product/product-picture.scss";
 @import "blocks/product/product-order.scss";
-@import "blocks/product-prices.scss";
+@import "blocks/prices.scss";
 @import "blocks/product-buttons.scss";
 @import "blocks/description/description";
-@import "blocks/button-about";
+@import "blocks/reviews/reviews";
+@import "blocks/related/related";
 @import "blocks/seller";
 @import "blocks/footer";
