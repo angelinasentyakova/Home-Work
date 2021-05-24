@@ -18,22 +18,22 @@ $(function() {
 'use strict'
 
 let slides = document.querySelectorAll('.js-image-current');
-let buttons = document.querySelectorAll('.js-image-switch');
+let thumbs = document.querySelectorAll('.js-image-switch');
 
 //ставим класс active на текущий слайд, с других убираем
-function activeSlide(n) {
+function activeSlide(current) {
   for (let slide of slides) {
     slide.classList.remove('--active');
   }
-  slides[n].classList.add('--active');
+  slides[current].classList.add('--active');
 }
 
 //ставим класс active на текущую кнопку, с других убираем
-function activeButton(n) {
-  for (let button of buttons) {
-    button.classList.remove('--active');
+function activeButton(current) {
+  for (let thumb of thumbs) {
+    thumb.classList.remove('--active');
   }
-  buttons[n].classList.add('--active');
+  thumbs[current].classList.add('--active');
 }
 
 //обьединение кнопки и слайда с одинаковым идексом
@@ -43,9 +43,9 @@ function makeCurrentSlide(index) {
 }
 
 //переключаем слайд по кнопке
-buttons.forEach((item, currentButton) => {
+thumbs.forEach((item, currentThumb) => {
   item.addEventListener('click', () => {
-    currentSlide = currentButton;
+    currentSlide = currentThumb;
     makeCurrentSlide(currentSlide);
   })
 })
@@ -65,16 +65,16 @@ $(function () {
     'polygon(0 0, 98% 0, 100% 100%, 0% 100%)',
   ];
 
-  const images = $('.js-crop-image');
+  const $images = $('.js-crop-image');
 
-  if (images.length > 0) {
-    for (let index = 0; index < images.length; index++) {
-      images[index].style.clipPath = cropImage[Math.floor(Math.random() * cropImage.length)];
+  if ($images.length > 0) {
+    for (let index = 0; index < $images.length; index++) {
+      $images[index].style.clipPath = cropImage[Math.floor(Math.random() * cropImage.length)];
     }
   };
 });
 $(function () {
-  $('.js-button-more').click(function (event) {
+  $('.js-button-more').on('click', function (event) {
     event.preventDefault();
     $(this).toggleClass('--opened');
     $(this).parent('div').prev('div').toggleClass('--opened');
@@ -82,33 +82,37 @@ $(function () {
   });
 });
 $(function () {
-  $(".js-fancybox").fancybox();
+  $(".js-fancybox").fancybox({
+    'touch' : false,
+  });
   
+  $.extend($.fancybox.defaults, {
+    afterClose: function () {
+      $('#email').val("");
+    },
+    modal : true,
+  });
+
   function openModal(form) {
     $.fancybox.defaults.closeExisting = true;
-    $.fancybox.open($(form))
-    $(form).find('input[type="email"]').val($('.sign-in__input').val())
+    $.fancybox.open($(form));
+    $(form).find('input[type="email"]').val($('.js-input').val());
     $(form).find('input[type="email"]').prop('disabled', true);
   }
 
   $('body').on('keypress', function (event) {
     if (event.key === 'Enter') {
       event.preventDefault();
-      let $emails = ['Alexander.Ivanov@gmail.com', 'Pavel.Pavlov@mail.ru', 'DS.Boss@ds.ru']
+      let $emails = ['Alexander.Ivanov@gmail.com', 'Pavel.Pavlov@mail.ru', 'DS.Boss@ds.ru'];
       for (let index = 0; index < $emails.length; index++) {
-        if ($emails[index] == $('.sign-in__input').val()) {
-          return openModal($('#authorisation'))
+        if ($emails[index] == $('.js-input').val()) {
+          return openModal($('#authorisation')),
+            $(".reset__text a").html($('.js-input').val());
         }
         else {
-          openModal($('#registration'))
+          openModal($('#registration'));
         }
       }
     }
   });
-
-  $('.authoristaion__forgot-password').on('click', function () {
-    $(".reset__text a").html($('.sign-in__input').val())
-  })
-
-
 });

@@ -12,7 +12,7 @@
     <header class="header">
       <div class="container">
         <div class="header__top"> 
-          <div class="header__top-logo"><img src="images/header/logo.svg" alt="Logo"></div>
+          <div class="header__top-logo"><img class="header__top-logo-desktop" src="images/header/logo.svg" alt="Logo"><img class="header__top-logo-mobile" src="images/header/logo_mob.svg"></div>
           <div class="header__top-search">
             <form class="header__top-search-form" action="#" method="get" name="search"> 
               <input class="header__top-search-input" type="text">
@@ -80,9 +80,9 @@
           <div class="sign-in__top">
             <div class="sign-in__title title --small">Вход / Регистрация</div>
             <label class="sign-in__label" for="email">Email</label>
-            <input class="sign-in__input input" type="email" placeholder="Alexander.Ivanov@gmail.com" id="email"><a class="sign-in__problem" href="">Проблема с входом ?</a>
+            <input class="sign-in__input js-input input" type="email" placeholder="Alexander.Ivanov@gmail.com" id="email"><a class="sign-in__problem" href="">Проблема с входом ?</a>
           </div>
-          <div class="sign-in__middle"><a class="sign-in__google button-social" href="">Войти через Google<img src="images/modals/google.svg" alt=""></a><a class="sign-in__facebook button-social" href="">Войти через Facebook<img src="images/modals/facebook.svg" alt=""></a></div><a class="sign-in__coninue button-wide" href="#registration">Продолжить как гость</a>
+          <div class="sign-in__middle"><a class="sign-in__google button-social" href="">Войти через Google<img src="images/modals/google.svg" alt=""></a><a class="sign-in__facebook button-social" href="">Войти через Facebook<img src="images/modals/facebook.svg" alt=""></a></div><a class="sign-in__coninue button-wide" href="">Продолжить как гость</a><a class="sign-in__close close" href="" onclick="$.fancybox.close(); return false;"> <img src="images/modals/close.svg" alt=""></a>
         </div>
       </form>
       <form class="registration" action="#" method="post" id="registration"> 
@@ -98,7 +98,7 @@
             <label class="registration__label">Повторите пароль
               <input class="registration__input input" type="password">
             </label>
-          </div><a class="registration__button button-wide --navy" href="">Зарегистрироваться</a>
+          </div><a class="registration__button button-wide --navy" href="">Зарегистрироваться</a><a class="registration__close close" href="" onclick="$.fancybox.close(); return false;"> <img src="images/modals/close.svg" alt=""></a>
         </div>
       </form>
       <form class="authoristaion" action="#" method="post" id="authorisation"> 
@@ -111,7 +111,7 @@
             <label class="authoristaion__label">Пароль
               <input class="authoristaion__input --nomargin input" type="password">
             </label><a class="authoristaion__registration" href="">Регистрация</a><a class="authoristaion__forgot-password js-fancybox" href="#reset">Восстановить пароль</a>
-          </div><a class="authoristaion__button button-wide --navy" href="">Войти</a>
+          </div><a class="authoristaion__button button-wide --navy" href="">Войти</a><a class="authorisation__close close" href="" onclick="$.fancybox.close(); return false;"> <img src="images/modals/close.svg" alt=""></a>
         </div>
       </form>
       <form class="reset" action="#" method="post" id="reset"> 
@@ -119,28 +119,30 @@
           <div class="reset__top"> 
             <div class="reset__title title --small">Восстановление пароля</div>
             <div class="reset__text">Сссылка для восстановления пароля отправлена на <a href=""> </a></div>
-          </div><a class="reset__button button-wide --navy" href="">Закрыть</a>
+          </div><a class="reset__button button-wide --navy" href="" onclick="$.fancybox.close(); return false;">Закрыть</a><a class="reset__close close" href="" onclick="$.fancybox.close(); return false;"> <img src="images/modals/close.svg" alt=""></a>
         </div>
       </form>
     </div>
     <div class="product">
       <div class="container"> 
         <div class="product__wrapper">
-          <div class="product-picture">
-            <div class="product-picture__current"> <img class="js-crop-image js-image-current" src="images/product-picture/1.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/2.jpg" alt=""><img class="js-crop-image js-image-current --active" src="images/product-picture/3.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/4.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/5.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/6.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/7.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/8.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/9.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/10.jpg" alt="">
-            </div>
-            <div class="product-picture__like-button"><img src="images/product-picture/like.svg" alt=""></div>
-            <div class="product-picture__slider"> 
-              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/1.jpg" alt=""></div>
-              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/2.jpg" alt=""></div>
-              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch --active" src="images/product-picture/3.jpg" alt=""></div>
-              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/4.jpg" alt=""></div>
-              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/5.jpg" alt=""></div>
-              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/6.jpg" alt=""></div>
-              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/7.jpg" alt=""></div>
-              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/8.jpg" alt=""></div>
-              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/9.jpg" alt=""></div>
-              <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/10.jpg" alt=""></div>
+          <div class="product__pictures">
+            <div class="product-picture">
+              <div class="product-picture__current"> <img class="js-crop-image js-image-current" src="images/product-picture/1.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/2.jpg" alt=""><img class="js-crop-image js-image-current --active" src="images/product-picture/3.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/4.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/5.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/6.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/7.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/8.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/9.jpg" alt=""><img class="js-crop-image js-image-current" src="images/product-picture/10.jpg" alt="">
+              </div>
+              <div class="product-picture__like-button"><img src="images/product-picture/like.svg" alt=""></div>
+              <div class="product-picture__slider"> 
+                <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/1.jpg" alt=""></div>
+                <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/2.jpg" alt=""></div>
+                <div class="product-picture__slide"> <img class="js-crop-image js-image-switch --active" src="images/product-picture/3.jpg" alt=""></div>
+                <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/4.jpg" alt=""></div>
+                <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/5.jpg" alt=""></div>
+                <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/6.jpg" alt=""></div>
+                <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/7.jpg" alt=""></div>
+                <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/8.jpg" alt=""></div>
+                <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/9.jpg" alt=""></div>
+                <div class="product-picture__slide"> <img class="js-crop-image js-image-switch" src="images/product-picture/10.jpg" alt=""></div>
+              </div>
             </div>
           </div>
           <div class="product-order"> 
@@ -307,7 +309,7 @@
     </div>
     <div class="container"> 
       <div class="seller"> 
-        <div class="seller__image"> <img src="images/seller/Rectangle.jpg" alt="Background"></div>
+        <div class="seller__image js-crop-image"><img src="images/seller/Rectangle.jpg" alt="Background"></div>
         <div class="seller__title title">What is Seller-online ?</div>
         <div class="seller__icon"><img src="images/seller/Group.png" alt="What is online"></div><a class="seller__button button" href="">Read more</a>
       </div>

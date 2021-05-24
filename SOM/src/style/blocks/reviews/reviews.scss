@@ -3,12 +3,21 @@
   &__wrapper {
     padding: 37px 0px 33px 0px;
     width: 746px;
+    @include small-desktop {
+      width: 600px;
+    }
+    @include tablet {
+      padding: 30px 0px;
+    }
   }
 
   &__top {
     display: flex;
     margin: 0px 0px 73px 0px;
     align-items: center;
+    @include small-desktop {
+      margin: 0px 0px 55px 0px;
+    }
   }
 
   &__top-title {
@@ -31,11 +40,17 @@
     transition: $transition;
     &.--opened {
       height: 1070px;
+      @include small-desktop {
+        height: 1000px;
+      }
     }
   }
 
   &__list-column {
     margin: 0px 0px 79px 0px;
+    @include small-desktop {
+      margin: 0px 0px 40px 0px;
+    }
   }
 
   &__list-stars {
@@ -92,5 +107,9 @@ line-height: 24px;
   &__list-more {
     display: flex;
     justify-content: center;
+
+  }
+  &__list-more-button {
+    height: 30px;
   }
 }

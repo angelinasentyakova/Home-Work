@@ -11,11 +11,11 @@ $(function () {
     'polygon(0 0, 98% 0, 100% 100%, 0% 100%)',
   ];
 
-  const images = $('.js-crop-image');
+  const $images = $('.js-crop-image');
 
-  if (images.length > 0) {
-    for (let index = 0; index < images.length; index++) {
-      images[index].style.clipPath = cropImage[Math.floor(Math.random() * cropImage.length)];
+  if ($images.length > 0) {
+    for (let index = 0; index < $images.length; index++) {
+      $images[index].style.clipPath = cropImage[Math.floor(Math.random() * cropImage.length)];
     }
   };
 });

@@ -4,13 +4,33 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #eeeeee;
+    @include tablet {
+      height: 80px;
+    }
   }
-  &__top-logo {
+  &__top-logo-desktop {
     margin: 0px 22px 0px 0px;
     cursor: pointer;
+    @include tablet {
+      display: none;
+    }
+  }
+  &__top-logo-mobile {
+    display: none;
+    margin: 0px 22px 0px 0px;
+    @include tablet {
+      display: block;
+      margin: 0px 30px 0px 0px;
+    }
   }
   &__top-search {
     margin: 0px 60px 0px 0px;
+    @include small-desktop {
+      margin: 0px 40px 0px 0px;
+    }
+    @include tablet {
+      margin: 0px 40px 0px 0px;
+    }
   }
   &__top-search-form {
     width: 360px;
@@ -21,7 +41,13 @@
     &:hover {
       box-shadow: 0px 5px 15px rgba(62, 75, 102, 0.15);
     }
-  }
+    @include small-desktop {
+      width: 260px;
+    }
+    @include tablet {
+      width: 350px;
+    }
+  } 
   &__top-search-input {
     font-family: "Roboto";
     width: 100%;
@@ -46,10 +72,19 @@
     &:hover {
       transform: scale(0.9);
     }
+    @include small-desktop {
+      right: 5%;
+    }
   }
   &__top-currency {
     margin: 0px 265px 0px 0px;
     display: flex;
+    @include small-desktop {
+      margin: 0px 130px 0px 0px;
+    }
+    @include tablet {
+      display: none;
+    }
   }
   &__top-currency-title {
     display: flex;
@@ -71,6 +106,12 @@
     transition: $transition;
     width: 18px;
     height: 18px;
+    @include small-desktop {
+      margin: 0px 85px 0px 0px;
+    }
+    @include tablet {
+      margin: 0px 60px 0px 0px;
+    }
     &:hover {
       opacity: 0.8;
     }
@@ -161,6 +202,9 @@
   }
   &__bottom {
     border-bottom: 3px solid $navy;
+    @include tablet {
+      display: none;
+    }
   }
   &__bottom-menu {
     padding: 20px 0px 0px 0px;
@@ -175,6 +219,9 @@
     line-height: 120%;
     position: relative;
     transition: $transition;
+    @include small-desktop {
+      margin: 0px 32px 0px 0px;
+    }
     a {
       display: inline-block;
       padding: 0px 0px 21px 0px;

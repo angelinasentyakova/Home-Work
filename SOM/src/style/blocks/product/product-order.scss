@@ -9,6 +9,13 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    @include small-desktop {
+      width: 450px;
+    }
+    @include tablet {
+      width: 600px;
+      height: 60px;
+    }
   }
   &__prices-wrapper {
     width: 187px;
@@ -21,6 +28,12 @@
     display: flex;
     align-items: start;
     margin: 0px 24px 0px 0px;
+    @include small-desktop {
+      padding: 17px 0px 54px 0px;
+    }
+    @include tablet {
+      padding: 17px 0px 30px 0px;
+    }
     }
 		&__inscription {
       flex: 0 0 265px;
@@ -88,10 +101,8 @@
   top: 18px;
       }
 		}
-
 		&__quantity-option {
       max-width: 72px;
         min-width: 72px;    
 		}
-
 }

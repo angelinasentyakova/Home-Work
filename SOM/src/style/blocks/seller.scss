@@ -1,7 +1,6 @@
 .seller {
   position: relative;
   &__image {
-    clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0 100%);
     margin: 0px 0px 90px 0px;
   }
 }
@@ -13,11 +12,20 @@
   top: 0;
   left: 0;
   width: 280px;
+  @include tablet {
+    z-index: 2;
+  }
 }
 .seller__icon {
   position: absolute;
   bottom: -17px;
   left: 470px;
+  @include small-desktop {
+    left: 370px;
+  }
+  @include tablet {
+    left: 180px;
+  }
 }
 .seller__button {
   position: absolute;
@@ -26,6 +34,9 @@
   padding: 8px 25px;
   border: 3px solid $white;
   transition: $transition;
+  @include tablet {
+    background: transparent;
+  }
   &:hover {
     border: 3px dotted $white;
   }

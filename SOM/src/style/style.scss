@@ -1,7 +1,6 @@
-@import "libs/jquery.formstyler.scss";
-@import "libs/jquery.formstyler.theme.scss";
+@import "libs/jquery.formstyler";
+@import "libs/jquery.formstyler.theme";
 @import "constants";
-@import "functions";
 @import "mixins";
 
 
@@ -11,15 +10,15 @@
 @import "common/buttons";
 @import "common/titles";
 @import "common/input";
+@import "common/prices";
 
 
 @import "blocks/header";
 @import "blocks/modals";
-@import "blocks/product/product.scss";
-@import "blocks/product/product-picture.scss";
-@import "blocks/product/product-order.scss";
-@import "blocks/prices.scss";
-@import "blocks/product-buttons.scss";
+@import "blocks/product/product";
+@import "blocks/product/product-picture";
+@import "blocks/product/product-order";
+@import "blocks/product-buttons";
 @import "blocks/description/description";
 @import "blocks/reviews/reviews";
 @import "blocks/related/related";

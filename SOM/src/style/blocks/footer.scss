@@ -1,5 +1,5 @@
 .footer {
-  background: #232f3e;
+  background: $footer;
   &__top {
     padding: 58px 0px 45px 0px;
   }
@@ -23,7 +23,7 @@
     font-family: Roboto;
     font-weight: 300;
     & a {
-      color: #bac4d0;
+      color: $pale-blue;
       position: relative;
       &:after {
         content: "";
@@ -32,7 +32,7 @@
         bottom: -1px;
         left: 0;
         height: 1px;
-        background: #9fa9b5;
+        background: $footer-blue;
         width: 0px;
         z-index: 3;
         transition: $transition;
@@ -45,7 +45,7 @@
     }
   }
   &__bottom {
-    background: #131a22;
+    background: $footer-bottom;
   }
   &__bottom-wrapper {
     display: flex;
@@ -62,7 +62,7 @@
   &__bottom-solma {
     font-size: 14px;
     line-height: 150%;
-    color: #9fa9b5;
+    color: $footer-blue;
     padding: 3px 0px 0px 0px;
   }
   &__bottom-list {
@@ -75,7 +75,7 @@
     margin: 0px 0px 0px 50px;
     position: relative;
     & a {
-      color: #9fa9b5;
+      color: $footer-blue;
       padding: 3px 0px 0px 0px;
       &:after {
         content: "";
@@ -84,7 +84,7 @@
         bottom: 0px;
         left: 0;
         height: 1px;
-        background: #9fa9b5;
+        background: $footer-blue;
         width: 0px;
         z-index: 3;
         transition: $transition;

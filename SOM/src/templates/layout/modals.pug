@@ -4,14 +4,16 @@
       .sign-in__top
         .sign-in__title.title.--small Вход / Регистрация
         label.sign-in__label(for="email") Email
-        input.sign-in__input.input(type="email", placeholder="Alexander.Ivanov@gmail.com", id="email")
+        input.sign-in__input.js-input.input(type="email", placeholder="Alexander.Ivanov@gmail.com", id="email")
         a.sign-in__problem(href="") Проблема с входом ?
       .sign-in__middle
         a.sign-in__google.button-social(href="") Войти через Google
           img(src="images/modals/google.svg", alt="") 
         a.sign-in__facebook.button-social(href="") Войти через Facebook
           img(src="images/modals/facebook.svg", alt="")
-      a.sign-in__coninue.button-wide(href="#registration") Продолжить как гость
+      a.sign-in__coninue.button-wide(href="") Продолжить как гость
+      a.sign-in__close.close(href="", onclick="$.fancybox.close(); return false;" ) 
+        img(src="images/modals/close.svg", alt="")
   form.registration(action="#", method="post", id="registration") 
     .registration__wrapper.wrapper
       .registration__top
@@ -23,6 +25,8 @@
         label.registration__label Повторите пароль
           input.registration__input.input(type="password")
       a.registration__button.button-wide.--navy(href="") Зарегистрироваться
+      a.registration__close.close(href="", onclick="$.fancybox.close(); return false;" ) 
+        img(src="images/modals/close.svg", alt="")
   form.authoristaion(action="#", method="post", id="authorisation") 
     .authoristaion__wrapper.wrapper
       .authoristaion__top
@@ -34,10 +38,14 @@
         a.authoristaion__registration(href="") Регистрация
         a.authoristaion__forgot-password.js-fancybox(href="#reset") Восстановить пароль
       a.authoristaion__button.button-wide.--navy(href="") Войти
+      a.authorisation__close.close(href="", onclick="$.fancybox.close(); return false;" ) 
+        img(src="images/modals/close.svg", alt="")
   form.reset(action="#", method="post", id="reset") 
     .reset__wrapper.wrapper 
       .reset__top 
         .reset__title.title.--small Восстановление пароля
         .reset__text Сссылка для восстановления пароля отправлена на 
           a(href="") 
-      a.reset__button.button-wide.--navy(href="") Закрыть
+      a.reset__button.button-wide.--navy(href="", onclick="$.fancybox.close(); return false;") Закрыть
+      a.reset__close.close(href="", onclick="$.fancybox.close(); return false;" ) 
+        img(src="images/modals/close.svg", alt="")

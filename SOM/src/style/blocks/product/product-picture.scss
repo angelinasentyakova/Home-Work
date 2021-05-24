@@ -1,12 +1,19 @@
 .product-picture {
   flex: 0 0 50%;
   position: relative;
-  padding: 0px 25px 0px 0px;
   &__current {
     width: 551px;
     height: 357px;
     position: relative;
     margin: 0px 0px 17px 0px;
+    @include small-desktop {
+      width: 450px;
+      height: 300px;
+    }
+    @include tablet {
+      width: 600px;
+      height: 357px;
+    }
     & img {
       position: absolute;
       top: 0;
@@ -37,34 +44,65 @@
   border-radius: 50%;
   transition: $transition;
   cursor: pointer;
+  @include small-desktop {
+    top: 20px;
+    right: 20px;
+  }
+  @include tablet {
+    right: 20px;
+  }
   & img {
     width: 26px;
     height: 23px;
   }
   &:hover {
-    opacity: 0.7;
+    opacity: 0.8;
+  }
+  &:active {
+    transform: scale(0.9);
   }
   }
   &__slider {
     display: flex;
     flex-wrap: wrap;
     & div:nth-child(6) {
-      margin: 0;
-    }
+      margin: 0px 0px 14px 0px;
+      @include small-desktop {
+        margin: 0px 12px 10px 0px;
+      }
+      @include tablet {
+        margin: 0px 20px 14px 0px;
+      }
+  
   }
+}
   &__slide {
-    flex: 0 0 16%; 
+    flex: 0 0 88px; 
     margin: 0px 4px 14px 0px;
-    width: 80px;
     height: 52px;
     cursor: pointer;
+    @include small-desktop {
+      flex: 0 0 100px;
+      margin: 0px 12px 10px 0px;
+      height: 70px;
+    }
+    @include tablet {
+      margin: 0px 20px 14px 0px;
+    }
     & img {
       height: 52px;
       width: 80px;
       opacity: 0.5;
       transition: $transition;
+      @include small-desktop {
+        width: 100px;
+        height: 70px;
+      }
       &:hover {
         opacity: 1;
+      }
+      &:active {
+        opacity: 0.8;
       }
       &.--active {
         opacity: 1;
