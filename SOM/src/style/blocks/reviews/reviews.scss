@@ -10,7 +10,6 @@
       padding: 30px 0px;
     }
   }
-
   &__top {
     display: flex;
     margin: 0px 0px 73px 0px;
@@ -19,21 +18,17 @@
       margin: 0px 0px 55px 0px;
     }
   }
-
   &__top-title {
     margin: 0px 20px 0px 0px;
   }
-
   &__top-stars {
     margin: 0px 12px 0px 0px;
   }
-
   &__top-total {
     position: relative;
     top: 1px;
     font-size: 16px;
   }
-
   &__list {
     height: 790px;
     overflow: hidden;
@@ -45,18 +40,15 @@
       }
     }
   }
-
   &__list-column {
     margin: 0px 0px 79px 0px;
     @include small-desktop {
       margin: 0px 0px 40px 0px;
     }
   }
-
   &__list-stars {
     margin: 0px 0px 16px 0px;
   }
-
   &__list-text-wrapper {
     margin: 0px 0px 20px 0px;
     overflow: hidden;
@@ -65,49 +57,43 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
   }
-
   &__list-text {
     font-style: italic;
-font-size: 14px;
-line-height: 24px;
+    line-height: 24px;
+    @include small-desktop {
+      line-height: 26px;
+    }
   }
-
   &__list-info {
     display: flex;
   }
-
   &__list-product {
     &:hover {
-      opacity: 0.8;
+      opacity: .8;
     }
   }
-
   &__list-person {
     position: relative;
     left: -10px;
     top: 2px;
     margin: 0px 21px 0px 0px;
     &:hover {
-      opacity: 0.8;
+      opacity: .8;
     }
   }
-
   &__list-person-info {
     padding: 20px 0px;
   }
-
   &__list-person-name {
     font-size: 16px;
     margin: 0px 0px 3px 0px;
   }
-
   &__list-date {
     line-height: 20px;
   }
   &__list-more {
     display: flex;
     justify-content: center;
-
   }
   &__list-more-button {
     height: 30px;

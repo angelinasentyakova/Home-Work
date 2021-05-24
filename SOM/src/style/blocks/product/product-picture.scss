@@ -31,36 +31,33 @@
     }
   }
   &__like-button {
-  position: absolute;
-  top: 27px;
-  right: 47px;
-  z-index: 5;
-  height: 40px;
-  width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $white;
-  border-radius: 50%;
-  transition: $transition;
-  cursor: pointer;
-  @include small-desktop {
-    top: 20px;
-    right: 20px;
-  }
-  @include tablet {
-    right: 20px;
-  }
-  & img {
-    width: 26px;
-    height: 23px;
-  }
-  &:hover {
-    opacity: 0.8;
-  }
-  &:active {
-    transform: scale(0.9);
-  }
+    position: absolute;
+    top: 27px;
+    right: 27px;
+    z-index: 5;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    border-radius: 50%;
+    transition: $transition;
+    cursor: pointer;
+    @include small-desktop {
+      top: 20px;
+      right: 20px;
+    }
+    & img {
+      width: 26px;
+      height: 23px;
+    }
+    &:hover {
+      opacity: .8;
+    }
+    &:active {
+      transform: scale(.9);
+    }
   }
   &__slider {
     display: flex;
@@ -73,11 +70,10 @@
       @include tablet {
         margin: 0px 20px 14px 0px;
       }
-  
+    }
   }
-}
   &__slide {
-    flex: 0 0 88px; 
+    flex: 0 0 88px;
     margin: 0px 4px 14px 0px;
     height: 52px;
     cursor: pointer;
@@ -92,7 +88,7 @@
     & img {
       height: 52px;
       width: 80px;
-      opacity: 0.5;
+      opacity: .5;
       transition: $transition;
       @include small-desktop {
         width: 100px;
@@ -102,7 +98,7 @@
         opacity: 1;
       }
       &:active {
-        opacity: 0.8;
+        opacity: .8;
       }
       &.--active {
         opacity: 1;

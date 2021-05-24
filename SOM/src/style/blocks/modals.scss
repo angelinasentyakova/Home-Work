@@ -1,8 +1,7 @@
-
 .wrapper {
   width: 383px;
   padding: 55px 0px 30px 0px;
-  box-shadow: 0px 20px 25px rgba(62, 75, 102, 0.2);
+  box-shadow: 0px 20px 25px rgba(62, 75, 102, .2);
   position: relative;
   & .close {
     position: absolute;
@@ -11,41 +10,41 @@
   }
 }
 .sign-in {
-    display: none;
-    &.fancybox-content {
-      padding: 0;
-    }
-    &__top {
-      padding: 0px 60px 23px 60px;
-      border-bottom: 1px solid $gray;
-    }
-		&__title {
-      margin: 0px 0px 27px 0px;
-		}
-		&__input {
-      margin: 0px 0px 3px 0px;
-		}
-		&__problem {
-      display: inline-block;
-      color: $blue;
-		}
-    &__middle {
-      padding: 30px 60px;
-      border-bottom: 1px solid $gray;
-    }
-		&__google{
-      background: $google;
-		}
-		&__facebook {
-  background: $facebook;
-  margin: 0;
-  & img {
-    right: 23px;
+  display: none;
+  &.fancybox-content {
+    padding: 0;
   }
-	}
-		&__coninue {
-      margin: 30px 60px 0px 60px;
-		}
+  &__top {
+    padding: 0px 60px 23px 60px;
+    border-bottom: 1px solid $gray;
+  }
+  &__title {
+    margin: 0px 0px 27px 0px;
+  }
+  &__input {
+    margin: 0px 0px 3px 0px;
+  }
+  &__problem {
+    display: inline-block;
+    color: $blue;
+  }
+  &__middle {
+    padding: 30px 60px;
+    border-bottom: 1px solid $gray;
+  }
+  &__google {
+    background: $google;
+  }
+  &__facebook {
+    background: $facebook;
+    margin: 0;
+    & img {
+      right: 23px;
+    }
+  }
+  &__coninue {
+    margin: 30px 60px 0px 60px;
+  }
 }
 
 .registration {
@@ -97,7 +96,6 @@
   }
   &__button {
     margin: 30px 60px 0px 60px;
-    
   }
 }
 
@@ -120,6 +118,3 @@
     margin: 30px 60px 0px 60px;
   }
 }
-
-
-

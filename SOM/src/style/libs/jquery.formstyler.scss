@@ -3,9 +3,7 @@
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
+	user-select: none;
 	user-select: none;
 }
 .jq-checkbox input,
@@ -55,9 +53,7 @@
 }
 .jq-selectbox li,
 .jq-select-multiple li {
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
+	user-select: none;
 	user-select: none;
 	white-space: nowrap;
 }
@@ -69,9 +65,7 @@
 }
 .jq-selectbox__select-text {
 	overflow: hidden;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
+	user-select: none;
 	user-select: none;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -80,11 +74,11 @@
 	position: absolute;
 }
 .jq-selectbox__search input {
-	-webkit-appearance: textfield;
+	appearance: textfield;
 }
 .jq-selectbox__search input::-webkit-search-cancel-button,
 .jq-selectbox__search input::-webkit-search-decoration {
-	-webkit-appearance: none;
+	appearance: none;
 }
 .jq-selectbox__dropdown ul {
 	position: relative;
@@ -102,11 +96,11 @@
 	display: inline-block;
 }
 .jq-number__field input {
-	-moz-appearance: textfield;
-	text-align: left; /* для Opera Presto */
+	appearance: textfield;
+	text-align: left; 
 }
 .jq-number__field input::-webkit-inner-spin-button,
 .jq-number__field input::-webkit-outer-spin-button {
-	margin: 0; /* в каких-то браузерах присутствует отступ */
-	-webkit-appearance: none;
+	margin: 0; 
+	appearance: none;
 }

@@ -3,6 +3,12 @@ body {
   font-size: 14px;
   line-height: 22px;
   color: $gray-superdark;
+  @include small-desktop {
+    font-size: 15px;
+  }
+  @include tablet {
+    font-size: 16px;
+  }
 }
 
 .container {

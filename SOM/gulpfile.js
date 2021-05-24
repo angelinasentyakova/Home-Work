@@ -29,12 +29,14 @@ let path = {
 let { src, dest } = require('gulp'),
   gulp = require('gulp'),
   browsersync = require('browser-sync').create(),
-  fileinclude = require('gulp-file-include'),
   del = require("del"),
   scss = require("gulp-sass"),
   pug = require("gulp-pug"),
   imageMin = require("gulp-imagemin"),
-  imgMin = require("gulp-imagemin");
+  imgMin = require("gulp-imagemin"),
+  rigger = require('gulp-rigger'),
+  uglify = require('gulp-uglify'),
+  autoprefixer = require("gulp-autoprefixer");
 
 function browserSync(params) {
   browsersync.init({
@@ -61,16 +63,18 @@ function css() {
   return src(path.src.css)
     .pipe(
       scss({
-        outputStyle: "expanded"
+        outputStyle: "compressed"
       })
     )
+  .pipe(autoprefixer())
     .pipe(dest(path.build.css))
     .pipe(browsersync.stream())
 }
 
 function js() {
   return src(path.src.js)
-    .pipe(fileinclude())
+    .pipe(rigger())
+    .pipe(uglify())
     .pipe(dest(path.build.js))
     .pipe(browsersync.stream())
 }

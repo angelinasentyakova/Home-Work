@@ -39,7 +39,7 @@
     transition: $transition;
     border-radius: 30px;
     &:hover {
-      box-shadow: 0px 5px 15px rgba(62, 75, 102, 0.15);
+      box-shadow: 0px 5px 15px rgba(62, 75, 102, .15);
     }
     @include small-desktop {
       width: 260px;
@@ -47,7 +47,7 @@
     @include tablet {
       width: 350px;
     }
-  } 
+  }
   &__top-search-input {
     font-family: "Roboto";
     width: 100%;
@@ -58,7 +58,7 @@
     color: $gray-dark;
     transition: $transition;
     &:focus {
-      box-shadow: 0px 5px 15px rgba(62, 75, 102, 0.15);
+      box-shadow: 0px 5px 15px rgba(62, 75, 102, .15);
     }
   }
   &__top-search-button {
@@ -70,7 +70,7 @@
     background: url("../images/header/search.png") 0 0 no-repeat;
     transition: $transition;
     &:hover {
-      transform: scale(0.9);
+      transform: scale(.9);
     }
     @include small-desktop {
       right: 5%;
@@ -113,7 +113,7 @@
       margin: 0px 60px 0px 0px;
     }
     &:hover {
-      opacity: 0.8;
+      opacity: .8;
     }
     & span {
       font-weight: 700;
@@ -141,14 +141,14 @@
     top: 6px;
     left: 8px;
     & img:hover {
-      opacity: 0.8;
+      opacity: .8;
     }
   }
   &__top-profile-list {
     width: 216px;
     height: 200px;
     background: $white;
-    box-shadow: 0px 5px 15px rgba(62, 75, 102, 0.15);
+    box-shadow: 0px 5px 15px rgba(62, 75, 102, .15);
     border-radius: 4px;
     position: absolute;
     top: 40px;
@@ -182,10 +182,10 @@
         top: 9px;
         transition: $transition;
         &:hover {
-          opacity: 0.6;
+          opacity: .6;
         }
         &:active {
-          transform: scale(0.9);
+          transform: scale(.9);
         }
       }
     }
@@ -231,7 +231,7 @@
       position: absolute;
       display: block;
       left: 0;
-      bottom:-3px;
+      bottom: -3px;
       height: 3px;
       background: $blue;
       width: 0;
@@ -265,7 +265,7 @@
     left: -163px;
     z-index: 4;
     background: $white;
-    box-shadow: 0px 20px 25px rgba(62, 75, 102, 0.2);
+    box-shadow: 0px 20px 25px rgba(62, 75, 102, .2);
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
@@ -308,19 +308,19 @@
     }
   }
   &__bottom-accesories-sublist {
-  position: absolute;
-  top: 0;
-  left: 200px;
-  padding: 37px 0px 0px 190px;
-  visibility: hidden;
-  height: 400px;
-  opacity: 0;
-  pointer-events: none;
-  transition: $transition;
-  &.--active {
-    opacity: 1;
-    pointer-events: all;
-    visibility: visible;
-  }
+    position: absolute;
+    top: 0;
+    left: 200px;
+    padding: 37px 0px 0px 190px;
+    visibility: hidden;
+    height: 400px;
+    opacity: 0;
+    pointer-events: none;
+    transition: $transition;
+    &.--active {
+      opacity: 1;
+      pointer-events: all;
+      visibility: visible;
+    }
   }
 }

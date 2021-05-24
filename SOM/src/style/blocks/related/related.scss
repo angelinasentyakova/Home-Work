@@ -1,6 +1,6 @@
 .related {
   padding: 38px 0px 70px 0px;
-  @include tablet {
+  @include small-desktop {
     padding: 30px 0px;
   }
   &__title {
@@ -11,23 +11,23 @@
   }
   &__buttons {
     display: flex;
-  & a {
-    display: flex;
-    font-size: 12px;
-    width: 72px;
-    height: 24px;
-    align-items: center;
-    justify-content: center;
-    background: $navy-dark;
-    color: $white;
-    border-radius: 16px;
-    margin: 0px 16px 0px 0px;
-    &:hover {
-      opacity: 0.9;
+    & a {
+      display: flex;
+      font-size: 12px;
+      width: 72px;
+      height: 24px;
+      align-items: center;
+      justify-content: center;
+      background: $navy-dark;
+      color: $white;
+      border-radius: 16px;
+      margin: 0px 16px 0px 0px;
+      &:hover {
+        opacity: .9;
+      }
+      &:active {
+        opacity: 1;
+      }
     }
-    &:active {
-      opacity: 1;
-    }
-}
   }
 }
