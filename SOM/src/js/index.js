@@ -4,3 +4,4 @@
 //= components/Crop.js
 //= components/MoreInfo.js
 //= components/Modals.js
+//= components/Burger.js

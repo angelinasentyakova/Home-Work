@@ -27,7 +27,7 @@ $(function () {
                     $('.reset__text a').html($('.js-input').val());
                 }
                 else {
-                    openModal($('#registration'));
+                    return openModal($('#registration'));
                 }
             }
         }

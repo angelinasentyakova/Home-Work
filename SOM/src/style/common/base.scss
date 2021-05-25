@@ -3,6 +3,9 @@ body {
   font-size: 14px;
   line-height: 22px;
   color: $gray-superdark;
+  &.--lock {
+    overflow: hidden;
+  }
   @include small-desktop {
     font-size: 15px;
   }
