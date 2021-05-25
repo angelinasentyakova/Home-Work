@@ -28,6 +28,9 @@
     line-height: 200%;
     font-family: Roboto;
     font-weight: 300;
+    @include small-desktop {
+      line-height: 40px;
+    }
     @include tablet {
       display: none;
     }
