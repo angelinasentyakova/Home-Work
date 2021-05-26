@@ -1,5 +1,6 @@
 .product-order {
   flex: 0 0 50%;
+
   &__title-height {
     width: 550px;
     height: 98px;
@@ -17,12 +18,10 @@
       height: 60px;
     }
   }
-  &__prices-wrapper {
-    width: 187px;
-  }
   &__prices-box {
     margin: 0px 14px 0px 0px;
   }
+
   &__inscription-quantity {
     padding: 17px 0px 24px 0px;
     display: flex;
@@ -35,14 +34,17 @@
       padding: 17px 0px 30px 0px;
     }
   }
+
   &__inscription {
     flex: 0 0 265px;
     margin: 0px 24px 0px 0px;
   }
+
   &__inscription-title {
     font-size: 16px;
     margin: 0px 0px 5px 0px;
   }
+
   &__inscription-input {
     font-family: Fira Sans;
     color: $black;
@@ -63,10 +65,12 @@
       font-size: 14px;
     }
   }
+
   &__quantity-title {
     font-size: 16px;
     margin: 0px 0px 5px 0px;
   }
+
   &__quantity-select {
     &.jq-selectbox {
       margin: 0px 0px 10px 0px;
@@ -95,6 +99,7 @@
       top: 18px;
     }
   }
+
   &__quantity-option {
     max-width: 72px;
     min-width: 72px;

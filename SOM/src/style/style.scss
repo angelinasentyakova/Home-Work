@@ -7,18 +7,18 @@
 @import "common/null";
 @import "common/fonts";
 @import "common/base";
-@import "common/buttons";
-@import "common/titles";
-@import "common/input";
-@import "common/prices";
 
 
+@import "blocks/buttons";
+@import "blocks/titles";
+@import "blocks/input";
+@import "blocks/prices";
 @import "blocks/header";
 @import "blocks/modals";
 @import "blocks/product/product";
 @import "blocks/product/product-picture";
 @import "blocks/product/product-order";
-@import "blocks/product-buttons";
+@import "blocks/product/product-buttons";
 @import "blocks/description/description";
 @import "blocks/reviews/reviews";
 @import "blocks/related/related";

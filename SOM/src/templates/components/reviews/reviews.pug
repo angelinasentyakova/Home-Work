@@ -7,7 +7,7 @@
         .reviews__top-title.title.--small Reviews
         .reviews__top-stars
           img(src="images/reviews/stars_1.png", alt="")
-        .reviews__top-total.subtitle (45)
+        .reviews__top-total.title.--sub (45)
       .reviews__list 
         each review in productReviews
           .reviews__list-column
@@ -21,10 +21,10 @@
               .reviews__list-person 
                 img(src=review.person, alt="")
               .reviews__list-person-info 
-                .reviews__list-person-name.subtitle=review.name
+                .reviews__list-person-name.title.--sub=review.name
                 .reviews__list-date=review.date
       .reviews__list-more
-        .reviews__list-more-button.button-more.js-button-more
+        .reviews__list-more-button.button.--more.js-button-more
           a(href="") 23 more reviews
             img(src="images/button-more/arrow.png", alt="")
           a.--noshow(href="") Show less

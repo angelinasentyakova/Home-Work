@@ -1,4 +1,5 @@
 .header {
+
   &__top {
     height: 90px;
     display: flex;
@@ -8,6 +9,7 @@
       height: 80px;
     }
   }
+
   &__top-logo-desktop {
     margin: 0px 22px 0px 0px;
     cursor: pointer;
@@ -15,6 +17,7 @@
       display: none;
     }
   }
+
   &__top-logo-mobile {
     display: none;
     margin: 0px 22px 0px 0px;
@@ -23,6 +26,7 @@
       margin: 0px 20px 0px 0px;
     }
   }
+
   &__top-search {
     margin: 0px 60px 0px 0px;
     @include small-desktop {
@@ -32,6 +36,7 @@
       margin: 0px 20px 0px 0px;
     }
   }
+
   &__top-search-form {
     width: 360px;
     height: 32px;
@@ -48,6 +53,7 @@
       width: 200px;
     }
   }
+
   &__top-search-input {
     font-family: "Roboto";
     width: 100%;
@@ -61,6 +67,7 @@
       box-shadow: 0px 5px 15px rgba(62, 75, 102, .15);
     }
   }
+
   &__top-search-button {
     position: absolute;
     top: 20%;
@@ -76,6 +83,7 @@
       right: 5%;
     }
   }
+
   &__top-currency {
     margin: 0px 265px 0px 0px;
     display: flex;
@@ -86,6 +94,7 @@
       margin: 0px 40px 0px 0px;
     }
   }
+
   &__top-currency-title {
     display: flex;
     align-items: center;
@@ -97,12 +106,14 @@
       display: none;
     }
   }
+
   &__top-currency-select {
     background: $backgrounds;
     border-radius: 30px;
     width: 80px;
     height: 32px;
   }
+
   &__top-cart {
     margin: 0px 60px 0px 0px;
     position: relative;
@@ -139,6 +150,7 @@
       overflow: hidden;
     }
   }
+
   &__top-profile {
     transition: $transition;
     position: relative;
@@ -152,6 +164,7 @@
       top: 3px;
     }
   }
+
   &__top-profile-list {
     width: 216px;
     height: 200px;
@@ -172,6 +185,7 @@
       visibility: visible;
     }
   }
+
   &__top-profile-link {
     font-size: 14px;
     line-height: 160%;
@@ -208,6 +222,7 @@
       font-weight: 700;
     }
   }
+
   &__top-burger {
     display: none;
     @include tablet {
@@ -252,12 +267,14 @@
       }
     }
     }
+
   &__bottom {
     border-bottom: 3px solid $navy;
     @include tablet {
       border: none;
     }
   }
+
   &__bottom-menu {
     padding: 20px 0px 0px 0px;
     @include tablet {
@@ -276,6 +293,7 @@
       }
     }
   }
+
   &__bottom-list {
     display: flex;
     @include tablet {
@@ -284,6 +302,7 @@
       border-bottom: 1px solid $gray;
     }
   }
+
   &__bottom-link {
     margin: 0px 72px 0px 0px;
     font-weight: 700;
@@ -333,6 +352,7 @@
       margin: 0;
     }
   }
+
   &__bottom-wedding-sublist {
     font-weight: 400;
     font-family: Roboto;
@@ -355,6 +375,7 @@
       visibility: visible;
     }
   }
+
   &__bottom-wedding-sublink {
     padding: 0px 0px 10px 0px;
     z-index: 5;
@@ -378,6 +399,7 @@
       }
     }
   }
+
   &__bottom-wedding-sublink.--clickable > a.--selected {
     display: inline-block;
     position: relative;
@@ -386,6 +408,7 @@
       width: 100%;
     }
   }
+
   &__bottom-accesories-sublist {
     position: absolute;
     top: 0;

@@ -76,51 +76,51 @@
       </div>
     </header>
     <div class="modals">
-      <form class="sign-in" action="#" method="post" id="sign-in"> 
-        <div class="sign-in__wrapper wrapper">
-          <div class="sign-in__top">
-            <div class="sign-in__title title --small">Вход / Регистрация</div>
+      <form class="sign-in js-sign-in" action="#" method="post" id="sign-in"> 
+        <div class="sign-in__wrapper modal">
+          <div class="sign-in__top modal__top">
+            <div class="sign-in__title modal__title title --small">Вход / Регистрация</div>
             <label class="sign-in__label" for="email">Email</label>
-            <input class="sign-in__input js-input input" type="email" placeholder="Alexander.Ivanov@gmail.com" id="email"><a class="sign-in__problem" href="">Проблема с входом ?</a>
+            <input class="sign-in__input input js-email" type="email" placeholder="Alexander.Ivanov@gmail.com"><a class="sign-in__problem" href="">Проблема с входом ?</a>
           </div>
-          <div class="sign-in__middle"><a class="sign-in__google button-social" href="">Войти через Google<img src="images/modals/google.svg" alt=""></a><a class="sign-in__facebook button-social" href="">Войти через Facebook<img src="images/modals/facebook.svg" alt=""></a></div><a class="sign-in__coninue button-wide" href="">Продолжить как гость</a><a class="sign-in__close close" href="" onclick="$.fancybox.close(); return false;"> <img src="images/modals/close.svg" alt=""></a>
+          <div class="sign-in__middle"><a class="sign-in__google button --social" href="">Войти через Google<img src="images/modals/google.svg" alt=""></a><a class="sign-in__facebook button --social" href="">Войти через Facebook<img src="images/modals/facebook.svg" alt=""></a></div><a class="sign-in__coninue modal__button button --wide" href="">Продолжить как гость</a><a class="sign-in__close modal__close" href="" onclick="$.fancybox.close(); return false;"> <img src="images/modals/close.svg" alt=""></a>
         </div>
       </form>
       <form class="registration" action="#" method="post" id="registration"> 
-        <div class="registration__wrapper wrapper">
-          <div class="registration__top">
-            <div class="registration__title title --small">Регистрация</div>
+        <div class="registration__wrapper modal">
+          <div class="registration__top modal__top">
+            <div class="registration__title modal__title title --small">Регистрация</div>
             <label class="registration__label">Email
-              <input class="registration__input input" type="email">
+              <input class="registration__input modal__input input" type="email">
             </label>
             <label class="registration__label">Новый пароль
-              <input class="registration__input input" type="password">
+              <input class="registration__input modal__input input" type="password">
             </label>
             <label class="registration__label">Повторите пароль
-              <input class="registration__input input" type="password">
+              <input class="registration__input modal__input input" type="password">
             </label>
-          </div><a class="registration__button button-wide --navy" href="">Зарегистрироваться</a><a class="registration__close close" href="" onclick="$.fancybox.close(); return false;"> <img src="images/modals/close.svg" alt=""></a>
+          </div><a class="registration__button modal__button button --wide --navy" href="">Зарегистрироваться</a><a class="registration__close modal__close" href="" onclick="$.fancybox.close(); return false;"> <img src="images/modals/close.svg" alt=""></a>
         </div>
       </form>
       <form class="authoristaion" action="#" method="post" id="authorisation"> 
-        <div class="authoristaion__wrapper wrapper">
-          <div class="authoristaion__top">
-            <div class="authoristaion__title title --small">Авторизация</div>
+        <div class="authoristaion__wrapper modal">
+          <div class="authoristaion__top modal__top">
+            <div class="authoristaion__title modal__title title --small">Авторизация</div>
             <label class="authoristaion__label">Почта
-              <input class="authoristaion__input input" type="email">
+              <input class="authoristaion__input modal__input input" type="email">
             </label>
             <label class="authoristaion__label">Пароль
-              <input class="authoristaion__input --nomargin input" type="password">
+              <input class="authoristaion__input modal__input --nomargin input" type="password">
             </label><a class="authoristaion__registration" href="">Регистрация</a><a class="authoristaion__forgot-password js-fancybox" href="#reset">Восстановить пароль</a>
-          </div><a class="authoristaion__button button-wide --navy" href="">Войти</a><a class="authorisation__close close" href="" onclick="$.fancybox.close(); return false;"> <img src="images/modals/close.svg" alt=""></a>
+          </div><a class="authoristaion__button modal__button button --wide --navy" href="">Войти</a><a class="authorisation__close modal__close" href="" onclick="$.fancybox.close(); return false;"> <img src="images/modals/close.svg" alt=""></a>
         </div>
       </form>
       <form class="reset" action="#" method="post" id="reset"> 
-        <div class="reset__wrapper wrapper"> 
-          <div class="reset__top"> 
-            <div class="reset__title title --small">Восстановление пароля</div>
-            <div class="reset__text">Сссылка для восстановления пароля отправлена на <a href=""> </a></div>
-          </div><a class="reset__button button-wide --navy" href="" onclick="$.fancybox.close(); return false;">Закрыть</a><a class="reset__close close" href="" onclick="$.fancybox.close(); return false;"> <img src="images/modals/close.svg" alt=""></a>
+        <div class="reset__wrapper modal">
+          <div class="reset__top modal__top">
+            <div class="reset__title modal__title title --small">Восстановление пароля</div>
+            <div class="reset__text">Сссылка для восстановления пароля отправлена на <a class="js-send-password-to" href=""> </a></div>
+          </div><a class="reset__button modal__button button --wide --navy" href="" onclick="$.fancybox.close(); return false;">Закрыть</a><a class="reset__close modal__close" href="" onclick="$.fancybox.close(); return false;"> <img src="images/modals/close.svg" alt=""></a>
         </div>
       </form>
     </div>
@@ -150,25 +150,25 @@
             <div class="product-order__title-height"> 
               <div class="product-order__title title --medium">Personalized Dog Leash Hanger, Dog Leash Hook, Dog Gift Personalized with Name</div>
             </div>
-            <div class="product-order__prices">
-              <div class="product-order__prices-wrapper prices-wrapper">
-                <div class="product-order__prices-box prices-box"> 
-                  <div class="product-order__prices-dollar prices --navy">$23.99</div>
+            <div class="product-order__prices prices">
+              <div class="product-order__prices-wrapper prices__wrapper">
+                <div class="product-order__prices-box">
+                  <div class="product-order__prices-dollar prices__price --navy">$23.99</div>
                 </div>
-                <div class="product-order__prices-box prices-box">
-                  <div class="product-order__prices-euro prices --gray">18.34 €</div>
+                <div class="product-order__prices-box">
+                  <div class="product-order__prices-euro prices__price --gray">18.34 €</div>
                 </div>
               </div>
             </div>
             <form class="product-order__details" action="#" method="get">
               <div class="product-order__inscription-quantity">
                 <div class="product-order__inscription"> 
-                  <div class="product-order__inscription-title subtitle">Apply the inscription on the product</div>
+                  <div class="product-order__inscription-title title --sub">Apply the inscription on the product</div>
                   <input class="product-order__inscription-input input" type="text" placeholder="I'am mrbig">
                   <div class="product-order__inscription-example">Example: Enter the name you want  on the necklace. Max 10 characters, no spaces, no special charachters. Thank you.</div>
                 </div>
                 <div class="product-order__quantity"> 
-                  <div class="product-order__quantity-title subtitle">Quantity</div>
+                  <div class="product-order__quantity-title title --sub">Quantity</div>
                   <select class="product-order__quantity-select" name="select">
                     <option class="product-order__quantity-option"></option>
                     <option class="product-order__quantity-option" value="1">1</option>
@@ -179,8 +179,8 @@
                 </div>
               </div>
               <div class="product-buttons">
-                <button class="product-buttons__button-buy button-wide" type="submit">Buy it now</button>
-                <button class="product-buttons__button-add button-wide --navy" type="submit">Add to cart<img src="images/product-buttons/add.svg" alt=""></button>
+                <button class="product-buttons__button-buy button --wide" type="submit">Buy it now</button>
+                <button class="product-buttons__button-add button --wide --navy" type="submit">Add to cart<img src="images/product-buttons/add.svg" alt=""></button>
               </div>
             </form>
           </div>
@@ -213,17 +213,17 @@
               </div>
             </div>
             <div class="description__product-more">
-              <div class="description__product-more-button button-more js-button-more"><a href="">More about product<img src="images/button-more/arrow.png" alt=""></a><a class="--noshow" href="">Show less<img src="images/button-more/arrow.png" alt=""></a></div>
+              <div class="description__product-more-button button --more js-button-more"><a href="">More about product<img src="images/button-more/arrow.png" alt=""></a><a class="--noshow" href="">Show less<img src="images/button-more/arrow.png" alt=""></a></div>
             </div>
           </div>
           <div class="description__delivery">
             <div class="description__delivery-title title --small">Delivery details</div>
             <div class="description__delivery-column"> 
-              <div class="description__delivery-subtitle subtitle">Ready to ship </div>
+              <div class="description__delivery-subtitle title --sub">Ready to ship </div>
               <div class="description__delivery-text">in 2–4 business days From Ukraine</div>
             </div>
             <div class="description__delivery-column"> 
-              <div class="description__delivery-subtitle subtitle">Returns and exchanges accepted</div>
+              <div class="description__delivery-subtitle title --sub">Returns and exchanges accepted</div>
               <div class="description__delivery-text">Exceptions may apply. See return policy </div>
             </div>
           </div>
@@ -236,7 +236,7 @@
           <div class="reviews__top"> 
             <div class="reviews__top-title title --small">Reviews</div>
             <div class="reviews__top-stars"><img src="images/reviews/stars_1.png" alt=""></div>
-            <div class="reviews__top-total subtitle">(45)</div>
+            <div class="reviews__top-total title --sub">(45)</div>
           </div>
           <div class="reviews__list"> 
             <div class="reviews__list-column">
@@ -248,7 +248,7 @@
                 <div class="reviews__list-product"><img src="images/reviews/1.1.jpg" alt=""></div>
                 <div class="reviews__list-person"> <img src="images/reviews/1.1.png" alt=""></div>
                 <div class="reviews__list-person-info"> 
-                  <div class="reviews__list-person-name subtitle">Alexander</div>
+                  <div class="reviews__list-person-name title --sub">Alexander</div>
                   <div class="reviews__list-date">12 sept 2019 г</div>
                 </div>
               </div>
@@ -262,7 +262,7 @@
                 <div class="reviews__list-product"><img src="images/reviews/2.1.jpg" alt=""></div>
                 <div class="reviews__list-person"> <img src="images/reviews/2.1.png" alt=""></div>
                 <div class="reviews__list-person-info"> 
-                  <div class="reviews__list-person-name subtitle">Kate</div>
+                  <div class="reviews__list-person-name title --sub">Kate</div>
                   <div class="reviews__list-date">15 may 2019 г</div>
                 </div>
               </div>
@@ -276,7 +276,7 @@
                 <div class="reviews__list-product"><img src="images/reviews/3.1.jpg" alt=""></div>
                 <div class="reviews__list-person"> <img src="images/reviews/3.1.png" alt=""></div>
                 <div class="reviews__list-person-info"> 
-                  <div class="reviews__list-person-name subtitle">Jenifer</div>
+                  <div class="reviews__list-person-name title --sub">Jenifer</div>
                   <div class="reviews__list-date">14 march 2019 г</div>
                 </div>
               </div>
@@ -290,14 +290,14 @@
                 <div class="reviews__list-product"><img src="images/reviews/1.1.jpg" alt=""></div>
                 <div class="reviews__list-person"> <img src="images/reviews/1.1.png" alt=""></div>
                 <div class="reviews__list-person-info"> 
-                  <div class="reviews__list-person-name subtitle">Alexander</div>
+                  <div class="reviews__list-person-name title --sub">Alexander</div>
                   <div class="reviews__list-date">12 sept 2019 г</div>
                 </div>
               </div>
             </div>
           </div>
           <div class="reviews__list-more">
-            <div class="reviews__list-more-button button-more js-button-more"><a href="">23 more reviews<img src="images/button-more/arrow.png" alt=""></a><a class="--noshow" href="">Show less<img src="images/button-more/arrow.png" alt=""></a></div>
+            <div class="reviews__list-more-button button --more js-button-more"><a href="">23 more reviews<img src="images/button-more/arrow.png" alt=""></a><a class="--noshow" href="">Show less<img src="images/button-more/arrow.png" alt=""></a></div>
           </div>
         </div>
       </div>

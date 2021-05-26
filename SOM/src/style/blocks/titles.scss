@@ -3,6 +3,12 @@
   font-weight: 900;
   line-height: 110%;
   color: $navy-dark;
+  &.--sub {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
   &.--medium {
     font-weight: 800;
     font-size: 24px;
@@ -12,12 +18,4 @@
     font-size: 18px;
     line-height: 24px;
   }
-}
-
-.subtitle {
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  color: $navy-dark;
 }

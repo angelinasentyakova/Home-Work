@@ -11,6 +11,7 @@
     font-size: 16px;
     line-height: 20px;
   }
+
   &__button-buy {
     margin: 0px 24px 0px 0px;
     @include small-desktop {
@@ -20,6 +21,7 @@
       margin: 0;
     }
   }
+
   &__button-add {
     position: relative;
     padding: 0px 0px 0px 19px;

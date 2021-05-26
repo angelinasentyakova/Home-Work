@@ -1,0 +1,20 @@
+.input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid $gray;
+  border-radius: 4px;
+  padding: 11px 16px;
+  color: $gray-superdark;
+  &::placeholder {
+    color: $gray-superdark;
+  }
+  &:-ms-input-placeholder {
+    color: $gray-superdark;
+  }
+  &:enabled:hover {
+    border: 1px solid $gray-darker;
+  }
+  &:focus {
+    border: 1px solid $gray-dark;
+  }
+}

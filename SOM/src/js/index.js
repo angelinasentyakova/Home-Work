@@ -3,5 +3,6 @@
 //= components/Gallery.js
 //= components/Crop.js
 //= components/MoreInfo.js
-//= components/Modals.js
+//= components/Fancybox.js
+//= components/FormsModal.js
 //= components/Burger.js

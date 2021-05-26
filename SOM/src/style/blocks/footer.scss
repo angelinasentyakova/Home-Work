@@ -1,17 +1,21 @@
 .footer {
-  background: $footer;
+  background: $blue-deep;
+
   &__top {
     padding: 58px 0px 45px 0px;
     @include tablet {
       padding: 30px 0px 15px 0px;
     }
   }
+
   &__top-wrapper {
     display: flex;
   }
+
   &__top-column {
     flex: 0 0 25%;
   }
+
   &__top-title {
     font-family: Montserrat;
     font-weight: 800;
@@ -23,6 +27,7 @@
       line-height: 40px;
     }
   }
+
   &__top-link {
     font-size: 14px;
     line-height: 200%;
@@ -35,7 +40,7 @@
       display: none;
     }
     & a {
-      color: $pale-blue;
+      color: $blue-pale;
       position: relative;
       &:after {
         content: "";
@@ -44,7 +49,7 @@
         bottom: -1px;
         left: 0;
         height: 1px;
-        background: $footer-blue;
+        background: $blue-lighter;
         width: 0px;
         z-index: 3;
         transition: $transition;
@@ -56,9 +61,11 @@
       }
     }
   }
+
   &__bottom {
-    background: $footer-bottom;
+    background: $black-lighter;
   }
+
   &__bottom-wrapper {
     display: flex;
     justify-content: space-between;
@@ -68,24 +75,29 @@
       height: 80px;
     }
   }
+
   &__bottom-left {
     display: flex;
   }
+
   &__bottom-logo {
     margin: 0px 25px 0px 0px;
     @include tablet {
       margin: 0px 15px 0px 0px;
     }
   }
+
   &__bottom-solma {
     font-size: 14px;
     line-height: 150%;
-    color: $footer-blue;
+    color: $blue-lighter;
     padding: 3px 0px 0px 0px;
   }
+
   &__bottom-list {
     display: flex;
   }
+
   &__bottom-link {
     font-size: 14px;
     line-height: 150%;
@@ -93,7 +105,7 @@
     margin: 0px 0px 0px 50px;
     position: relative;
     & a {
-      color: $footer-blue;
+      color: $blue-lighter;
       padding: 3px 0px 0px 0px;
       &:after {
         content: "";
@@ -102,7 +114,7 @@
         bottom: 0px;
         left: 0;
         height: 1px;
-        background: $footer-blue;
+        background: $blue-lighter;
         width: 0px;
         z-index: 3;
         transition: $transition;
