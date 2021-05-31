@@ -4,5 +4,6 @@
 //= components/Crop.js
 //= components/MoreInfo.js
 //= components/Fancybox.js
-//= components/FormsModal.js
+//= components/FormValidation.js
 //= components/Burger.js
+//= components/Ajax.js

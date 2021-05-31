@@ -29,34 +29,21 @@
   }
 }
 
-.sign-in {
-  display: none;
-  &.fancybox-content {
-    padding: 0;
-  }
-  &__problem {
-    display: inline-block;
-  }
-  &__middle {
-    padding: 30px 60px;
-    border-bottom: 1px solid $gray;
-  }
-  &__google {
-    background: $red;
-    margin: 0px 0px 20px 0px;
-  }
-  &__facebook {
-    background: $blue-dark;
-    & img {
-      right: 23px;
-    }
-  }
-}
 
 .registration {
   display: none;
   &.fancybox-content {
     padding: 0;
+  }
+  &__title {
+    padding: 0px 0px 10px 0px;
+  }
+  &__label {
+    display: block;
+    margin: 17px 0px 0px 0px;
+    & .error {
+      color: red;
+    }
   }
 }
 
@@ -70,7 +57,21 @@
   }
 }
 
+.success {
+  display: none;
+  &.fancybox-content {
+    padding: 0;
+  }
+}
+
 .reset {
+  display: none;
+  &.fancybox-content {
+    padding: 0;
+  }
+}
+
+.errors {
   display: none;
   &.fancybox-content {
     padding: 0;

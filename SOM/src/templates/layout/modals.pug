@@ -1,51 +1,40 @@
 .modals
-  form.sign-in.js-sign-in(action="#", method="post", id="sign-in") 
-    .sign-in__wrapper.modal
-      .sign-in__top.modal__top
-        .sign-in__title.modal__title.title.--small Вход / Регистрация
-        label.sign-in__label(for="email") Email
-        input.sign-in__input.input.js-email(type="email", placeholder="Alexander.Ivanov@gmail.com")
-        a.sign-in__problem(href="") Проблема с входом ?
-      .sign-in__middle
-        a.sign-in__google.button.--social(href="") Войти через Google
-          img(src="images/modals/google.svg", alt="") 
-        a.sign-in__facebook.button.--social(href="") Войти через Facebook
-          img(src="images/modals/facebook.svg", alt="")
-      a.sign-in__coninue.modal__button.button.--wide(href="") Продолжить как гость
-      a.sign-in__close.modal__close(href="", onclick="$.fancybox.close(); return false;" ) 
-        img(src="images/modals/close.svg", alt="")
-  form.registration(action="#", method="post", id="registration") 
+  form.registration(action="json/responseOk.json", id="registration") 
     .registration__wrapper.modal
       .registration__top.modal__top
-        .registration__title.modal__title.title.--small Регистрация
+        .registration__title.title.--small Регистрация
         label.registration__label Email
-          input.registration__input.modal__input.input(type="email")
+          input.registration__input.input(type="email", pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})", required)
         label.registration__label Новый пароль
-          input.registration__input.modal__input.input(type="password")
+          input.registration__input.input(type="password", name="password" id="password")
         label.registration__label Повторите пароль
-          input.registration__input.modal__input.input(type="password")
-      a.registration__button.modal__button.button.--wide.--navy(href="") Зарегистрироваться
+          input.registration__input.input(type="password", name="passwordConfirm" id="passwordConfirm")
+      button.registration__button.modal__button.button.--wide.--navy(type="submit") Зарегистрироваться
       a.registration__close.modal__close(href="", onclick="$.fancybox.close(); return false;" ) 
         img(src="images/modals/close.svg", alt="")
-  form.authoristaion(action="#", method="post", id="authorisation") 
-    .authoristaion__wrapper.modal
-      .authoristaion__top.modal__top
-        .authoristaion__title.modal__title.title.--small Авторизация
-        label.authoristaion__label Почта
-          input.authoristaion__input.modal__input.input(type="email")
-        label.authoristaion__label Пароль
-          input.authoristaion__input.modal__input.--nomargin.input(type="password")
-        a.authoristaion__registration(href="") Регистрация
-        a.authoristaion__forgot-password.js-fancybox(href="#reset") Восстановить пароль
-      a.authoristaion__button.modal__button.button.--wide.--navy(href="") Войти
-      a.authorisation__close.modal__close(href="", onclick="$.fancybox.close(); return false;" ) 
+  form.success(action="#", id="success") 
+    .success__wrapper.modal
+      .success__top.modal__top
+        .success__title.modal__title.title.--small Информация
+        .success__text Вы авторизированы под ID 
+          a.js-id(href="") 
+      a.success__button.modal__button.button.--wide.--navy(href="", onclick="$.fancybox.close(); return false;") Закрыть
+      a.success__close.modal__close(href="", onclick="$.fancybox.close(); return false;" ) 
         img(src="images/modals/close.svg", alt="")
-  form.reset(action="#", method="post", id="reset") 
+  form.reset(action="#",  id="reset") 
     .reset__wrapper.modal
       .reset__top.modal__top
-        .reset__title.modal__title.title.--small Восстановление пароля
-        .reset__text Сссылка для восстановления пароля отправлена на 
+        .reset__title.modal__title.title.--small Предупреждение
+        .reset__text.js-text 
           a.js-send-password-to(href="") 
       a.reset__button.modal__button.button.--wide.--navy(href="", onclick="$.fancybox.close(); return false;") Закрыть
       a.reset__close.modal__close(href="", onclick="$.fancybox.close(); return false;" ) 
         img(src="images/modals/close.svg", alt="")
+  form.errors(action="#")
+    .errors__wrapper.modal
+        .errors__top.modal__top
+          .errors__title.modal__title.title.--small Ошибка сервера
+          .errors__text.js-error  
+        a.errors__button.modal__button.button.--wide.--navy(href="", onclick="$.fancybox.close(); return false;") Закрыть
+        a.error_s_close.modal__close(href="", onclick="$.fancybox.close(); return false;" ) 
+          img(src="images/modals/close.svg", alt="")

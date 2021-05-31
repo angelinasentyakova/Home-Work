@@ -4,9 +4,6 @@ $(function () {
   });
 
   $.extend($.fancybox.defaults, {
-    afterClose: function () {
-      $('.js-email').val('');
-    },
     modal: true,
   });
 

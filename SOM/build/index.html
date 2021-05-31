@@ -30,7 +30,7 @@
             </select>
           </div>
           <div class="header__top-cart"> <a href=""> <img src="images/header/cart.svg" alt="Shopping cart"></a><span>34</span></div>
-          <div class="header__top-profile --clickable"><a class="js-fancybox" href="#sign-in"><img src="images/header/profile.svg" alt="Profile"></a>
+          <div class="header__top-profile --clickable"><a class="js-fancybox" href="#registration"><img src="images/header/profile.svg" alt="Profile"></a>
             <ul class="header__top-profile-list">
               <li class="header__top-profile-link"> <a href="">Посмотреть профиль</a></li>
               <li class="header__top-profile-link --favorite"><a href="">Избранные магазины</a><img src="images/header/like.png" alt="Избранные магазины"></li>
@@ -76,51 +76,45 @@
       </div>
     </header>
     <div class="modals">
-      <form class="sign-in js-sign-in" action="#" method="post" id="sign-in"> 
-        <div class="sign-in__wrapper modal">
-          <div class="sign-in__top modal__top">
-            <div class="sign-in__title modal__title title --small">Вход / Регистрация</div>
-            <label class="sign-in__label" for="email">Email</label>
-            <input class="sign-in__input input js-email" type="email" placeholder="Alexander.Ivanov@gmail.com"><a class="sign-in__problem" href="">Проблема с входом ?</a>
-          </div>
-          <div class="sign-in__middle"><a class="sign-in__google button --social" href="">Войти через Google<img src="images/modals/google.svg" alt=""></a><a class="sign-in__facebook button --social" href="">Войти через Facebook<img src="images/modals/facebook.svg" alt=""></a></div><a class="sign-in__coninue modal__button button --wide" href="">Продолжить как гость</a><a class="sign-in__close modal__close" href="" onclick="$.fancybox.close(); return false;"> <img src="images/modals/close.svg" alt=""></a>
-        </div>
-      </form>
-      <form class="registration" action="#" method="post" id="registration"> 
+      <form class="registration" action="json/responseOk.json" id="registration"> 
         <div class="registration__wrapper modal">
           <div class="registration__top modal__top">
-            <div class="registration__title modal__title title --small">Регистрация</div>
+            <div class="registration__title title --small">Регистрация</div>
             <label class="registration__label">Email
-              <input class="registration__input modal__input input" type="email">
+              <input class="registration__input input" type="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
             </label>
             <label class="registration__label">Новый пароль
-              <input class="registration__input modal__input input" type="password">
+              <input class="registration__input input" type="password" name="password" id="password">
             </label>
             <label class="registration__label">Повторите пароль
-              <input class="registration__input modal__input input" type="password">
+              <input class="registration__input input" type="password" name="passwordConfirm" id="passwordConfirm">
             </label>
-          </div><a class="registration__button modal__button button --wide --navy" href="">Зарегистрироваться</a><a class="registration__close modal__close" href="" onclick="$.fancybox.close(); return false;"> <img src="images/modals/close.svg" alt=""></a>
+          </div>
+          <button class="registration__button modal__button button --wide --navy" type="submit">Зарегистрироваться</button><a class="registration__close modal__close" href="" onclick="$.fancybox.close(); return false;"> <img src="images/modals/close.svg" alt=""></a>
         </div>
       </form>
-      <form class="authoristaion" action="#" method="post" id="authorisation"> 
-        <div class="authoristaion__wrapper modal">
-          <div class="authoristaion__top modal__top">
-            <div class="authoristaion__title modal__title title --small">Авторизация</div>
-            <label class="authoristaion__label">Почта
-              <input class="authoristaion__input modal__input input" type="email">
-            </label>
-            <label class="authoristaion__label">Пароль
-              <input class="authoristaion__input modal__input --nomargin input" type="password">
-            </label><a class="authoristaion__registration" href="">Регистрация</a><a class="authoristaion__forgot-password js-fancybox" href="#reset">Восстановить пароль</a>
-          </div><a class="authoristaion__button modal__button button --wide --navy" href="">Войти</a><a class="authorisation__close modal__close" href="" onclick="$.fancybox.close(); return false;"> <img src="images/modals/close.svg" alt=""></a>
+      <form class="success" action="#" id="success"> 
+        <div class="success__wrapper modal">
+          <div class="success__top modal__top">
+            <div class="success__title modal__title title --small">Информация</div>
+            <div class="success__text">Вы авторизированы под ID <a class="js-id" href=""> </a></div>
+          </div><a class="success__button modal__button button --wide --navy" href="" onclick="$.fancybox.close(); return false;">Закрыть</a><a class="success__close modal__close" href="" onclick="$.fancybox.close(); return false;"> <img src="images/modals/close.svg" alt=""></a>
         </div>
       </form>
-      <form class="reset" action="#" method="post" id="reset"> 
+      <form class="reset" action="#" id="reset"> 
         <div class="reset__wrapper modal">
           <div class="reset__top modal__top">
-            <div class="reset__title modal__title title --small">Восстановление пароля</div>
-            <div class="reset__text">Сссылка для восстановления пароля отправлена на <a class="js-send-password-to" href=""> </a></div>
+            <div class="reset__title modal__title title --small">Предупреждение</div>
+            <div class="reset__text js-text"> <a class="js-send-password-to" href=""> </a></div>
           </div><a class="reset__button modal__button button --wide --navy" href="" onclick="$.fancybox.close(); return false;">Закрыть</a><a class="reset__close modal__close" href="" onclick="$.fancybox.close(); return false;"> <img src="images/modals/close.svg" alt=""></a>
+        </div>
+      </form>
+      <form class="errors" action="#">
+        <div class="errors__wrapper modal">
+          <div class="errors__top modal__top">
+            <div class="errors__title modal__title title --small">Ошибка сервера</div>
+            <div class="errors__text js-error"> </div>
+          </div><a class="errors__button modal__button button --wide --navy" href="" onclick="$.fancybox.close(); return false;">Закрыть</a><a class="error_s_close modal__close" href="" onclick="$.fancybox.close(); return false;"> <img src="images/modals/close.svg" alt=""></a>
         </div>
       </form>
     </div>
