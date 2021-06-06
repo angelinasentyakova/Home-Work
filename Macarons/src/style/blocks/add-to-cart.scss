@@ -1,0 +1,17 @@
+.add-to-cart {
+  margin-left: 20px;
+  position: relative; 
+  top: -3px;
+  &__image {
+    margin-right: 10px;
+  }
+  &__text {
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+      color: $pink;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  transition: $transition-xl;
+
+  &.--framed {
+    color: $black;
+    border: 1px solid $dark-blue;
+    border-radius: 3px;
+    &:hover {
+      background: $dark-blue;
+    }
+  }
+
+  &.--pink {
+    color: $white;
+    background: $pink;
+  }
+
+  &.--hidden {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+}

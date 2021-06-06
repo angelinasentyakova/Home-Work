@@ -1,0 +1,49 @@
+.packages {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+  }
+
+  &__backround {
+    flex: 0 0 50%;
+    position: relative;
+    margin-bottom: 25px;
+    padding: 0px 14px;
+  }
+
+  &__column {
+    position: absolute;
+    top: 36px;
+    left: 86px;
+    text-align: center;
+    width: 423px;
+  }
+
+  &__image {
+    margin-bottom: 20px;
+  }
+  &__more-info {
+    transition: $transition;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  &__title {
+    margin: 0px 10px 10px 0px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  &__arrow {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

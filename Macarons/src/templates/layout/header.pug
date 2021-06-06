@@ -1,0 +1,45 @@
+- let links = ["Свадебные предложения", "Наборы с печатью", "Гарантии вкуса и свежести", "Доставка и оплата", "Контакты"];
+- let rightLinks = ["Каталог десертов ", "Корпоративные подарки", "Оптовикам"];
+
+header.header
+  .container
+    .header__top
+      nav.header__top-menu 
+        ul.header__top-list 
+          for link in links
+            li.header__top-link 
+              a(href="")= link 
+      .header__top-call 
+        img.header__top-call-icon(src="images/icons/header-top/mob.svg", alt="Позвонить")
+        a.header__top-call-number(href="tel:+78123098288") 8 812 309-82-88
+      .header__top-cart
+        img.header__top-cart-icon(src="images/icons/header-top/cart.svg", alt="Корзина")
+        span.header__top-cart-quantity 0
+        a.header__top-cart-text(href="") В корзине 
+          span (0 товаров)
+      .header__top-socials
+        a.header__top-socials-inst(href="")
+          img(src="images/icons/header-top/inst.svg", alt="Инстаграм")
+        a.header__top-socials-fb(href="")
+          img(src="images/icons/header-top/fb.svg", alt="Фейсбук")
+        a.header__top-socials-vk(href="")
+          img(src="images/icons/header-top/vk.svg", alt="Вконтакте")
+  .header__bottom 
+    .container 
+      .header__bottom-wrapper 
+        .header__bottom-left 
+          ul.header__bottom-left-list
+            li.header__bottom-left-link
+              a(href="product.html") Готовые наборы
+            li.header__bottom-left-link
+              a(href="") Собрать свой набор
+            li.header__bottom-left-link
+              a(href="") Акции
+              img(src="images/icons/header-bottom/sale.svg", alt="")
+        .header__bottom-logo 
+          img(src="images/logo.svg", alt="Логотип")
+        .header__bottom-right 
+          ul.header__bottom-right-list 
+            for item in rightLinks  
+              li.header__bottom-right-link
+                a(href="")= item

@@ -1,0 +1,181 @@
+.product-card {
+  display: flex;
+  padding-bottom: 36px;
+  &__pictures {
+    flex: 0 0 50%;
+    margin-right: 15px;
+  }
+
+  &__pictures-main {
+    position: relative;
+    width: 570px;
+    height: 450px;
+    margin-bottom: 12px;
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      z-index: 1;
+      transition: $transition-xl;
+      &.--active {
+        opacity: 1;
+        z-index: 2;
+      }
+    }
+  }
+
+  &__pictures-thumbs {
+    display: flex;
+  }
+
+  &__pictures-thumb {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    transition: $transition-xl;
+    margin-right: 12px;
+    border: 3px solid transparent;
+    &.--active {
+      border: 3px solid $pink;
+      border-radius: 3px;
+    }
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+		&__order {
+		}
+
+		&__order-title {
+      margin-bottom: 13px;
+      line-height: 28px;
+		}
+
+		&__order-text {
+      font-size: 16px;
+line-height: 19px;
+margin-bottom: 24px;
+
+		}
+
+		&__order-options {
+      width: 570px;
+      padding: 25px 28px 18px 25px;
+      background: $white;
+      margin-bottom: 10px;
+      border: 1px solid $gray;
+border-radius: 5px;
+		}
+
+		&__order-tastes {
+      margin-bottom: 8px;
+		}
+
+		&__order-option {
+      font-size: 16px;
+      line-height: 22px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 1px;
+        width: 430px;
+        background: $gray;
+        opacity: 0.6;
+        bottom: 5px;
+        left: 47px;
+      }
+      &:nth-of-type(2) {
+          &:after {
+            left: 65px;
+            width: 410px;
+          }
+      }
+      &:nth-of-type(3) {
+        &:after {
+          left: 55px;
+          width: 415px;
+        }
+    }
+		}
+
+		&__order-flavor {
+      
+      
+		}
+
+		&__order-quantity {
+		}
+
+		&__order-cart {
+      width: 570px;
+      height: 80px;
+      background: $white;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 28px;
+      border: 1px solid $gray;
+      border-radius: 5px;
+		}
+
+		&__order-price-wrapper {
+      width: 200px;
+		}
+
+		&__order-price {
+      font-family: Montserrat;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+color: $pink;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+		}
+
+		&__order-add {
+      padding: 0px 38px 0px 60px;
+height: 50px;
+background: url('../img/product-card/cart.png') right no-repeat;
+border-radius: 3px;
+position: relative;
+& img {
+position: absolute;
+left: 35px;
+top: 14px;
+}
+		}
+
+		&__order-details {
+		}
+
+		&__order-detail {
+      margin-bottom: 7px;
+      display: flex;
+      align-items: center;
+      & img {
+        margin-right: 28px;
+      }
+		}
+
+		&__order-info {
+		}
+    
+
+  }

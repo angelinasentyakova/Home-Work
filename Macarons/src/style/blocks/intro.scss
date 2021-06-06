@@ -1,0 +1,78 @@
+.intro {
+  background: url('../images/intro/blur.png') 104% 40% no-repeat;
+  overflow: hidden;
+  &__wrapper {
+    display: flex;
+    padding-bottom: 43px;
+  }
+
+  &__images {
+    position: relative;
+  }
+
+  &__images-main {
+    width: 760px;
+    height: 480px;
+    position: relative;
+    top: -60px;
+    right: 90px;
+  }
+
+  &__images-macarons {
+    position: absolute;
+    top: 60px;
+    left: -110px;
+    opacity: 0;
+    transition: all .7s linear .4s;
+    &.--active{
+      opacity: 1;
+    }
+  }
+
+  &__images-almonds {
+    position: absolute;
+    top: 40px;
+    left: -25px;
+    transition: all .7s linear .9s;
+    opacity: 0;
+    &.--active{
+      opacity: 1;
+    }
+  }
+
+  &__images-mint {
+    position: absolute;
+    bottom: 77px;
+    left: 2px;
+    transition: all .9s linear 1.5s;
+    opacity: 0;
+    &.--active{
+      opacity: 1;
+    }
+  }
+
+  &__info {
+    text-align: center;
+    flex: 0 0 500px;
+    position: relative;
+    top: 135px;
+    right: 180px;
+  }
+
+  &__info-since {
+    margin-bottom: 24px;
+  }
+
+  &__info-title {
+    margin-bottom: 13px;
+    font-family: Montserrat;
+font-weight: 600;
+font-size: 42px;
+line-height: 51px;
+  }
+
+  &__info-text {
+    font-size: 18px;
+line-height: 22px;
+  }
+}

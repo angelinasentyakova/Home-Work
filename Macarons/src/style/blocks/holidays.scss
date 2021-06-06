@@ -1,0 +1,49 @@
+.holidays {
+  padding: 0px 0px 108px 0px;
+  &__title {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px -15px;
+    position: relative;
+    padding: 0px 15px;
+    &:after {
+      content: '';
+      position: absolute;
+      border: 1px dashed $gray-dark;
+      width: 1000px;
+      top: 31px;
+      left: 90px;
+      z-index: -2;
+    }
+  }
+
+  &__column {
+    flex: 0 0 170px;
+    text-align: center;
+    padding: 0px 15px;
+  }
+
+  &__image {
+    height: 61px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-family: Montserrat;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+width: 150px;
+  }
+
+  &__cup {
+    position: absolute;
+    left: 93px;
+    top: -40px;
+  }
+}

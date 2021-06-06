@@ -1,0 +1,115 @@
+.youlike {
+  padding: 60px 0px 87px 0px;
+  &__title {
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  &__container {
+    height: 413px;
+  }
+  & .swiper-container {
+    margin: 0 -23px 35px -25px;
+    padding: 0 27px;
+    position: relative;
+  }
+
+  &__wrapper {
+    display: flex;
+    margin: 0px -15px;
+  }
+
+  &__column {
+    flex: 0 0 25%;
+    padding: 0px 13px;
+    display: flex;
+    
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    background: $white;
+    border-radius: 5px;
+  }
+
+  &__image {
+    margin-bottom: 22px;
+  }
+
+  &__name {
+    margin-bottom: 7px;
+    padding: 0px 18px 0px 21px;
+  }
+
+  &__text-wrapper {
+    padding: 0px 18px 0px 21px;
+    flex: 1 0 auto;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__text {
+    
+  }
+
+  &__order {
+    display: flex;
+    border-top: 1px solid $gray;
+  }
+
+  &__prices {
+    width: 125px;
+    padding: 9px 0px 13px 22px;
+    border-right: 1px solid $gray;
+  }
+
+  &__price-old {
+    white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+color: $gray-deep;
+position: relative;
+margin-bottom: 4px;
+font-family: Montserrat;
+
+&:after {
+  content: '';
+  width: 49px;
+  height: 1px;
+  background: $gray-deep;
+  top: 8px;
+  left: 0px;
+  position: absolute;
+}
+  }
+
+  &__price {
+    white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+color: $pink;
+  }
+  & .swiper-button-prev,
+  .swiper-button-next {
+    top: 27%;
+    position: absolute;
+    &:after {
+    display: none;
+    }
+    &.swiper-button-disabled {
+      opacity: 1;
+    } 
+  }
+  &__all-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  &__all {
+    width: 289px;
+height: 50px;
+  }
+}

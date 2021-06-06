@@ -1,0 +1,25 @@
+@import "libs";
+@import "constants";
+@import "mixins";
+
+//какие-то глобальные стили
+@import "common/fonts";
+@import "common/base";
+@import "common/title";
+@import "common/button";
+
+
+//Ваши блоки
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/packages";
+@import "blocks/specials";
+@import "blocks/holidays";
+@import "blocks/popular";
+@import "blocks/wecare";
+@import "blocks/breadcrumbs";
+@import "blocks/product-card";
+@import "blocks/tabs";
+@import "blocks/youlike";
+@import "blocks/add-to-cart";
+@import "blocks/footer";

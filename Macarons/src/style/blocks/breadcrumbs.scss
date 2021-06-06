@@ -1,0 +1,21 @@
+.breadcrumbs {
+  padding: 34px 0px 36px 0px;
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    background: url('../img/breadcrumbs/arrow.png') 99% 3px no-repeat;
+    padding-right: 13px;
+    & a{
+    color: rgba(41, 41, 41, 0.46);
+    }
+    &:last-child {
+      background: none;
+      & a {
+      color: $dark-blue;
+      }
+    }
+  }
+}
