@@ -1,8 +1,14 @@
 .breadcrumbs {
   padding: 34px 0px 36px 0px;
+  @include tablet {
+    padding: 13px 0px 14px 15px;
+  }
   &__list {
     display: flex;
     justify-content: center;
+    @include tablet {
+      justify-content: flex-start;
+    }
   }
 
   &__link {
@@ -10,11 +16,19 @@
     padding-right: 13px;
     & a{
     color: rgba(41, 41, 41, 0.46);
+    transition: $transition;
+    &:hover {
+      color: $dark-blue;
+    }
     }
     &:last-child {
       background: none;
       & a {
       color: $dark-blue;
+      transition: $transition;
+      &:hover {
+        color: rgba(41, 41, 41, 0.46);
+      }
       }
     }
   }

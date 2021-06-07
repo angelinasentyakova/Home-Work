@@ -20,6 +20,10 @@
   &.--pink {
     color: $white;
     background: $pink;
+    transition: $transition;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   &.--hidden {

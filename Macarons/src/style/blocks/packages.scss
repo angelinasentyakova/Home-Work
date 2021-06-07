@@ -3,6 +3,9 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0px -15px;
+    @include tablet {
+      justify-content: center;
+    }
   }
 
   &__backround {
@@ -10,18 +13,38 @@
     position: relative;
     margin-bottom: 25px;
     padding: 0px 14px;
+    & > img {
+    @include small-desktop {
+        width: 433px;
+        height: 200px;
+      }
+    }
   }
 
   &__column {
     position: absolute;
+    cursor: pointer;
     top: 36px;
     left: 86px;
     text-align: center;
     width: 423px;
+    @include small-desktop {
+      left: 25px;
+      top: 20px;
+    }
   }
 
   &__image {
     margin-bottom: 20px;
+    @include small-desktop {
+      margin-bottom: 10px;
+    }
+    & img {
+      @include small-desktop {
+          height: 80px;
+          width: 80px;
+      }
+    }
   }
   &__more-info {
     transition: $transition;
@@ -33,6 +56,10 @@
     margin: 0px 10px 10px 0px;
     display: inline-block;
     cursor: pointer;
+    @include small-desktop {
+      margin: 0px 5px 8px 0px;
+      
+    }
   }
 
   &__arrow {

@@ -17,6 +17,10 @@ font-weight: 600;
 font-size: 14px;
 line-height: 17px;
 position: relative;
+transition: $transition;
+&:hover {
+  color: $pink;
+}
 &:before {
   content: '';
   position: absolute;
@@ -34,11 +38,22 @@ position: relative;
     transform: scale(1);
 }
 }
+&:first-of-type {
+  @include tablet {
+    display: none;
+  }
+  }
   }
 
   &__content {
     height: 154px;
     position: relative;
+    @include small-desktop {
+      height: 110px;
+    }
+    @include tablet {
+      height: 100px;
+    }
   }
 
   &__content-item {
@@ -53,11 +68,24 @@ opacity: 1;
 height: 0;
 color: transparent;
 transition: $transition;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 8;
+-webkit-box-orient: vertical;
 &.--active {
   visibility: visible;
   opacity: 1;
   height: 154px;
   color: $base-color;
 }
+&:first-of-type {
+  @include tablet {
+    display: none;
+  }
+  }
+  @include small-desktop  {
+    top: -20px;
+  }
 }
 }

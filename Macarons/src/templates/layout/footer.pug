@@ -1,6 +1,6 @@
 - let features = [{img: "images/icons/footer-features/1.svg", text: "Готовим вручную и с любовью"}, {img: "images/icons/footer-features/2.svg", text: "Доставим <br>в день заказа"}, {img: "images/icons/footer-features/3.svg", text: "100% <br>миндальная мука и натуральные ингредиенты"}];
 
-- let socials = ["images/icons/footer-socials/inst.png", "images/icons/footer-socials/fb.png", "images/icons/footer-socials/vk.png"];
+- let socials = [{normal: "images/icons/footer-socials/inst.png", hover: "images/icons/footer-socials/inst-h.png"}, {normal: "images/icons/footer-socials/fb.png", hover: "images/icons/footer-socials/fb-h.png"}, {normal: "images/icons/footer-socials/vk.png", hover: "images/icons/footer-socials/vk-h.png"}];
 
 mixin footerList(title, ...items)
   .footer__info-item
@@ -22,8 +22,9 @@ footer.footer
                 img(src=feature.img, alt="")
               .footer__features-text !{feature.text}
         .footer__features-bottom 
-          .footer__features-address © 2021 Макароншоп 
-            #br ООО "Квантум", Санкт-Петербург,  улица Маршала Тухачевского, дом 22
+          .footer__features-address © 2021 Макароншоп ООО "Квантум", Санкт-Петербург,  улица Маршала Тухачевского, 
+            span дом
+            | 22
       .footer__info 
         +footerList("Информация", 'О компании','Гарантии вкуса и <br>свежести','Доставка и оплата','Контакты')
         +footerList("Каталог", 'Каталог десертов', 'Готовые наборы', 'Собрать свой набор','Акции')  
@@ -35,4 +36,5 @@ footer.footer
         .footer__contacts-socials 
           for social in socials
             a.footer__contacts-social(href="")
-              img(src=social, alt="")
+              img(src=social.normal, alt="").footer__contacts-social-normal
+              img(src=social.hover, alt="").footer__contacts-social-hover

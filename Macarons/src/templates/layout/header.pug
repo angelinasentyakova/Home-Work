@@ -4,11 +4,15 @@
 header.header
   .container
     .header__top
-      nav.header__top-menu 
+      .header__top-burger 
+        span
+      nav.header__top-menu  
         ul.header__top-list 
           for link in links
             li.header__top-link 
               a(href="")= link 
+      .header__top-logo-mobile 
+        img(src="images/logo-mob.png", alt="")
       .header__top-call 
         img.header__top-call-icon(src="images/icons/header-top/mob.svg", alt="Позвонить")
         a.header__top-call-number(href="tel:+78123098288") 8 812 309-82-88

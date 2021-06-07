@@ -14,12 +14,23 @@
     &.--opened {
       height: 1984px;
     }
+    @include small-desktop {
+      margin: 0;
+    }
+    @include tablet {
+      justify-content: center;
+    }
   }
 
   &__column {
     flex: 0 0 33.333%;
     padding: 0px 13px;
     margin-bottom: 35px;
+    @include small-desktop {
+      flex: 0 0 25%;
+      padding: 0px 39px;
+    }
+    
   }
 
   &__item {
@@ -79,6 +90,12 @@
     overflow: hidden;
   }
 
+  &__add {
+    margin-left: 20px;
+  position: relative; 
+  top: -3px;
+  }
+
   &__button-flex {
     display: flex;
     justify-content: center;
@@ -88,5 +105,8 @@
     width: 293px;
     height: 52px;
     text-align: center;
+    @include small-desktop {
+      margin-bottom: 50px;
+    }
   }
 }

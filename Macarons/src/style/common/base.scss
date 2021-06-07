@@ -100,4 +100,10 @@ u {
 .container {
   max-width: 1168px;
   margin: 0 auto;
+  @include small-desktop {
+    max-width: 900px;
+  }
+  @include tablet {
+    max-width: 600px;
+  }
 }

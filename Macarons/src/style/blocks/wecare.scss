@@ -1,5 +1,8 @@
 .wecare {
   padding: 0px 0px 76px 0px;
+  @include tablet {
+    padding: 0px 0px 40px 0px;
+  }
   &__title {
     text-align: center;
     margin-bottom: 40px;
@@ -8,11 +11,18 @@
   &__row {
     display: flex;
     margin: 0px -16px;
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__column {
     flex: 0 0 25%;
     padding: 0px 14px;
+    @include tablet {
+      margin-bottom: 16px;
+    }
   }
 
   &__item {
@@ -20,13 +30,26 @@
 
   &__image {
     margin-bottom: 29px;
+    @include small-desktop {
+      & img {
+      width: 200px;
+      height: 200px;
+      }
+    }
   }
 
   &__subtitle {
     margin-bottom: 9px;
+    @include small-desktop {
+      height: 40px;
+      margin-bottom: 12px;
+    }
   }
 
   &__text {
+    @include small-desktop {
+      font-size: 16px;
+    }
   }
 }
 

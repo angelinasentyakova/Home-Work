@@ -4,13 +4,56 @@
     display: flex;
     align-items: center;
     height: 48px;
+    position: relative;
+    @include tablet {
+      justify-content: space-between;
+      height: 59px;
+    }
   }
 
   &__bottom {
     background: $white;
     padding: 19px 0px 17px 0px;
+    @include tablet {
+      padding: 0;
+    }
   }
-
+  &__top-menu {
+    @include tablet {
+      display: none;
+    }
+  }
+  &__top-burger {
+    display: none;
+    @include tablet {
+      display: block;
+      margin-right: 55px;
+      &:before, &:after, span {
+        position: absolute;
+        left: 18px;
+        height: 2px;
+        width: 20px;
+        transition: all 0.3s ease 0s;
+        background-color: #000;
+        border-radius: 5px;
+      }
+      &:before, &:after {
+        content: "";
+      }
+      &:before{
+        top: 23px;
+      }
+      &:after {
+        bottom: 22px;
+        width: 12px;
+      }
+      span {
+        top: 50%;
+        transform: translate(0px, -50%);
+      }
+    
+    }
+  }
   &__top-list {
     display: flex;
     margin-right: 16px;
@@ -32,11 +75,22 @@
     &:hover:after {
       width: 100%;
     }
+    @include small-desktop {
+    margin: 0px 14px 0px 0px;
+    }
   }
-
+  &__top-logo-mobile {
+    display: none;  
+    @include tablet {
+      display: block;
+    }
+  }
   &__top-call {
     display: flex;
     align-items: center;
+    @include small-desktop {
+    display: none;
+    }
   }
 
   &__top-call-icon {
@@ -62,6 +116,13 @@
     align-items: center;
     position: relative;
     width: 197px;
+    @include small-desktop {
+    width: 174px;
+    }
+    @include tablet {
+      width: auto;
+      padding-right: 16px;
+    }
   }
 
   &__top-cart-icon {
@@ -92,6 +153,9 @@
     &:hover {
       color: $pink;
     }
+    @include small-desktop {
+      display: none;
+    }
   }
 
   &__top-socials {
@@ -99,6 +163,9 @@
     align-items: center;
     & img:hover {
       opacity: 0.6;
+    }
+    @include small-desktop {
+    display: none;
     }
   }
 
@@ -144,6 +211,9 @@
 
   &__bottom-left-list {
     display: flex;
+    @include tablet {
+      display: none;
+    }
   }
 
   &__bottom-left-link {
@@ -153,11 +223,20 @@
       position: relative;
       bottom: 3px;
     }
+    @include small-desktop {
+      margin-left: 44px;
+      &:first-child {
+        display: none;
+      }
+    }
   }
 
   &__bottom-logo {
     margin: 0px 41px 0px 37px;
     cursor: pointer;
+    @include tablet {
+      display: none;
+    }
   }
 
   &__bottom-right {
@@ -169,6 +248,9 @@
 
   &__bottom-right-list {
     display: flex;
+    @include tablet {
+      display: none;
+    }
   }
 
   &__bottom-right-link {
@@ -176,5 +258,14 @@
     &:last-child {
       margin: 0;
     }
+    @include small-desktop {
+      margin-right: 45px;
+      &:nth-child(2) {
+      display: none;
+    }
+    &:last-child {
+      margin-right: 45px;
+    }
   }
+}
 }
