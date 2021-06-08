@@ -15,6 +15,10 @@
       flex-wrap: wrap;
       justify-content: center;
     }
+    @include tablet {
+      margin: 0;
+      paddong: 0px 12px;
+    }
   }
 
   &__column {
@@ -23,6 +27,9 @@
     @include tablet {
       margin-bottom: 16px;
     }
+    @include tablet {
+      padding: 0px 4px;
+    }
   }
 
   &__item {
@@ -30,11 +37,17 @@
 
   &__image {
     margin-bottom: 29px;
+    & img {
     @include small-desktop {
-      & img {
       width: 200px;
       height: 200px;
       }
+      @include phone {
+        width: 140px;height: 140px;
+      }
+    }
+    @include tablet {
+      margin-bottom: 15px;
     }
   }
 
@@ -44,11 +57,23 @@
       height: 40px;
       margin-bottom: 12px;
     }
+    &.--small{
+    @include tablet {
+      margin-bottom: 10px;
+      font-size: 12px;
+      line-height: 14px;
+      height: auto;
+    }
+  }
   }
 
   &__text {
     @include small-desktop {
       font-size: 16px;
+    }
+    @include tablet {
+      font-size: 10px;
+      line-height: 12px;
     }
   }
 }

@@ -17,8 +17,8 @@
     <header class="header">
       <div class="container">
         <div class="header__top">
-          <div class="header__top-burger"> <span></span></div>
-          <nav class="header__top-menu"> 
+          <div class="header__top-burger js-burger-icon"> <span></span></div>
+          <nav class="header__top-menu js-burger-menu"> 
             <ul class="header__top-list"> 
               <li class="header__top-link"> <a href="">Свадебные предложения</a></li>
               <li class="header__top-link"> <a href="">Наборы с печатью</a></li>
@@ -76,21 +76,29 @@
         </div>
         <div class="product-card__order"> 
           <div class="product-card__order-title title">Сердце</div>
-          <div class="product-card__order-text">40 макаронс в круглой коробке с персональной надписью</div>
+          <div class="product-card__order-text-container">
+            <div class="product-card__order-text">40 макаронс в круглой коробке с персональной надписью</div>
+          </div>
           <div class="product-card__order-options"> 
-            <div class="product-card__order-tastes title --small">Вкусы:</div>
-            <div class="product-card__order-option"> 
-              <div class="product-card__order-flavor">Яблоко</div>
-              <div class="product-card__order-quantity">4 шт.</div>
+            <div class="product-card__order-tastes title --small">Вкусы:<img class="product-card__order-arrow js-accordion-switch" src="images/icons/accordion.svg" alt=""></div>
+            <div class="product-card__order-list js-accordion-list"> 
+              <div class="product-card__order-option"> 
+                <div class="product-card__order-flavor">Яблоко</div>
+                <div class="product-card__order-quantity">4 шт.</div>
+              </div>
+              <div class="product-card__order-option"> 
+                <div class="product-card__order-flavor">Вишня</div>
+                <div class="product-card__order-quantity">12 шт.</div>
+              </div>
+              <div class="product-card__order-option"> 
+                <div class="product-card__order-flavor">Кокос</div>
+                <div class="product-card__order-quantity">8 шт.</div>
+              </div>
             </div>
-            <div class="product-card__order-option"> 
-              <div class="product-card__order-flavor">Вишня</div>
-              <div class="product-card__order-quantity">12 шт.</div>
-            </div>
-            <div class="product-card__order-option"> 
-              <div class="product-card__order-flavor">Кокос</div>
-              <div class="product-card__order-quantity">8 шт.</div>
-            </div>
+            <div class="product-card__order-mobile title --small">Состав и пищевая ценность<img class="product-card__order-mobile-arrow js-accordion-switch" src="images/icons/accordion.svg" alt=""></div>
+            <div class="product-card__order-mobile-list js-accordion-list"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, pariatur!</div>
+            <div class="product-card__order-mobile title --small">Условия и срок хранения<img class="product-card__order-mobile-arrow js-accordion-switch" src="images/icons/accordion.svg" alt=""></div>
+            <div class="product-card__order-mobile-list js-accordion-list"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non velit voluptatibus est odio?</div>
           </div>
           <div class="product-card__order-cart"> 
             <div class="product-card__order-price-wrapper"> 

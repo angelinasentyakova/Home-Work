@@ -20,7 +20,19 @@
   }
   &__top-menu {
     @include tablet {
-      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: translate(-100%, 0px);
+      background-color: $pink-light;
+      transition: left 0.3s ease 0s;
+      overflow: auto;
+      z-index: 5;
+      &.--active {
+        transform: translate(0px, 0px);
+      }
     }
   }
   &__top-burger {
@@ -28,7 +40,10 @@
     @include tablet {
       display: block;
       margin-right: 55px;
-      &:before, &:after, span {
+      z-index: 7;
+      &:before,
+      &:after,
+      span {
         position: absolute;
         left: 18px;
         height: 2px;
@@ -37,10 +52,11 @@
         background-color: #000;
         border-radius: 5px;
       }
-      &:before, &:after {
+      &:before,
+      &:after {
         content: "";
       }
-      &:before{
+      &:before {
         top: 23px;
       }
       &:after {
@@ -51,19 +67,27 @@
         top: 50%;
         transform: translate(0px, -50%);
       }
-    
     }
   }
+
   &__top-list {
     display: flex;
     margin-right: 16px;
+    @include tablet {
+      flex-direction: column;
+      padding: 299px 0px 0px 0px;
+      border-bottom: 1px solid $gray-dark;
+      margin: 0px 19px 0px 19px;
+      font-size: 14px;
+      line-height: 17px;
+    }
   }
 
   &__top-link {
     margin: 0px 14px 0px 0px;
     position: relative;
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       height: 1px;
       width: 0;
@@ -71,25 +95,47 @@
       bottom: -1px;
       left: 0;
       transition: $transition;
+      @include tablet {
+        display: none;
+      }
     }
     &:hover:after {
       width: 100%;
     }
     @include small-desktop {
-    margin: 0px 14px 0px 0px;
+      margin: 0px 14px 0px 0px;
+    }
+    @include tablet {
+      margin: 0px 0px 14px 0px;
+      text-align: center;
+    }
+    &:last-child {
+      @include tablet {
+        margin-bottom: 24px;
+      }
     }
   }
+
   &__top-logo-mobile {
-    display: none;  
+    display: none;
     @include tablet {
       display: block;
     }
   }
+
   &__top-call {
     display: flex;
     align-items: center;
     @include small-desktop {
-    display: none;
+      display: none;
+    }
+    @include tablet {
+      display: block;
+      z-index: 5;
+      position: absolute;
+      top: 476px;
+      left: 50%;
+      transform: translate(-50%, 0);
     }
   }
 
@@ -109,6 +155,9 @@
     &:hover {
       color: $pink;
     }
+    @include tablet {
+      margin: 0;
+    }
   }
 
   &__top-cart {
@@ -117,7 +166,7 @@
     position: relative;
     width: 197px;
     @include small-desktop {
-    width: 174px;
+      width: 174px;
     }
     @include tablet {
       width: auto;
@@ -128,6 +177,7 @@
   &__top-cart-icon {
     margin-right: 15px;
   }
+
   &__top-cart-quantity {
     display: inline-block;
     position: absolute;
@@ -146,14 +196,18 @@
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+
   &__top-cart-text {
     position: relative;
     top: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     transition: $transition;
     &:hover {
       color: $pink;
     }
-    @include small-desktop {
+    @include tablet {
       display: none;
     }
   }
@@ -162,15 +216,27 @@
     display: flex;
     align-items: center;
     & img:hover {
-      opacity: 0.6;
+      opacity: 0.5;
     }
     @include small-desktop {
-    display: none;
+      display: none;
+    }
+    @include tablet {
+      display: block;
+      z-index: 5;
+      position: absolute;
+      top: 510px;
+      left: 50%;
+      transform: translate(-50%, 0);
     }
   }
 
   &__top-socials-inst {
     margin-right: 12px;
+    @include tablet {
+      position: relative;
+      top: 5px;
+    }
   }
 
   &__top-socials-fb {
@@ -186,19 +252,25 @@
       color: $black;
       text-transform: uppercase;
       position: relative;
-    &:after {
-      content: '';
-      position: absolute;
-      height: 1px;
-      width: 0;
-      background: $pink;
-      bottom: -1px;
-      left: 0;
-      transition: $transition;
+      &:after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 0;
+        background: $pink;
+        bottom: -1px;
+        left: 0;
+        transition: $transition;
+        @include tablet {
+          display: none;
+        }
+      }
+      &:hover:after {
+        width: 100%;
+      }
     }
-    &:hover:after {
-      width: 100%;
-    }
+    @include tablet {
+      display: block;
     }
   }
 
@@ -207,12 +279,21 @@
     align-items: center;
     position: relative;
     bottom: 2px;
+    @include tablet {
+      flex-direction: column;
+    }
   }
 
   &__bottom-left-list {
     display: flex;
     @include tablet {
-      display: none;
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      z-index: 5;
+      margin: 0px 19px 0px 19px;
     }
   }
 
@@ -222,11 +303,25 @@
       margin-left: 7px;
       position: relative;
       bottom: 3px;
+      @include tablet {
+        transform: scale(0.9);
+      }
     }
-    @include small-desktop {
-      margin-left: 44px;
-      &:first-child {
+    @include tablet {
+      display: block;
+      margin: 0;
+      text-align: center;
+      padding: 13px 0px 10px 0px;
+      border-bottom: 1px solid $gray-dark;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &:first-child {
+      @include small-desktop {
         display: none;
+      }
+      @include tablet {
+        display: block;
       }
     }
   }
@@ -244,12 +339,21 @@
     align-items: center;
     position: relative;
     bottom: 3px;
+    @include tablet {
+      display: block;
+      
+    }
   }
 
   &__bottom-right-list {
     display: flex;
     @include tablet {
-      display: none;
+      display: block;
+      position: absolute;
+      top: 125px;
+      left: 0;
+      z-index: 5;
+      width: 100%;
     }
   }
 
@@ -258,14 +362,24 @@
     &:last-child {
       margin: 0;
     }
-    @include small-desktop {
-      margin-right: 45px;
-      &:nth-child(2) {
-      display: none;
+    &:nth-child(2) {
+      @include small-desktop {
+        margin-right: 45px;
+        display: none;
+      }
+      @include tablet {
+        display: block;
+        margin: 0;
+      }
     }
-    &:last-child {
-      margin-right: 45px;
+    @include tablet {
+      display: block;
+      margin-right: 0;
+      text-align: center;
+      padding: 13px 0px 10px 0px;
+      border-bottom: 1px solid $gray-dark;
+      font-size: 14px;
+      line-height: 17px;
     }
   }
-}
 }

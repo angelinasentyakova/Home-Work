@@ -3,6 +3,9 @@
   @include small-desktop {
     padding: 0px 0px 80px 0px;
   }
+  @include phone {
+      padding: 0px 41px 0px 39px;
+  }
   &__title {
     text-align: center;
     margin-bottom: 48px;
@@ -26,11 +29,21 @@
         width: 800px;
       }
       @include tablet {
-        width: 300px;
+        width: 450px;
+      }
+      @include phone {
+        border: none;
+        border-left: 1px dashed $gray-dark;
+        height: 200px;
+        top:10px;
+        left: 40px;
       }
     }
     @include tablet {
       padding: 0;
+    }
+    @include phone {
+      flex-direction: column;
     }
   }
 
@@ -43,9 +56,13 @@
       padding: 0px 3px;
     }
     @include tablet {
-      &:nth-of-type(2), &:nth-of-type(5), &:nth-of-type(6) {
+      &:nth-of-type(4), &:nth-of-type(5), &:nth-of-type(6) {
         display: none;
       }
+    }
+    @include phone {
+      display: flex;
+      justify-content: space-between;
     }
   }
 
@@ -60,14 +77,22 @@ font-weight: 600;
 font-size: 14px;
 line-height: 17px;
 width: 150px;
+@include phone {
+      font-size: 12px;
+      line-height: 15px;
+      padding: 13px 0px 0px 0px;
+    }
   }
 
   &__cup {
     position: absolute;
-    left: 93px;
+    left: 98px;
     top: -40px;
     @include small-desktop {
       left: 85px;
+    }
+    @include phone {
+      left: 33px;
     }
   }
 }

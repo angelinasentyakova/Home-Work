@@ -75,6 +75,14 @@ body {
   line-height: 17px;
   color: $base-color;
   background: $gray-light;
+  &.--lock {
+    overflow: hidden;
+  }
+
+  @include phone {
+    font-size: 10px;
+    line-height: 15px;
+  }
 }
 
 a {
@@ -105,5 +113,8 @@ u {
   }
   @include tablet {
     max-width: 600px;
+  }
+  @include phone {
+    max-width: 320px;
   }
 }

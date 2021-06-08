@@ -1,6 +1,9 @@
 .add-to-cart {
   &__image {
     margin-right: 10px;
+    @include phone {
+      margin-right: 0;
+    }
   }
   &__text {
     position: relative;
@@ -9,6 +12,9 @@
     transition: $transition;
     &:hover {
       color: $pink;
+    }
+    @include phone {
+      display: none;
     }
   }
 }

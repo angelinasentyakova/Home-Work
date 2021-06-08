@@ -19,6 +19,9 @@
     @include tablet {
       order: 2;
     }
+    @include phone {
+      display: none;
+    }
   }
 
   &__images-main {
@@ -116,6 +119,9 @@
       position: static;
       padding: 65px 0px 0px 0px;
     }
+    @include phone {
+
+    }
   }
 
   &__info-since {
@@ -125,6 +131,9 @@
     }
     @include tablet {
       margin-bottom: 40px;
+    }
+    @include phone {
+      transform: scale(0.9);
     }
   }
 
@@ -138,10 +147,27 @@ line-height: 51px;
   font-size: 35px;
   line-height: 40px;
 }
+@include phone {
+  font-size: 24px;
+  line-height: 29px;
+}
   }
 
   &__info-text {
     font-size: 18px;
 line-height: 22px;
+@include phone {
+  font-size: 14px;
+  line-height: 17px;
+  width: 265px;
+  margin-left: 27px;
+}
+  }
+  &__image-mob{
+    display: none;
+    @include phone {
+      display: block;
+      margin-top: -60px;
+    }
   }
 }

@@ -3,3 +3,5 @@
 //= components/ProductGallery.js
 //= components/Tabs.js
 //= components/Swiper.js
+//= components/Burger.js
+//= components/Accordion.js

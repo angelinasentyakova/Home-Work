@@ -3,6 +3,9 @@
   background: $white;
   border-radius: 5px;
   border: 1px solid $gray;
+  @include phone {
+    display: none;
+  }
   &__buttons {
     height: 57px;
     padding: 23px 0px 0px 5px;
@@ -86,6 +89,9 @@ display: -webkit-box;
   }
   @include small-desktop  {
     top: -20px;
+  }
+  @include phone{
+    
   }
 }
 }

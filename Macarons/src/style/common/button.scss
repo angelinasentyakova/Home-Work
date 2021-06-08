@@ -7,6 +7,10 @@
   font-size: 14px;
   line-height: 17px;
   transition: $transition-xl;
+  @include phone {
+      font-size: 12px;
+      line-height: 14px;
+  }
 
   &.--framed {
     color: $black;
