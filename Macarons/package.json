@@ -35,6 +35,7 @@
     "gulp-util": "^3.0.8",
     "gulp-watch": "^5.0.1",
     "husky": "^2.3.0",
+    "jquery-validation": "^1.19.3",
     "stylelint": "^10.0.1",
     "stylelint-config-standard": "^18.3.0"
   },

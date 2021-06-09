@@ -9,7 +9,6 @@
     @include phone {
       margin: 0;
     }
-    
   }
 
   &__backround {
@@ -18,7 +17,7 @@
     margin-bottom: 25px;
     padding: 0px 14px;
     & > img {
-    @include small-desktop {
+      @include small-desktop {
         width: 433px;
         height: 200px;
       }
@@ -48,11 +47,12 @@
     }
     & img {
       @include small-desktop {
-          height: 80px;
-          width: 80px;
+        height: 80px;
+        width: 80px;
       }
     }
   }
+
   &__more-info {
     transition: $transition;
     cursor: pointer;
@@ -60,6 +60,7 @@
       opacity: 0.6;
     }
   }
+
   &__title {
     margin: 0px 10px 10px 0px;
     display: inline-block;
@@ -78,18 +79,21 @@
     font-size: 16px;
     line-height: 19px;
   }
+
   &__mobile {
     display: none;
     @include phone {
       display: block;
     }
   }
+
   &__mobile-list {
     @include phone {
-    padding: 0px 17px 0px 16px;
-    margin-top: -50px;
+      padding: 0px 17px 0px 16px;
+      margin-top: -50px;
     }
   }
+
   &__mobile-link {
     @include phone {
       display: flex;
@@ -99,19 +103,21 @@
       border-bottom: 1px solid $gray;
     }
   }
+
   &__mobile-link-text {
     @include phone {
       font-family: Montserrat;
-font-weight: 600;
-font-size: 14px;
-line-height: 17px;
-margin-right: 14px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      margin-right: 14px;
     }
   }
+
   &__mobile-arrow {
     @include phone {
-    position: relative;
-    top: 4px;
-  }
+      position: relative;
+      top: 4px;
+    }
   }
 }

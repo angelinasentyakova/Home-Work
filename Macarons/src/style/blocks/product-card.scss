@@ -9,6 +9,7 @@
   @include phone {
     padding: 0px 16px 36px 16px;
   }
+
   &__pictures {
     flex: 0 0 50%;
     margin-right: 15px;
@@ -34,7 +35,6 @@
     &:hover {
       opacity: 0.8;
     }
-
     @include small-desktop {
       width: 450px;
       height: 400px;
@@ -49,7 +49,6 @@
       height: 227px;
       margin-bottom: 11px;
     }
-
     & img {
       position: absolute;
       top: 0;
@@ -139,9 +138,10 @@
     @include phone {
       font-size: 18px;
       line-height: 22px;
-      left: 130px;
+      left: 127px;
     }
   }
+
   &__order-text-container {
     height: 43px;
     @include tablet {
@@ -157,6 +157,7 @@
       top: 25px;
     }
   }
+
   &__order-text {
     font-size: 16px;
     line-height: 19px;
@@ -165,6 +166,10 @@
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    @include phone {
+      font-size: 14px;
+      line-height: 17px;
+    }
   }
 
   &__order-options {
@@ -196,13 +201,21 @@
       margin: 0;
     }
   }
+
   &__order-arrow {
     display: none;
+    transition: $transition;
     @include phone {
       display: inline-block;
       position: absolute;
       right: 15px;
       top: 7px;
+      transform: rotate(180deg);
+    }
+    &.--active {
+      @include phone {
+        transform: rotate(360deg);
+      }
     }
   }
 
@@ -233,12 +246,12 @@
       bottom: 5px;
       left: 47px;
       &:nth-of-type(2) {
-          left: 65px;
-          width: 410px;
+        left: 65px;
+        width: 410px;
       }
       &:nth-of-type(3) {
-          left: 55px;
-          width: 415px;
+        left: 55px;
+        width: 415px;
       }
       @include small-desktop {
         width: 300px;
@@ -255,13 +268,6 @@
       font-size: 14px;
       line-height: 17px;
     }
-    
-  }
-
-  &__order-flavor {
-  }
-
-  &__order-quantity {
   }
 
   &__order-cart {
@@ -342,6 +348,9 @@
     @include tablet {
       order: 3;
     }
+    @include phone {
+      padding-top: 22px;
+    }
   }
 
   &__order-detail {
@@ -356,37 +365,44 @@
     }
   }
 
-
-		&__order-mobile {
-      display: none;
+  &__order-mobile {
+    display: none;
+    @include phone {
+      display: block;
+      padding: 14px 15px 13px 18px;
+      border-bottom: 1px solid $gray;
+      position: relative;
+    }
+    &.--noborder {
       @include phone {
-        display: block;
-        padding: 14px 15px 13px 18px;
-        border-bottom: 1px solid $gray;
-        position: relative;
+        border-bottom: none;
       }
-		}
+    }
+  }
 
-		&__order-mobile-arrow {
-      display: none;
-      @include phone {
-        display: inline-block;
-        position: absolute;
-        right: 15px;
-        top: 22px;
-      }
-		}
+  &__order-mobile-arrow {
+    display: none;
+    transition: $transition;
+    @include phone {
+      display: inline-block;
+      position: absolute;
+      right: 15px;
+      top: 22px;
+    }
+    &.--active {
+      transform: rotate(180deg);
+    }
+  }
 
-		&__order-mobile-list {
-      display: none;
-      @include tablet {
-        padding: 16px 15px 16px 18px;
-        font-size: 14px;line-height: 17px;
-        border-bottom: 1px solid $gray;
-        
-      }
-		}
-
+  &__order-mobile-list {
+    display: none;
+    @include phone {
+      padding: 16px 15px 16px 18px;
+      font-size: 14px;
+      line-height: 17px;
+      border-bottom: 1px solid $gray;
+    }
+  }
 
   &__order-info {
     @include tablet {

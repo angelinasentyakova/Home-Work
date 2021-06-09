@@ -1,6 +1,10 @@
 .intro {
-  background: url('../images/intro/blur.png') 104% 40% no-repeat;
+  background: url("../images/intro/blur.png") 104% 40% no-repeat;
   overflow: hidden;
+  @include phone {
+    background: none;
+  }
+
   &__wrapper {
     display: flex;
     padding-bottom: 43px;
@@ -47,8 +51,8 @@
     top: 60px;
     left: -110px;
     opacity: 0;
-    transition: all .7s linear .4s;
-    &.--active{
+    transition: all 0.7s linear 0.4s;
+    &.--active {
       opacity: 1;
     }
     @include small-desktop {
@@ -66,9 +70,9 @@
     position: absolute;
     top: 40px;
     left: -25px;
-    transition: all .7s linear .9s;
+    transition: all 0.7s linear 0.9s;
     opacity: 0;
-    &.--active{
+    &.--active {
       opacity: 1;
     }
     @include small-desktop {
@@ -86,9 +90,9 @@
     position: absolute;
     bottom: 77px;
     left: 2px;
-    transition: all .9s linear 1.5s;
+    transition: all 0.9s linear 1.5s;
     opacity: 0;
-    &.--active{
+    &.--active {
       opacity: 1;
     }
     @include small-desktop {
@@ -111,7 +115,7 @@
     right: 180px;
     @include small-desktop {
       flex: 0 0 400px;
-      top: 135px; 
+      top: 135px;
       right: 100px;
     }
     @include tablet {
@@ -120,7 +124,6 @@
       padding: 65px 0px 0px 0px;
     }
     @include phone {
-
     }
   }
 
@@ -140,30 +143,31 @@
   &__info-title {
     margin-bottom: 13px;
     font-family: Montserrat;
-font-weight: 600;
-font-size: 42px;
-line-height: 51px;
-@include small-desktop {
-  font-size: 35px;
-  line-height: 40px;
-}
-@include phone {
-  font-size: 24px;
-  line-height: 29px;
-}
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 51px;
+    @include small-desktop {
+      font-size: 35px;
+      line-height: 40px;
+    }
+    @include phone {
+      font-size: 24px;
+      line-height: 29px;
+    }
   }
 
   &__info-text {
     font-size: 18px;
-line-height: 22px;
-@include phone {
-  font-size: 14px;
-  line-height: 17px;
-  width: 265px;
-  margin-left: 27px;
-}
+    line-height: 22px;
+    @include phone {
+      font-size: 14px;
+      line-height: 17px;
+      width: 265px;
+      margin-left: 27px;
+    }
   }
-  &__image-mob{
+
+  &__image-mob {
     display: none;
     @include phone {
       display: block;

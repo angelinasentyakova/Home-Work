@@ -93,15 +93,22 @@ u {
   text-decoration: none;
   position: relative;
   &:after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     height: 1px;
     width: 100%;
     background: $base-color;
-    opacity: 0.3;
+    opacity: .3;
     bottom: 1px;
     left: 0px;
+  }
+}
+
+input {
+  border: 1px solid $gray;
+  &::placeholder {
+    color: $gray-dark;
   }
 }
 

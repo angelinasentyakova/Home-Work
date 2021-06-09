@@ -3,7 +3,7 @@
   @include tablet {
     padding: 13px 0px 14px 15px;
   }
-  
+
   &__list {
     display: flex;
     justify-content: center;
@@ -13,24 +13,29 @@
   }
 
   &__link {
-    background: url('../img/breadcrumbs/arrow.png') 99% 3px no-repeat;
+    background: url("../img/breadcrumbs/arrow.png") 99% 3px no-repeat;
     padding-right: 13px;
-    & a{
-    color: rgba(41, 41, 41, 0.46);
-    transition: $transition;
-    &:hover {
-      color: $dark-blue;
-    }
+    & a {
+      color: $gray-dark;
+      transition: $transition;
+      &:hover {
+        color: $dark-blue;
+      }
     }
     &:last-child {
       background: none;
+      padding-left: 2px;
       & a {
-      color: $dark-blue;
-      transition: $transition;
-      &:hover {
-        color: rgba(41, 41, 41, 0.46);
+        color: $dark-blue;
+        transition: $transition;
+        &:hover {
+          color: $gray-dark;
+        }
       }
-      }
+    }
+    @include phone {
+      background-position: 102% 2px;
+      padding-right: 11px;
     }
   }
 }

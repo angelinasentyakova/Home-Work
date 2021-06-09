@@ -16,19 +16,19 @@
     .product-card__order-text-container
       .product-card__order-text 40 макаронс в круглой коробке с персональной надписью
     .product-card__order-options 
-      .product-card__order-tastes.title.--small Вкусы:
-        img(src="images/icons/accordion.svg", alt="").product-card__order-arrow.js-accordion-switch
+      .product-card__order-tastes.title.--small.js-accordion-switch Вкусы:
+        img(src="images/icons/accordion.svg", alt="").product-card__order-arrow
       .product-card__order-list.js-accordion-list 
         each flavor in flavors
           .product-card__order-option  
             .product-card__order-flavor= flavor.name 
             .product-card__order-quantity= flavor.quant
-      .product-card__order-mobile.title.--small Состав и пищевая ценность
-        img(src="images/icons/accordion.svg", alt="").product-card__order-mobile-arrow.js-accordion-switch
-      .product-card__order-mobile-list.js-accordion-list  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, pariatur!
-      .product-card__order-mobile.title.--small Условия и срок хранения
-        img(src="images/icons/accordion.svg", alt="").product-card__order-mobile-arrow.js-accordion-switch
-      .product-card__order-mobile-list.js-accordion-list  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non velit voluptatibus est odio?
+      .product-card__order-mobile.title.--small.js-accordion-switch Состав и пищевая ценность
+        img(src="images/icons/accordion.svg", alt="").product-card__order-mobile-arrow
+      .product-card__order-mobile-list.js-accordion-list Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, pariatur!
+      .product-card__order-mobile.--noborder.title.--small.js-accordion-switch Условия и срок хранения
+        img(src="images/icons/accordion.svg", alt="").product-card__order-mobile-arrow
+      .product-card__order-mobile-list.js-accordion-list Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non velit voluptatibus est odio?
     .product-card__order-cart 
       .product-card__order-price-wrapper 
         .product-card__order-price 2800 руб

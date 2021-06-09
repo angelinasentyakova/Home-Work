@@ -10,10 +10,20 @@ header.header
         ul.header__top-list 
           for link in links
             li.header__top-link 
-              a(href="")= link 
+              a(href="")= link
+          li.header__top-link-call
+            img.header__top-link-call-icon(src="images/icons/header-top/mob.svg", alt="Позвонить")
+            a.header__top-link-call-number(href="tel:+78123098288") 8 812 309-82-88
+          li.header__top-link-socials
+            a.header__top-link-socials-inst(href="")
+              img(src="images/icons/header-top/inst.svg", alt="Инстаграм")
+            a.header__top-link-socials-fb(href="")
+              img(src="images/icons/header-top/fb.svg", alt="Фейсбук")
+            a.header__top-link-socials-vk(href="")
+              img(src="images/icons/header-top/vk.svg", alt="Вконтакте")
       .header__top-logo-mobile 
         img(src="images/logo-mob.png", alt="")
-      .header__top-call 
+      .header__top-call
         img.header__top-call-icon(src="images/icons/header-top/mob.svg", alt="Позвонить")
         a.header__top-call-number(href="tel:+78123098288") 8 812 309-82-88
       .header__top-cart
@@ -21,16 +31,16 @@ header.header
         span.header__top-cart-quantity 0
         a.header__top-cart-text(href="") В корзине 
           span (0 товаров)
-      .header__top-socials
+      .header__top-socials 
         a.header__top-socials-inst(href="")
           img(src="images/icons/header-top/inst.svg", alt="Инстаграм")
         a.header__top-socials-fb(href="")
           img(src="images/icons/header-top/fb.svg", alt="Фейсбук")
         a.header__top-socials-vk(href="")
           img(src="images/icons/header-top/vk.svg", alt="Вконтакте")
-  .header__bottom 
+  .header__bottom  
     .container 
-      .header__bottom-wrapper 
+      .header__bottom-wrapper.js-burger-menu  
         .header__bottom-left 
           ul.header__bottom-left-list
             li.header__bottom-left-link
@@ -46,4 +56,4 @@ header.header
           ul.header__bottom-right-list 
             for item in rightLinks  
               li.header__bottom-right-link
-                a(href="")= item
+                a(href="#allgifts").js-fancybox= item

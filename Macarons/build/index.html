@@ -4,12 +4,12 @@
     <title>Macaron Shop</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="format-detection" content="telephone=no"/>
     <link rel="stylesheet" href="../css/style.css" media="all"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
     <script async="async" src="../js/bundle.js"></script>
   </head>
@@ -25,17 +25,19 @@
               <li class="header__top-link"> <a href="">Гарантии вкуса и свежести</a></li>
               <li class="header__top-link"> <a href="">Доставка и оплата</a></li>
               <li class="header__top-link"> <a href="">Контакты</a></li>
+              <li class="header__top-link-call"><img class="header__top-link-call-icon" src="images/icons/header-top/mob.svg" alt="Позвонить"><a class="header__top-link-call-number" href="tel:+78123098288">8 812 309-82-88</a></li>
+              <li class="header__top-link-socials"><a class="header__top-link-socials-inst" href=""><img src="images/icons/header-top/inst.svg" alt="Инстаграм"></a><a class="header__top-link-socials-fb" href=""><img src="images/icons/header-top/fb.svg" alt="Фейсбук"></a><a class="header__top-link-socials-vk" href=""><img src="images/icons/header-top/vk.svg" alt="Вконтакте"></a></li>
             </ul>
           </nav>
           <div class="header__top-logo-mobile"> <img src="images/logo-mob.png" alt=""></div>
-          <div class="header__top-call"> <img class="header__top-call-icon" src="images/icons/header-top/mob.svg" alt="Позвонить"><a class="header__top-call-number" href="tel:+78123098288">8 812 309-82-88</a></div>
+          <div class="header__top-call"><img class="header__top-call-icon" src="images/icons/header-top/mob.svg" alt="Позвонить"><a class="header__top-call-number" href="tel:+78123098288">8 812 309-82-88</a></div>
           <div class="header__top-cart"><img class="header__top-cart-icon" src="images/icons/header-top/cart.svg" alt="Корзина"><span class="header__top-cart-quantity">0</span><a class="header__top-cart-text" href="">В корзине <span>(0 товаров)</span></a></div>
-          <div class="header__top-socials"><a class="header__top-socials-inst" href=""><img src="images/icons/header-top/inst.svg" alt="Инстаграм"></a><a class="header__top-socials-fb" href=""><img src="images/icons/header-top/fb.svg" alt="Фейсбук"></a><a class="header__top-socials-vk" href=""><img src="images/icons/header-top/vk.svg" alt="Вконтакте"></a></div>
+          <div class="header__top-socials"> <a class="header__top-socials-inst" href=""><img src="images/icons/header-top/inst.svg" alt="Инстаграм"></a><a class="header__top-socials-fb" href=""><img src="images/icons/header-top/fb.svg" alt="Фейсбук"></a><a class="header__top-socials-vk" href=""><img src="images/icons/header-top/vk.svg" alt="Вконтакте"></a></div>
         </div>
       </div>
       <div class="header__bottom"> 
         <div class="container"> 
-          <div class="header__bottom-wrapper"> 
+          <div class="header__bottom-wrapper js-burger-menu"> 
             <div class="header__bottom-left"> 
               <ul class="header__bottom-left-list">
                 <li class="header__bottom-left-link"><a href="product.html">Готовые наборы</a></li>
@@ -46,9 +48,9 @@
             <div class="header__bottom-logo"> <img src="images/logo.svg" alt="Логотип"></div>
             <div class="header__bottom-right"> 
               <ul class="header__bottom-right-list"> 
-                <li class="header__bottom-right-link"><a href="">Каталог десертов </a></li>
-                <li class="header__bottom-right-link"><a href="">Корпоративные подарки</a></li>
-                <li class="header__bottom-right-link"><a href="">Оптовикам</a></li>
+                <li class="header__bottom-right-link"><a class="js-fancybox" href="#allgifts">Каталог десертов </a></li>
+                <li class="header__bottom-right-link"><a class="js-fancybox" href="#allgifts">Корпоративные подарки</a></li>
+                <li class="header__bottom-right-link"><a class="js-fancybox" href="#allgifts">Оптовикам</a></li>
               </ul>
             </div>
           </div>
@@ -56,14 +58,45 @@
       </div>
     </header>
     <main></main>
+    <div class="allgifts" id="allgifts">
+      <div class="allgifts__wrapper">
+        <div class="allgifts__title title">Скачать весь каталог подарков</div>
+        <form class="allgifts__form" action="#" id="js-form">
+          <div class="allgifts__sections">
+            <div class="allgifts__section">
+              <label class="allgifts__label" for="name">Ваше имя*</label>
+              <input class="allgifts__input" type="text" id="name" name="name" placeholder="Укажите имя">
+            </div>
+            <div class="allgifts__section">
+              <label class="allgifts__label" for="tel">Ваш телефон*</label>
+              <input class="allgifts__input" type="TEL" id="tel" name="tel" placeholder="+7 (___) ___-__-__">
+            </div>
+            <div class="allgifts__section">
+              <label class="allgifts__label" for="company">Название компании</label>
+              <input class="allgifts__input" type="text" id="company">
+            </div>
+            <div class="allgifts__section">
+              <label class="allgifts__label" for="email">E-mail</label>
+              <input class="allgifts__input" type="email" id="email">
+            </div>
+          </div>
+          <div class="allgifts__button-wrapper">
+            <button class="allgifts__button button --pink" type="submit">Отправить заявку</button>
+          </div>
+          <div class="allgifts__info-wrapper">
+            <div class="allgifts__info">Нажимая на кнопку "Оформить заказ" Я принимаю и соглашаюсь с <a href=""> Договором оферты </a>и разрешаю обработку моих персональных данных в соответствии с <a href=""> Политикой конфиденциальности</a></div>
+          </div>
+        </form>
+      </div><a class="allgifts__close" href="" onclick="$.fancybox.close(); return false;"><img src="images/allgifts/close.png" alt=""></a><a class="allgifts__close-tablet" href="" onclick="$.fancybox.close(); return false;"><img src="images/allgifts/close-tablet.png" alt=""></a>
+    </div>
     <div class="intro"> 
       <div class="container">
         <div class="intro__wrapper">
-          <div class="intro__images"> 
-            <div class="intro__images-main"> <img src="images/intro/main.png" alt="Коробка с макаронс"></div>
-            <div class="intro__images-macarons js-img"> <img src="images/intro/macarons.png" alt="Макаронс"></div>
+          <div class="intro__images" data-speed="10">
+            <div class="intro__images-main"><img src="images/intro/main.png" alt="Коробка с макаронс"></div>
+            <div class="intro__images-macarons js-img"><img src="images/intro/macarons.png" alt="Макаронс"></div>
             <div class="intro__images-almonds js-img"><img src="images/intro/almonds.png" alt="Миндаль"></div>
-            <div class="intro__images-mint js-img"> <img src="images/intro/mint.png" alt="Мята"></div>
+            <div class="intro__images-mint js-img"><img src="images/intro/mint.png" alt="Мята"></div>
           </div>
           <div class="intro__info">
             <div class="intro__info-since"><img src="images/intro/since.png" alt="С 2013 года"></div>
@@ -504,6 +537,30 @@
           </div>
         </div>
         <div class="popular__button-flex"><a class="popular__button button --framed js-button" href="">Все праздничные наборы</a><a class="popular__button button --framed --hidden js-button" href="">Скрыть</a></div>
+      </div>
+      <div class="instagram"> 
+        <div class="instagram__title title">Всё самое вкусное в нашем Instagram</div>
+        <div class="instagram__head"> <a class="instagram__profile" href=""> <img src="images/instagram/profile.png" alt=""></a>
+          <div class="instagram__info"><a class="instagram__name" href="">@macaronshopru</a>
+            <div class="instagram__posts"> <span>1 589 </span>публикаций</div>
+            <div class="instagram__followers"> <span>10,9 тыс. </span>подписчиков</div>
+            <div class="instagram__following"> <span>435 </span>подписок</div>
+          </div>
+        </div>
+        <div class="instagram__body"> 
+          <div class="instagram__pic"> <img src="images/instagram/1.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/2.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/3.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/4.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/1.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/2.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/5.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/6.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/2.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/3.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/5.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/6.jpg" alt=""></div>
+        </div>
       </div>
       <div class="wecare"> 
         <div class="wecare__title title">Мы обо всём позаботились</div>
