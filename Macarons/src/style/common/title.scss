@@ -1,0 +1,25 @@
+.title {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+
+  &.--medium {
+    font-size: 20px;
+line-height: 24px;
+  }
+
+  &.--small {
+    font-size: 18px;  
+    line-height: 22px;
+    @include phone {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  @include phone {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

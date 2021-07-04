@@ -1,0 +1,16 @@
+- let specials = [{img: "images/specials/1.png", label: "НОВИНКА", title: "Супербольшие наборы <br>от 1000 Рублей"}, {img: "images/specials/2.png", label: "АКЦИЯ", title: "Эклер + 1 макарон <br>= 99 рублей"}, {img: "images/specials/3.png", label: "АКЦИЯ", title: "СУПЕРМАКАРУХИ <br>ПО СУПЕРЦЕНАМ"}, {img: "images/specials/4.png", label: "НОВИНКА", title: "Великолепные трубочки. Самые вкусные на свете"}, {img: "images/specials/1.png", label: "НОВИНКА", title: "Супербольшие наборы <br>от 1000 Рублей"}, {img: "images/specials/2.png", label: "АКЦИЯ", title: "Эклер + 1 макарон <br>= 99 рублей"}];
+
+
+.specials 
+  .specials__title.title Акции
+  .specials__container.swiper-container.js-swiper
+    .specials__wrapper.swiper-wrapper
+      for item in specials
+        .specials__slide.swiper-slide
+          .specials__image 
+            img(src= item.img, alt="Специальное предложение")
+          .specials__info 
+            .specials__label= item.label
+            .specials__title.title.--small !{item.title}
+    .specials__pagination.swiper-pagination
+      

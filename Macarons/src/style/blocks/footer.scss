@@ -1,0 +1,226 @@
+.footer {
+  background: $gray-darker;
+  padding: 56px 0px 82px 0px;
+  @include small-desktop {
+    padding: 36px 0px 35px 0px;
+  }
+  @include tablet {
+    padding: 36px 15px 53px 15px;
+  }
+
+  &__wrapper {
+    display: flex;
+    position: relative;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__features {
+    flex: 0 0 370px;
+    margin-right: 17px;
+    @include small-desktop {
+      flex: 0 0 200px;
+    }
+  }
+
+  &__features-top {
+    display: flex;
+    margin: 0px 0px 28px 22px;
+    @include small-desktop {
+      flex-direction: column;
+      margin: 0px 0px 10px 0px;
+    }
+    @include tablet {
+      padding-left: 30px;
+    }
+  }
+
+  &__features-item {
+    flex: 0 0 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    &:first-child {
+      margin-right: 17px;
+    }
+    &:nth-child(2) {
+      margin-right: 12px;
+    }
+    @include small-desktop {
+      flex: 0 0 40px;
+      flex-direction: row;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__features-image {
+    margin-bottom: 15px;
+    height: 39px;
+    @include small-desktop {
+      margin: 0px 10px 0px 0px;
+      & img {
+        height: 30px;
+        width: 40px;
+      }
+    }
+  }
+
+  &__features-text {
+    font-size: 12px;
+    line-height: 13px;
+    text-align: center;
+    @include small-desktop {
+      text-align: left;
+    }
+    @include tablet {
+      width: 190px;
+    }
+  }
+
+  &__features-address {
+    font-size: 12px;
+    line-height: 15px;
+    opacity: 0.7;
+    @include tablet {
+      width: 173px;
+      font-size: 10px;
+      line-height: 12px;
+    }
+    & > span {
+      display: none;
+    }
+  }
+
+  &__info {
+    flex: 0 0 auto;
+    display: flex;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__info-item {
+    margin: 0px 67px 0px 15px;
+    &:nth-of-type(2) {
+      margin: 0px 54px 0px 15px;
+      @include small-desktop {
+        margin: 0px 32px 0px 0px;
+      }
+    }
+    &:nth-of-type(3) {
+      margin: 0px 38px 0px 15px;
+      @include small-desktop {
+        margin: 0px 32px 0px 0px;
+      }
+    }
+    @include small-desktop {
+      margin: 0px 32px 0px 0px;
+    }
+  }
+
+  &__info-title {
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    @include small-desktop {
+      margin: 0px 0px 25px 0px;
+    }
+  }
+
+  &__info-link {
+    margin-bottom: 12px;
+    & a {
+      transition: $transition;
+      &:hover {
+        color: $dark-blue;
+      }
+    }
+    @include small-desktop {
+      margin: 0px 0px 25px 0px;
+    }
+  }
+
+  &__contacts {
+    flex: 0 0 170px;
+    @include tablet {
+      flex: 0 0 auto;
+    }
+  }
+
+  &__contacts-top {
+    margin-bottom: 70px;
+    @include small-desktop {
+      margin: 0px 0px 120px 0px;
+    }
+    @include tablet {
+      position: absolute;
+      right: 0;
+      top: 159px;
+    }
+  }
+
+  &__contacts-number {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 5px;
+    text-align: right;
+    transition: $transition;
+    &:hover {
+      color: $pink;
+    }
+    @include tablet {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  &__contacts-schedule {
+    text-align: right;
+    @include tablet {
+      line-height: 12px;
+      font-size: 12px;
+    }
+  }
+
+  &__contacts-socials {
+    display: flex;
+    justify-content: flex-end;
+    @include tablet {
+      justify-content: center;
+      padding-top: 37px;
+    }
+    @include tablet {
+      padding-top: 27px;
+    }
+  }
+
+  &__contacts-social {
+    margin-left: 18px;
+    position: relative;
+    @include small-desktop {
+      margin: 0px 0px 0px 30px;
+    }
+    @include tablet {
+      margin: 0px 0px 0px 10px;
+    }
+  }
+
+  &__contacts-social-normal {
+    & + img:hover {
+      opacity: 1;
+    }
+  }
+
+  &__contacts-social-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: $transition;
+  }
+}

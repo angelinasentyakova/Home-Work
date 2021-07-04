@@ -1,0 +1,97 @@
+.tabs {
+  padding: 0px 0px 57px 0px;
+  background: $white;
+  border-radius: 5px;
+  border: 1px solid $gray;
+  @include phone {
+    display: none;
+  }
+
+  &__buttons {
+    height: 57px;
+    padding: 23px 0px 0px 5px;
+    margin: 0px 0px 41px 23px;
+    border-bottom: 1px solid $gray-darker;
+  }
+
+  &__buttons-item {
+    padding: 0px 15px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    position: relative;
+    transition: $transition;
+    &:hover {
+      color: $pink;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      height: 4px;
+      background: $pink;
+      bottom: -18px;
+      width: 100%;
+      transform: scale(0);
+      transform-origin: center;
+      left: 0;
+      transition: $transition;
+    }
+    &.--active {
+      &:before {
+        transform: scale(1);
+      }
+    }
+    &:first-of-type {
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__content {
+    height: 154px;
+    position: relative;
+    @include small-desktop {
+      height: 110px;
+    }
+    @include tablet {
+      height: 100px;
+    }
+  }
+
+  &__content-item {
+    font-size: 16px;
+    line-height: 22px;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    padding: 0px 20px 0px 0px;
+    visibility: hidden;
+    opacity: 1;
+    height: 0;
+    color: transparent;
+    transition: $transition-xxl;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    &.--active {
+      visibility: visible;
+      opacity: 1;
+      height: 154px;
+      color: $base-color;
+    }
+    &:first-of-type {
+      @include tablet {
+        display: none;
+      }
+    }
+    @include small-desktop {
+      top: -20px;
+    }
+    @include phone {
+    }
+  }
+}

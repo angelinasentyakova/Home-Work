@@ -1,0 +1,12 @@
+- let holidays = [{img: "images/holidays/1.png", text: "Скоро<br>День рождения близкого человека "}, {img: "images/holidays/2.png", text: "1 января<br>Новый Год<br>2021"}, {img: "images/holidays/3.png", text: "14 февраля<br>День Святого<br>Валентина"}, {img: "images/holidays/4.png", text: "23 февраля<br>День Защитника<br>Отечества"}, {img: "images/holidays/5.png", text: "8 марта<br>Международный<br>Женский День"}, {img: "images/holidays/6.png", text: "9 марта<br>День Сурка"}];
+
+.holidays 
+  .holidays__title.title Ближайшие праздники 
+  .holidays__row 
+    for holiday in holidays
+      .holidays__column 
+        .holidays__image 
+          img(src= holiday.img, alt="")
+        .holidays__text !{holiday.text} 
+    .holidays__cup 
+      img(src="images/holidays/cup.png", alt="")

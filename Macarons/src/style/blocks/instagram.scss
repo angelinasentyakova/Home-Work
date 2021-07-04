@@ -1,0 +1,118 @@
+.instagram {
+  padding-bottom: 102px;
+  & span {
+    font-weight: 600;
+  }
+  & img {
+    transition: $transition;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  @include small-desktop {
+    padding: 0px 60px 72px 60px;
+  }
+  @include tablet {
+    padding: 0px 5px 52px 5px;
+  }
+  @include phone {
+    padding: 0px 10px 40px 10px;
+  }
+
+  &__title {
+    padding-bottom: 41px;
+    text-align: center;
+    @include tablet {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    @include phone {
+      padding-bottom: 17px;
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    height: 83px;
+    padding: 0px 0px 0px 21px;
+    background: $gray-darker;
+    margin-bottom: 13px;
+    font-size: 17px;
+    line-height: 20px;
+    @include small-desktop {
+      width: 780px;
+    }
+    @include tablet {
+      width: 590px;
+      justify-content: space-between;
+      padding: 0px 21px 0px 21px;
+    }
+    @include phone {
+      width: 300px;
+    }
+  }
+
+  &__profile {
+    margin-right: 19px;
+  }
+
+  &__info {
+    display: flex;
+    @include tablet {
+      flex-direction: column;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  &__name {
+    margin-right: 390px;
+    font-size: 20px;
+    line-height: 24px;
+    transition: $transition;
+    &:hover {
+      color: $dark-blue;
+    }
+    @include small-desktop {
+      margin-right: 50px;
+      font-size: 18px;
+    }
+    @include tablet {
+      margin: 0px 0px 4px 0px;
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+  &__posts {
+    margin-right: 32px;
+    @include small-desktop {
+      margin-right: 26px;
+    }
+  }
+
+  &__followers {
+    margin-right: 26px;
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -4px;
+    @include phone {
+      padding: 0px 5px;
+    }
+  }
+
+  &__pic {
+    padding: 0px 2px;
+    margin-bottom: 4px;
+    & img {
+      @include tablet {
+        width: 95px;
+        height: 95px;
+      }
+    }
+  }
+}

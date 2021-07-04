@@ -1,0 +1,16 @@
+extends ./layout/layout
+
+block variables
+    - let page_title = 'Macaron Shop';
+    
+
+block content
+  include components/allgifts
+  include components/intro
+  .container
+    include components/packages
+    include components/specials
+    include components/holidays
+    include components/popular
+    include components/instagram
+    include components/wecare

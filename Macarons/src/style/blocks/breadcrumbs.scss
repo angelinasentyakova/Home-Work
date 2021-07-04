@@ -1,0 +1,41 @@
+.breadcrumbs {
+  padding: 34px 0px 36px 0px;
+  @include tablet {
+    padding: 13px 0px 14px 15px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    @include tablet {
+      justify-content: flex-start;
+    }
+  }
+
+  &__link {
+    background: url("../img/breadcrumbs/arrow.png") 99% 3px no-repeat;
+    padding-right: 13px;
+    & a {
+      color: $gray-dark;
+      transition: $transition;
+      &:hover {
+        color: $dark-blue;
+      }
+    }
+    &:last-child {
+      background: none;
+      padding-left: 2px;
+      & a {
+        color: $dark-blue;
+        transition: $transition;
+        &:hover {
+          color: $gray-dark;
+        }
+      }
+    }
+    @include phone {
+      background-position: 102% 2px;
+      padding-right: 11px;
+    }
+  }
+}

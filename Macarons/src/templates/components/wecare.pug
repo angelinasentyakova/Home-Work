@@ -1,0 +1,12 @@
+- let services = [{img: "images/wecare/1.jpg", title: "Лучшие ингредeнты", text: "Что-то про суперкачество, лучших поваров, свежесть и т.д."}, {img: "images/wecare/2.jpg", title: "Упаковка", text: "Что-то про суперкоробочки и бантики и бла бла бла"}, {img: "images/wecare/3.jpg", title: "Получение в день заказа", text: "В день заказа доставка курьером или самовывоз"}, {img: "images/wecare/4.jpg", title: "Анонимная доставка", text: "Можем преподнести Ваш заказ как анонимный подарок"}];
+
+.wecare 
+  .wecare__title.title Мы обо всём позаботились
+  .wecare__row 
+    for feature in services
+      .wecare__column 
+        .wecare__item 
+          .wecare__image 
+            img(src= feature.img, alt="")
+          .wecare__subtitle.title.--small= feature.title
+          .wecare__text= feature.text

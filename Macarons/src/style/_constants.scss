@@ -1,0 +1,26 @@
+$base-font-size: 14px;
+
+//Разрешения экранов
+$phone-width: 320px;
+$tablet-width: 768px;
+$small-desktop-width: 992px;
+$desktop-width: 1200px;
+$wide-desktop-width : 1400px;
+
+//Цвета
+$base-color: #292929;
+$white: #FFF;
+$black: #2B1414;;
+$gray-light: #F7F7F7;
+$gray: #EDEDF0;
+$gray-darker: #EBEDEE;
+$gray-dark: #D2D2D2;
+$gray-deep: #969696;
+$blue: #74CED2;
+$pink-light: #F7EBE5;
+$pink: #E7426A;
+$dark-blue: #4E9DD3;
+
+$transition: all .4s ease;
+$transition-xl: all .7s ease;
+$transition-xxl: all 1.2s ease;

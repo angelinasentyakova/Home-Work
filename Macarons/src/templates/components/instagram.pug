@@ -1,0 +1,22 @@
+-let pics = ["images/instagram/1.jpg", "images/instagram/2.jpg", "images/instagram/3.jpg", "images/instagram/4.jpg", "images/instagram/1.jpg", "images/instagram/2.jpg","images/instagram/5.jpg", "images/instagram/6.jpg", "images/instagram/2.jpg", "images/instagram/3.jpg", "images/instagram/5.jpg", "images/instagram/6.jpg",];
+
+.instagram 
+  .instagram__title.title Всё самое вкусное в нашем Instagram
+  .instagram__head 
+    a(href="").instagram__profile 
+      img(src="images/instagram/profile.png", alt="")
+    .instagram__info
+      a(href="").instagram__name @macaronshopru
+      .instagram__posts 
+        span 1 589 
+        | публикаций
+      .instagram__followers 
+        span 10,9 тыс. 
+        | подписчиков
+      .instagram__following 
+        span 435 
+        |подписок
+  .instagram__body 
+    for pic in pics
+      .instagram__pic  
+        img(src=pic, alt="")

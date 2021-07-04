@@ -1,0 +1,27 @@
+- let sets = [{img: "images/youlike/1.jpg", name: "1 макарон и 1 эклер", text: "промо-набор", oldprice: "160 руб", price: "90 руб"}, {img: "images/youlike/2.jpg", name: "Всего понемногу ", text: "3 эклера, 4 трубочки, 6 макарун. Вкусы: клубника - базилик, кокос, голубой сыр, пармезан", price: "750 руб"}, {img: "images/youlike/3.jpg", name: "Ещё побольше", text: "3 эклера, 4 трубочки, 6 макарун. Вкусы: клубника - базилик, кокос, голубой сыр, пармезан", price: "3900 руб"}, {img: "images/youlike/4.jpg", name: "Ещё побольше", text: "3 эклера, 4 трубочки, 6 макарун. Вкусы: клубника - базилик, кокос, голубой сыр, пармезан", price: "3900 руб"}, {img: "images/youlike/1.jpg", name: "1 макарон и 1 эклер", text: "промо-набор", oldprice: "160 руб", price: "90 руб"}, {img: "images/youlike/2.jpg", name: "Всего понемногу ", text: "3 эклера, 4 трубочки, 6 макарун. Вкусы: клубника - базилик, кокос, голубой сыр, пармезан", price: "750 руб"}, {img: "images/youlike/3.jpg", name: "Ещё побольше", text: "3 эклера, 4 трубочки, 6 макарун. Вкусы: клубника - базилик, кокос, голубой сыр, пармезан", price: "3900 руб"}, {img: "images/youlike/4.jpg", name: "Ещё побольше", text: "3 эклера, 4 трубочки, 6 макарун. Вкусы: клубника - базилик, кокос, голубой сыр, пармезан", price: "3900 руб"}];
+
+.youlike 
+  .youlike__title.title Вам могут понравиться
+  .youlike__container.swiper-container.js-swiper-2
+    .youlike__wrapper.swiper-wrapper
+      for set in sets
+        .youlike__column.swiper-slide
+          .youlike__item 
+            .youlike__image 
+              img(src= set.img, alt="")
+            .youlike__name.title.--small= set.name
+            .youlike__text-wrapper 
+              .youlike__text= set.text
+            .youlike__order 
+              .youlike__prices 
+                .youlike__price-old= set.oldprice 
+                .youlike__price.title.--small= set.price
+              .youlike__add
+                include add-to-cart
+    .youlike__prev.swiper-button-prev 
+      img(src="images/youlike/prev.png", alt="")
+    .youlike__next.swiper-button-next
+      img(src="images/youlike/next.png", alt="")
+    .youlike__pagination.swiper-pagination
+  .youlike__all-wrapper
+    a(href="").youlike__all.button.--framed Все готовые наборы

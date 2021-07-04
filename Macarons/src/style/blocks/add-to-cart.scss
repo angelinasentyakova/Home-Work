@@ -1,0 +1,22 @@
+.add-to-cart {
+  &__image {
+    margin-right: 10px;
+    @include phone {
+      margin-right: 0;
+      transform: scale(0.8);
+    }
+  }
+
+  &__text {
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+      color: $pink;
+    }
+    @include phone {
+      display: none;
+    }
+  }
+}

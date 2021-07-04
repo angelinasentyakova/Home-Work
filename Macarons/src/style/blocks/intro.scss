@@ -1,0 +1,177 @@
+.intro {
+  background: url("../images/intro/blur.png") 104% 40% no-repeat;
+  overflow: hidden;
+  @include phone {
+    background: none;
+  }
+
+  &__wrapper {
+    display: flex;
+    padding-bottom: 43px;
+    @include small-desktop {
+      padding-bottom: 83px;
+    }
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 0px;
+    }
+  }
+
+  &__images {
+    position: relative;
+    @include tablet {
+      order: 2;
+    }
+    @include phone {
+      display: none;
+    }
+  }
+
+  &__images-main {
+    width: 760px;
+    height: 480px;
+    position: relative;
+    top: -60px;
+    right: 90px;
+    @include small-desktop {
+      width: 600px;
+      height: 430px;
+      top: -80px;
+      right: 120px;
+    }
+    @include tablet {
+      top: -200px;
+      right: 50px;
+    }
+  }
+
+  &__images-macarons {
+    position: absolute;
+    top: 60px;
+    left: -110px;
+    opacity: 0;
+    transition: all 0.7s linear 0.4s;
+    &.--active {
+      opacity: 1;
+    }
+    @include small-desktop {
+      transition: none;
+      left: -130px;
+      top: 35px;
+    }
+    @include tablet {
+      top: -90px;
+      left: -60px;
+    }
+  }
+
+  &__images-almonds {
+    position: absolute;
+    top: 40px;
+    left: -25px;
+    transition: all 0.7s linear 0.9s;
+    opacity: 0;
+    &.--active {
+      opacity: 1;
+    }
+    @include small-desktop {
+      transition: none;
+      left: -45px;
+      top: 25px;
+    }
+    @include tablet {
+      top: -100px;
+      left: 15px;
+    }
+  }
+
+  &__images-mint {
+    position: absolute;
+    bottom: 77px;
+    left: 2px;
+    transition: all 0.9s linear 1.5s;
+    opacity: 0;
+    &.--active {
+      opacity: 1;
+    }
+    @include small-desktop {
+      transition: none;
+      left: -40px;
+      bottom: 40px;
+      transform: scale(0.95);
+    }
+    @include tablet {
+      left: 30px;
+      bottom: 150px;
+    }
+  }
+
+  &__info {
+    text-align: center;
+    flex: 0 0 500px;
+    position: relative;
+    top: 135px;
+    right: 180px;
+    @include small-desktop {
+      flex: 0 0 400px;
+      top: 135px;
+      right: 100px;
+    }
+    @include tablet {
+      order: 1;
+      position: static;
+      padding: 65px 0px 0px 0px;
+    }
+    @include phone {
+    }
+  }
+
+  &__info-since {
+    margin-bottom: 24px;
+    @include small-desktop {
+      margin-bottom: 10px;
+    }
+    @include tablet {
+      margin-bottom: 40px;
+    }
+    @include phone {
+      transform: scale(0.9);
+    }
+  }
+
+  &__info-title {
+    margin-bottom: 13px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 51px;
+    @include small-desktop {
+      font-size: 35px;
+      line-height: 40px;
+    }
+    @include phone {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+
+  &__info-text {
+    font-size: 18px;
+    line-height: 22px;
+    @include phone {
+      font-size: 14px;
+      line-height: 17px;
+      width: 265px;
+      margin-left: 27px;
+    }
+  }
+
+  &__image-mob {
+    display: none;
+    @include phone {
+      display: block;
+      margin-top: -60px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+include head.pug
+
+
+    
+block variables
+    
+doctype html
+html(lang='ru')
+    +head(page_title || '', scripts || [])
+    body
+        include header
+        main
+        block content
+        include footer

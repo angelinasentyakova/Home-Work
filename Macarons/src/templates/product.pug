@@ -1,0 +1,11 @@
+extends ./layout/layout
+
+block variables
+    - let page_title = 'Карточка товара';
+
+block content
+  .container
+    include components/breadcrumbs
+    include components/product-card
+    include components/tabs
+    include components/youlike

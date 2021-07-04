@@ -1,0 +1,40 @@
+- let features = [{img: "images/icons/footer-features/1.svg", text: "Готовим вручную и с любовью"}, {img: "images/icons/footer-features/2.svg", text: "Доставим <br>в день заказа"}, {img: "images/icons/footer-features/3.svg", text: "100% <br>миндальная мука и натуральные ингредиенты"}];
+
+- let socials = [{normal: "images/icons/footer-socials/inst.png", hover: "images/icons/footer-socials/inst-h.png"}, {normal: "images/icons/footer-socials/fb.png", hover: "images/icons/footer-socials/fb-h.png"}, {normal: "images/icons/footer-socials/vk.png", hover: "images/icons/footer-socials/vk-h.png"}];
+
+mixin footerList(title, ...items)
+  .footer__info-item
+    .footer__info-title= title
+    ul.footer__info-list
+      each item in items
+        li.footer__info-link
+          a(href="product.html") !{item}
+
+
+footer.footer 
+  .container
+    .footer__wrapper
+      .footer__features 
+        .footer__features-top
+          for feature in features
+            .footer__features-item 
+              .footer__features-image
+                img(src=feature.img, alt="")
+              .footer__features-text !{feature.text}
+        .footer__features-bottom 
+          .footer__features-address © 2021 Макароншоп ООО "Квантум", Санкт-Петербург,  улица Маршала Тухачевского, 
+            span дом
+            | 22
+      .footer__info 
+        +footerList("Информация", 'О компании','Гарантии вкуса и <br>свежести','Доставка и оплата','Контакты')
+        +footerList("Каталог", 'Каталог десертов', 'Готовые наборы', 'Собрать свой набор','Акции')  
+        +footerList("Для бизнеса", 'Корпоративные подарки', 'Для юридических лиц', 'Оптовикам')    
+      .footer__contacts
+        .footer__contacts-top 
+          a(href="TEL:+78123098288").footer__contacts-number +7 (812) 309 82 88
+          .footer__contacts-schedule с 9:00 до 21:00
+        .footer__contacts-socials 
+          for social in socials
+            a.footer__contacts-social(href="")
+              img(src=social.normal, alt="").footer__contacts-social-normal
+              img(src=social.hover, alt="").footer__contacts-social-hover

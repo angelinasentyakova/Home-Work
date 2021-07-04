@@ -1,0 +1,24 @@
+- let packages = [{bg: "images/packages/bg_1.png", image: "images/packages/1.png", title: "Готовые наборы", text: "Готовые наборы со скидкой. <br> Вы можете подобрать набор на подходящий случай."}, {bg: "images/packages/bg_2.png", image: "images/packages/2.png", title: "Собрать свой набор", text: "Выбрать количество макарун, и выбрать вкусы"}, {bg: "images/packages/bg_3.png", image: "images/packages/3.png", title: "Набор с индивидуальной печатью", text: "Собрать набор макарон с уникальным дизайном. "}, {bg: "images/packages/bg_4.png", image: "images/packages/4.png", title: "Свадебные предложения", text: "Нежные пирожные макаронс с разными вкусами для <br>украшения вашего свадебного торжества"}, {bg: "images/packages/bg_5.png", image: "images/packages/5.png", title: "Корпоративные подарки", text: "От 85 руб за шт. С уникальным дизайном. <br> Приятный комплимент для коллег и партнеров"}, {bg: "images/packages/bg_6.png", image: "images/packages/6.png", title: "Оптовые поставки", text: "Предложение для кофеен, кафе, отелей и т.д. <br>Посмотрите условия сотрудничества и отзывы."}];
+- let mobileLinks = ["Готовые наборы", "Собрать свой набор", "Набор с индивидуальной печатью", "Свадебные предложения","Корпоративные подарки", "Для юридических лиц"];
+
+.packages
+  .packages__wrapper
+    for package in packages
+      .packages__backround 
+        img(src=package.bg, alt="Фон")
+        .packages__column 
+          .packages__item 
+            .packages__image 
+                img(src=package.image, alt="Товар")
+            a(href="").packages__more-info
+              .packages__title.title.--medium= package.title
+              .packages__arrow 
+                img(src="images/icons/packages/arrow.svg", alt="Перейти")
+            .packages__text !{package.text}
+    .packages__mobile 
+      .packages__mobile-list 
+        for link in mobileLinks
+          a(href="").packages__mobile-link
+            .packages__mobile-link-text= link
+            .packages__mobile-arrow 
+              img(src="images/icons/packages/arrow-mob.svg", alt="Перейти")

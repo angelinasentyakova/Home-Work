@@ -1,0 +1,29 @@
+
+.allgifts#allgifts
+  .allgifts__wrapper
+    .allgifts__title.title Скачать весь каталог подарков
+    form(action="#").allgifts__form#js-form
+      .allgifts__sections
+        .allgifts__section
+          label(for="name").allgifts__label Ваше имя*
+          input(type="text", id="name", name="name" placeholder="Укажите имя").allgifts__input
+        .allgifts__section
+          label(for="tel").allgifts__label Ваш телефон*
+          input(type="TEL", id="tel", name="tel", placeholder="+7 (___) ___-__-__").allgifts__input
+        .allgifts__section
+          label(for="company").allgifts__label Название компании
+          input(type="text", id="company").allgifts__input
+        .allgifts__section
+          label(for="email").allgifts__label E-mail
+          input(type="email", id="email").allgifts__input
+      .allgifts__button-wrapper
+        button(type="submit").allgifts__button.button.--pink Отправить заявку
+      .allgifts__info-wrapper
+        .allgifts__info Нажимая на кнопку "Оформить заказ" Я принимаю и соглашаюсь с 
+          a(href="")  Договором оферты 
+          | и разрешаю обработку моих персональных данных в соответствии с 
+          a(href="")  Политикой конфиденциальности
+  a(href="", onclick="$.fancybox.close(); return false;").allgifts__close
+    img(src="images/allgifts/close.png", alt="")
+  a(href="", onclick="$.fancybox.close(); return false;").allgifts__close-tablet
+    img(src="images/allgifts/close-tablet.png", alt="")

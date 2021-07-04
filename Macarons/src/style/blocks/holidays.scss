@@ -1,0 +1,101 @@
+.holidays {
+  padding: 0px 0px 108px 0px;
+  @include small-desktop {
+    padding: 0px 0px 80px 0px;
+  }
+  @include phone {
+    padding: 0px 41px 0px 39px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px -15px;
+    position: relative;
+    padding: 0px 15px;
+    &:after {
+      content: "";
+      position: absolute;
+      border: 1px dashed $gray-dark;
+      width: 1000px;
+      top: 31px;
+      left: 90px;
+      z-index: -2;
+      @include small-desktop {
+        width: 800px;
+      }
+      @include tablet {
+        width: 450px;
+      }
+      @include phone {
+        border: none;
+        border-left: 1px dashed $gray-dark;
+        height: 200px;
+        top: 10px;
+        left: 40px;
+      }
+    }
+    @include tablet {
+      padding: 0;
+    }
+    @include phone {
+      flex-direction: column;
+    }
+  }
+
+  &__column {
+    flex: 0 0 170px;
+    text-align: center;
+    padding: 0px 15px;
+    @include small-desktop {
+      flex: 0 0 100px;
+      padding: 0px 3px;
+    }
+    @include tablet {
+      &:nth-of-type(4),
+      &:nth-of-type(5),
+      &:nth-of-type(6) {
+        display: none;
+      }
+    }
+    @include phone {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__image {
+    height: 61px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    width: 150px;
+    @include phone {
+      font-size: 12px;
+      line-height: 15px;
+      padding: 13px 0px 0px 0px;
+    }
+  }
+
+  &__cup {
+    position: absolute;
+    left: 98px;
+    top: -40px;
+    @include small-desktop {
+      left: 85px;
+    }
+    @include phone {
+      left: 33px;
+    }
+  }
+}

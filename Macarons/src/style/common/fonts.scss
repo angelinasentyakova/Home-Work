@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts//ProximaNova-Regular.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/ProximaNova-Regular.otf") format("otf"),
+       url("../fonts/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg"),
+       url("../fonts/ProximaNova-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: url("../fonts//ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/ProximaNova-Semibold.otf") format("otf"),
+       url("../fonts/ProximaNova-Semibold.svg#ProximaNova-Semibold") format("svg"),
+       url("../fonts/ProximaNova-Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ProximaNovaCond";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/ProximaNovaCond.eot");
+  src: url("../fonts//ProximaNovaCond.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/ProximaNovaCond.otf") format("otf"),
+       url("../fonts/ProximaNovaCond.svg#ProximaNovaCond") format("svg"),
+       url("../fonts/ProximaNovaCond.woff") format("woff");
+}

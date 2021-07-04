@@ -1,0 +1,39 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  transition: $transition-xl;
+  @include phone {
+      font-size: 12px;
+      line-height: 14px;
+  }
+
+  &.--framed {
+    color: $black;
+    border: 1px solid $dark-blue;
+    border-radius: 3px;
+    &:hover {
+      background: $dark-blue;
+    }
+  }
+
+  &.--pink {
+    color: $white;
+    background: $pink;
+    transition: $transition;
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &.--hidden {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+}

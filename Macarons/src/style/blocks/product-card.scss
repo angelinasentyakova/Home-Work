@@ -1,0 +1,412 @@
+.product-card {
+  display: flex;
+  padding-bottom: 36px;
+  position: relative;
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+  @include phone {
+    padding: 0px 16px 36px 16px;
+  }
+
+  &__pictures {
+    flex: 0 0 50%;
+    margin-right: 15px;
+    @include small-desktop {
+      margin-right: 30px;
+    }
+    @include tablet {
+      margin: 0;
+      padding-top: 90px;
+    }
+    @include phone {
+      padding-top: 70px;
+    }
+  }
+
+  &__pictures-main {
+    position: relative;
+    width: 570px;
+    height: 450px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+      opacity: 0.8;
+    }
+    @include small-desktop {
+      width: 450px;
+      height: 400px;
+      margin-bottom: 20px;
+    }
+    @include tablet {
+      width: 570px;
+      height: 450px;
+    }
+    @include phone {
+      width: 288px;
+      height: 227px;
+      margin-bottom: 11px;
+    }
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      z-index: 1;
+      transition: $transition-xl;
+      &.--active {
+        opacity: 1;
+        z-index: 2;
+      }
+    }
+  }
+
+  &__pictures-thumbs {
+    display: flex;
+    @include tablet {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__pictures-thumb {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    position: relative;
+    transition: $transition-xl;
+    margin-right: 12px;
+    border: 3px solid transparent;
+    @include small-desktop {
+      margin-right: 20px;
+    }
+    @include phone {
+      width: 36px;
+      height: 36px;
+    }
+    @include phone {
+      margin-right: 8px;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+    &.--active {
+      border: 3px solid $pink;
+      border-radius: 3px;
+    }
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__order {
+    width: 570px;
+    @include small-desktop {
+      width: 420px;
+    }
+    @include tablet {
+      width: 570px;
+      display: flex;
+      flex-direction: column;
+    }
+    @include phone {
+      width: 288px;
+    }
+  }
+
+  &__order-title {
+    margin-bottom: 13px;
+    line-height: 28px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    @include tablet {
+      position: absolute;
+      top: 0;
+      left: 250px;
+      font-size: 24px;
+    }
+    @include phone {
+      font-size: 18px;
+      line-height: 22px;
+      left: 127px;
+    }
+  }
+
+  &__order-text-container {
+    height: 43px;
+    @include tablet {
+      position: absolute;
+      top: 35px;
+      left: 100px;
+      width: 400px;
+      text-align: center;
+    }
+    @include phone {
+      width: 288px;
+      left: 25px;
+      top: 25px;
+    }
+  }
+
+  &__order-text {
+    font-size: 16px;
+    line-height: 19px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    @include phone {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  &__order-options {
+    width: 570px;
+    padding: 25px 28px 18px 25px;
+    background: $white;
+    margin-bottom: 10px;
+    border: 1px solid $gray;
+    border-radius: 5px;
+    @include small-desktop {
+      width: 420px;
+    }
+    @include tablet {
+      width: 570px;
+      order: 2;
+    }
+    @include phone {
+      width: 288px;
+      padding: 16px 0px 0px 0px;
+    }
+  }
+
+  &__order-tastes {
+    margin-bottom: 8px;
+    @include phone {
+      padding: 0px 15px 13px 18px;
+      border-bottom: 1px solid $gray-darker;
+      position: relative;
+      margin: 0;
+    }
+  }
+
+  &__order-arrow {
+    display: none;
+    transition: $transition;
+    @include phone {
+      display: inline-block;
+      position: absolute;
+      right: 15px;
+      top: 7px;
+      transform: rotate(180deg);
+    }
+    &.--active {
+      @include phone {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  &__order-list {
+    @include phone {
+      padding: 16px 15px 16px 18px;
+      font-size: 14px;
+      line-height: 17px;
+      border-bottom: 1px solid $gray;
+    }
+  }
+
+  &__order-option {
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 1px;
+      width: 430px;
+      background: $gray;
+      opacity: 0.6;
+      bottom: 5px;
+      left: 47px;
+      &:nth-of-type(2) {
+        left: 65px;
+        width: 410px;
+      }
+      &:nth-of-type(3) {
+        left: 55px;
+        width: 415px;
+      }
+      @include small-desktop {
+        width: 300px;
+      }
+      @include tablet {
+        width: 420px;
+        left: 55px;
+      }
+      @include phone {
+        width: 145px;
+      }
+    }
+    @include phone {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  &__order-cart {
+    width: 570px;
+    height: 80px;
+    background: $white;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 28px;
+    border: 1px solid $gray;
+    border-radius: 5px;
+    @include small-desktop {
+      width: 420px;
+      height: 70px;
+    }
+    @include tablet {
+      width: 570px;
+      height: 80px;
+      order: 1;
+      margin-bottom: 8px;
+    }
+    @include phone {
+      width: 288px;
+      height: 63px;
+      padding: 0px 10px 0px 23px;
+    }
+  }
+
+  &__order-price-wrapper {
+    width: 200px;
+    @include phone {
+      width: 90px;
+    }
+  }
+
+  &__order-price {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: $pink;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    @include phone {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__order-add {
+    padding: 0px 38px 0px 60px;
+    height: 50px;
+    background: url("../img/product-card/cart.png") right no-repeat;
+    border-radius: 3px;
+    position: relative;
+    @include small-desktop {
+      padding: 0px 20px 0px 40px;
+      height: 40px;
+    }
+    @include phone {
+      padding: 0px 22px 0px 37px;
+    }
+    & img {
+      position: absolute;
+      left: 35px;
+      top: 14px;
+      @include small-desktop {
+        left: 13px;
+        top: 8px;
+      }
+    }
+  }
+
+  &__order-details {
+    @include tablet {
+      order: 3;
+    }
+    @include phone {
+      padding-top: 22px;
+    }
+  }
+
+  &__order-detail {
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    & img {
+      margin-right: 28px;
+      @include tablet {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__order-mobile {
+    display: none;
+    @include phone {
+      display: block;
+      padding: 14px 15px 13px 18px;
+      border-bottom: 1px solid $gray;
+      position: relative;
+    }
+    &.--noborder {
+      @include phone {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__order-mobile-arrow {
+    display: none;
+    transition: $transition;
+    @include phone {
+      display: inline-block;
+      position: absolute;
+      right: 15px;
+      top: 22px;
+    }
+    &.--active {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__order-mobile-list {
+    display: none;
+    @include phone {
+      padding: 16px 15px 16px 18px;
+      font-size: 14px;
+      line-height: 17px;
+      border-bottom: 1px solid $gray;
+    }
+  }
+
+  &__order-info {
+    @include tablet {
+      font-size: 12px;
+    }
+  }
+}
