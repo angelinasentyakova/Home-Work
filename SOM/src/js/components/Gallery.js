@@ -1,35 +1,28 @@
 'use strict';
 
 let slides = document.querySelectorAll('.js-image-current');
-let thumbs = document.querySelectorAll('.js-image-switch');
+let thumbs = Array.from(document.querySelectorAll('.js-image-switch'));
+let thumbsContainer = document.querySelector('.product-picture__slider');
 
-//ставим класс active на текущий слайд, с других убираем
+thumbsContainer.onclick = function (event) {
+    let target = event.target;
+    let index = thumbs.indexOf(target);
+    activeThumb(target);
+    activeSlide(index);
+};
+
+function activeThumb(clicked) {
+    for (let thumb of thumbs) {
+        thumb.classList.remove('--active');
+    }
+    clicked.classList.add('--active');
+}
+
 function activeSlide(current) {
     for (let slide of slides) {
         slide.classList.remove('--active');
     }
     slides[current].classList.add('--active');
 }
-
-//ставим класс active на текущую кнопку, с других убираем
-function activeButton(current) {
-    for (let thumb of thumbs) {
-        thumb.classList.remove('--active');
-    }
-    thumbs[current].classList.add('--active');
-}
-
-//обьединение кнопки и слайда с одинаковым идексом
-function makeCurrentSlide(index) {
-    activeSlide(index);
-    activeButton(index);
-}
-
-//переключаем слайд по кнопке
-thumbs.forEach((item, currentThumb) => {
-    item.addEventListener('click', () => {
-        makeCurrentSlide(currentThumb);
-    });
-});
 
 
