@@ -1,6 +1,6 @@
 'use strict'
 const GEO_DECODER = "https://maps.googleapis.com/maps/api/geocode";
-const API_KEY = 'AIzaSyAkvz_as7f9vETEaqm6S9Jh7bCoT7eL01U';
+const API_KEY = '' ;
 
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
